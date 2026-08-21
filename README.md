@@ -1,4 +1,4 @@
-# 🎼 Harmonia
+#  Harmonia
 
 Aplicação web para organização e consulta da programação das reuniões da **Congregação Noroeste**.
 
