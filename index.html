@@ -1,41 +1,240 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
+
+    <meta
+        name="description"
+        content="Programação das reuniões e designações da Congregação Harmonia"
+    >
+
     <link rel="stylesheet" href="style.css">
-    <title>Congregação Noroeste</title>
+
+    <title>Harmonia | Congregação Harmonia</title>
 </head>
+
 <body>
-    <header>
-        <div class="menu-content">
-            <h1 class="logo"> Congregação Noroeste</h1>
-            <nav class="header-menu">
-                <ul class="list-itens">
-                    <li><a href="index.html">Apostila</a></li>
-                    <li><a href="finalsemana.html">Final de Semana</a></li>
-                </ul>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="index.html" class="brand" aria-label="Página inicial do Harmonia">
+                <span class="brand-title">Harmonia</span>
+                <span class="brand-subtitle">Congregação Harmonia</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Navegação principal">
+                <a href="index.html" class="active">
+                    Apostila
+                </a>
+
+                <a href="finalsemana.html">
+                    Final de Semana
+                </a>
             </nav>
+
         </div>
     </header>
-    <main>
-        <div class="main-content">
-            <h1 class="primary-text">Reunião das Testemunhas de Jeová</h1>
-            <h2 class="second-text">Programação das Reuniões</h2>
-                    <div class="btns">
-                        <a href="designacaoSemana01.html"><button>01 Semana</button> </a> 
-                        <a href="designacaoSemana02.html"><button>02 Semana</button> </a>
-                        <a href="designacaoSemana03.html"><button>03 Semana</button> </a>
-                        <a href="designacaoSemana04.html"><button>04 Semana</button> </a>
-                        <a href="designacaoSemana05.html"><button>05 Semana</button> </a>                       
-                    </div>                       
-        </div>
-    </main>
-   
-    
 
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-content">
+
+                <p class="eyebrow">
+                    Congregação Harmonia
+                </p>
+
+                <h1>
+                    Programação das Reuniões
+                </h1>
+
+                <p class="hero-description">
+                    Consulte a programação e as designações de cada semana.
+                </p>
+
+
+                <!-- ESTA SEMANA -->
+                <div class="current-week-card">
+
+                    <div>
+                        <span class="card-label">
+                            Esta semana
+                        </span>
+
+                        <strong>
+                            Programação semanal
+                        </strong>
+                    </div>
+
+                    <a
+                        href="designacaoSemana01.html"
+                        class="primary-action"
+                    >
+                        Ver programação
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ACESSO RÁPIDO -->
+        <section class="meetings-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">
+                        Acesso rápido
+                    </p>
+
+                    <h2>
+                        Reuniões
+                    </h2>
+                </div>
+
+
+                <div class="meeting-grid">
+
+                    <!-- MEIO DE SEMANA -->
+                    <a
+                        href="designacaoSemana01.html"
+                        class="meeting-card"
+                    >
+
+                        <span
+                            class="meeting-icon"
+                            aria-hidden="true"
+                        >
+                            📘
+                        </span>
+
+                        <div>
+                            <strong>
+                                Meio de Semana
+                            </strong>
+
+                            <span>
+                                Programação e designações
+                            </span>
+                        </div>
+
+                    </a>
+
+
+                    <!-- FINAL DE SEMANA -->
+                    <a
+                        href="finalsemana.html"
+                        class="meeting-card"
+                    >
+
+                        <span
+                            class="meeting-icon"
+                            aria-hidden="true"
+                        >
+                            📖
+                        </span>
+
+                        <div>
+                            <strong>
+                                Final de Semana
+                            </strong>
+
+                            <span>
+                                Discurso público e estudo
+                            </span>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SEMANAS -->
+        <section class="weeks-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">
+                        Programação mensal
+                    </p>
+
+                    <h2>
+                        Escolha a semana
+                    </h2>
+                </div>
+
+
+                <div class="weeks-grid">
+
+                    <a
+                        href="designacaoSemana01.html"
+                        class="week-card current"
+                    >
+                        <span>Semana</span>
+                        <strong>01</strong>
+                    </a>
+
+
+                    <a
+                        href="designacaoSemana02.html"
+                        class="week-card"
+                    >
+                        <span>Semana</span>
+                        <strong>02</strong>
+                    </a>
+
+
+                    <a
+                        href="designacaoSemana03.html"
+                        class="week-card"
+                    >
+                        <span>Semana</span>
+                        <strong>03</strong>
+                    </a>
+
+
+                    <a
+                        href="designacaoSemana04.html"
+                        class="week-card"
+                    >
+                        <span>Semana</span>
+                        <strong>04</strong>
+                    </a>
+
+
+                    <a
+                        href="designacaoSemana05.html"
+                        class="week-card"
+                    >
+                        <span>Semana</span>
+                        <strong>05</strong>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                 • Congregação Harmonia
+            </p>
+        </div>
+    </footer>
 
 </body>
 </html>
+```

@@ -1,138 +1,530 @@
-@media only screen and (max-device-width: 900px) {
-    /* .menu { width:100%; } */
-    }
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* Zerando CSS */
+:root {
+    --bg: #f4f6f8;
+    --surface: #ffffff;
+    --surface-soft: #eef3f7;
+
+    --primary: #315b7d;
+    --primary-dark: #24455f;
+    --primary-light: #e5eef5;
+
+    --text: #1f2933;
+    --text-soft: #64727e;
+    --border: #dce3e8;
+
+    --radius: 16px;
+    --shadow: 0 8px 30px rgba(25, 42, 55, 0.08);
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Fundo-tela */
+
 html {
-    width: 99vw;
-    height: 120vh;
-    font-size: 62.5%;
-    color: white;
-    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
 }
+
 body {
-    background-image:  linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)),url(/img/1011229_univ_pnr_lg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Inter', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
 }
-/* Menu - Header - NavBar */
-header {
-    width: 100%;
-    height: 7vh;
-    background-color: rgba(22, 22, 22, 0.2);
-}
-.menu-content {
-    text-transform: uppercase;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.8rem;
-}
-.logo {
-    font-size: 2.3rem;
-    letter-spacing: 0.4rem;
-    cursor: pointer;
-    color: burlywood;
-}
-.menu-content .list-itens {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-}
-.menu-content .list-itens a {
+
+a {
+    color: inherit;
     text-decoration: none;
-    color: white;
-    padding: 1.5rem;
-    transform: 2ms ease-in;
-    position: relative;
 }
-.menu-content .list-itens a:before {
-    content: ' ';
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 0px;
-    height: 1px;
-    background-color: rgb(251, 255, 0);
-    transition: all 1.5s ease; 
+
+.container {
+    width: min(1120px, calc(100% - 32px));
+    margin: 0 auto;
 }
-.menu-content .list-itens a:hover:before {
-    width: 100%;
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(10px);
 }
-/* Centro - Conteudo Principal */
-main {
-    height: 93vh;
+
+.header-content {
+    min-height: 76px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    gap: 24px;
 }
-.main-content {
+
+.brand {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
-/* Textos conteudo principal */
-.primary-text {
-    width: 850px;
-    font-size: 5rem;
-    margin-bottom: 5rem;
+
+.brand-title {
+    color: var(--primary);
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.brand-subtitle {
+    margin-top: 1px;
+    color: var(--text-soft);
+    font-size: 0.75rem;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.main-nav a {
+    padding: 9px 14px;
+    border-radius: 9px;
+    color: var(--text-soft);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--primary);
+    background: var(--primary-light);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    padding: 64px 0 42px;
+}
+
+.hero-content {
     text-align: center;
 }
-.second-text {
-    margin-bottom: 8rem;
-    font-size: 2rem;
-    color: rgb(165, 165, 165);
+
+.eyebrow {
+    margin-bottom: 9px;
+    color: var(--primary);
     text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.72rem;
+    font-weight: 700;
 }
-/* Botões */
-.btns {
+
+.hero h1 {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+}
+
+.hero-description {
+    max-width: 600px;
+    margin: 16px auto 0;
+    color: var(--text-soft);
+    font-size: 1rem;
+}
+
+
+/* =========================
+   ESTA SEMANA
+========================= */
+
+.current-week-card {
+    max-width: 720px;
+    margin: 30px auto 0;
+    padding: 20px 22px;
+
     display: flex;
-    justify-content: center;
-    gap: 18px;
-    margin-bottom: 20rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+
+    text-align: left;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
 }
-.btns button {
-    width: 250px;
-    height: 60px;
-    cursor: pointer;
-    border: 1px solid white;
-    color: white;
+
+.current-week-card > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.card-label {
+    color: var(--primary);
+    font-size: 0.75rem;
+    font-weight: 700;
     text-transform: uppercase;
-    background-color: transparent;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-    border-radius: 20px;
-    position: relative;
-    transition: 1.5s;
+    letter-spacing: 0.08em;
 }
-.btns button:hover {
-    color: rgb(251, 255, 0);
-    border: none;
+
+.current-week-card strong {
+    font-size: 1.05rem;
 }
-.btns button:before {
-    content: ' ';
-    border-radius: 20px;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    width: 0;
-    height: 60px;
-    background-color: rgb(61, 61, 61);
-    z-index: -1;
-    transition: 1s;
+
+.primary-action {
+    padding: 11px 18px;
+    border-radius: 10px;
+
+    background: var(--primary);
+    color: #ffffff;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
 }
-.btns button:hover:before {
-    width: 100%;
+
+.primary-action:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.meetings-section,
+.weeks-section {
+    padding: 28px 0;
+}
+
+.weeks-section {
+    padding-bottom: 64px;
+}
+
+.section-heading {
+    margin-bottom: 18px;
+}
+
+.section-heading h2 {
+    font-size: clamp(1.4rem, 3vw, 1.85rem);
+    letter-spacing: -0.02em;
+}
+
+
+/* =========================
+   REUNIÕES
+========================= */
+
+.meeting-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.meeting-card {
+    padding: 22px;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    box-shadow: 0 4px 18px rgba(25, 42, 55, 0.04);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.meeting-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+    border-color: #bdccd7;
+}
+
+.meeting-icon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+
+    display: grid;
+    place-items: center;
+
+    background: var(--primary-light);
+    border-radius: 13px;
+    font-size: 1.4rem;
+}
+
+.meeting-card div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.meeting-card strong {
+    font-size: 1rem;
+}
+
+.meeting-card div span {
+    color: var(--text-soft);
+    font-size: 0.85rem;
+}
+
+
+/* =========================
+   SEMANAS
+========================= */
+
+.weeks-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+}
+
+.week-card {
+    min-height: 108px;
+    padding: 17px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.week-card span {
+    color: var(--text-soft);
+    font-size: 0.78rem;
+    font-weight: 500;
+}
+
+.week-card strong {
+    color: var(--primary);
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.week-card:hover {
+    transform: translateY(-3px);
+    border-color: #b9cad6;
+    box-shadow: 0 6px 20px rgba(25, 42, 55, 0.07);
+}
+
+.week-card.current {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.week-card.current span {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.week-card.current strong {
+    color: #ffffff;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.site-footer {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+}
+
+.site-footer .container {
+    min-height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-footer p {
+    color: var(--text-soft);
+    font-size: 0.78rem;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+    .hero {
+        padding-top: 50px;
+    }
+
+    .meeting-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .weeks-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 560px) {
+    .container {
+        width: min(100% - 24px, 1120px);
+    }
+
+    .header-content {
+        min-height: 68px;
+        gap: 12px;
+    }
+
+    .brand-title {
+        font-size: 1.15rem;
+    }
+
+    .brand-subtitle {
+        font-size: 0.67rem;
+    }
+
+    .main-nav {
+        gap: 2px;
+    }
+
+    .main-nav a {
+        padding: 8px;
+        font-size: 0.75rem;
+    }
+
+    .main-nav a:first-child {
+        display: none;
+    }
+
+    .hero {
+        padding: 32px 0 20px;
+    }
+
+    .eyebrow {
+        margin-bottom: 7px;
+        font-size: 0.68rem;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+        line-height: 1.12;
+    }
+
+    .hero-description {
+        margin-top: 12px;
+        font-size: 0.86rem;
+    }
+
+    .current-week-card {
+        margin-top: 22px;
+        padding: 16px;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 13px;
+    }
+
+    .primary-action {
+        padding: 12px;
+        text-align: center;
+    }
+
+    .meetings-section,
+    .weeks-section {
+        padding: 20px 0;
+    }
+
+    .weeks-section {
+        padding-bottom: 48px;
+    }
+
+    .section-heading {
+        margin-bottom: 14px;
+    }
+
+    .section-heading h2 {
+        font-size: 1.35rem;
+    }
+
+    .meeting-grid {
+        gap: 10px;
+    }
+
+    .meeting-card {
+        padding: 16px;
+    }
+
+    .meeting-icon {
+        width: 46px;
+        height: 46px;
+        font-size: 1.25rem;
+    }
+
+    .weeks-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .week-card {
+        min-height: 96px;
+        padding: 15px;
+    }
+
+    .week-card strong {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* =========================
+   CELULARES MUITO PEQUENOS
+========================= */
+
+@media (max-width: 360px) {
+    .brand-subtitle {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 1.72rem;
+    }
+
+    .meeting-card {
+        gap: 13px;
+    }
 }
