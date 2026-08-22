@@ -1,0 +1,59 @@
+{
+  "congregacao": "Congregação Harmonia",
+  "tipo": "Reunião do Final de Semana",
+
+  "semanas": [
+    {
+      "id": 1,
+      "data": "18-08-26",
+
+      "presidente": "Roger Aragao",
+
+      "abertura": {
+        "cantico": 67,
+        "oracao": "Joao Pires"
+      },
+
+      "discursoPublico": {
+        "tempo": "30 min",
+        "numero": 28,
+        "tema": "Obedeca a Jeova",
+        "orador": "Rafael",
+        "congregacao": "Central - Lageado"
+      },
+
+      "sentinela": {
+        "tempo": "60 min",
+        "artigo": "Sabedoria de Jeova",
+        "tema": "A definir",
+        "dirigente": "Davi",
+        "leitor": "Lucad Isse"
+      },
+
+      "encerramento": {
+        "cantico": 89,
+        "oracao": "Alan"
+      }
+    },
+
+    {
+      "id": 2,
+      "data": "A definir"
+    },
+
+    {
+      "id": 3,
+      "data": "A definir"
+    },
+
+    {
+      "id": 4,
+      "data": "A definir"
+    },
+
+    {
+      "id": 5,
+      "data": "A definir"
+    }
+  ]
+}
