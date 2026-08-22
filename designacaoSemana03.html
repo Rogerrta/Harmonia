@@ -1,276 +1,418 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
+
+    <meta
+        name="description"
+        content="Programação da Semana 03 — Congregação Noroeste"
+    >
+
     <link rel="stylesheet" href="style.css">
-    <title>Congregação Noroeste</title>
+    <link rel="stylesheet" href="programacao.css">
+
+    <title>Semana 03 | Harmonia</title>
 </head>
+
 <body>
-    <header>
-        <div class="menu-content">
-            <h1 class="logo"> Congregação Noroeste</h1>
-            <nav class="header-menu">
-                <ul class="list-itens">
-                    <li><a href="index.html">HOME</a></li>
-                </ul>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="index.html" class="brand">
+                <span class="brand-title">Harmonia</span>
+                <span class="brand-subtitle">Congregação Noroeste</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="finalsemana.html">Final de Semana</a>
             </nav>
+
+        </div>
+    </header>
+
+
+    <main class="meeting-page">
+
+        <div class="container meeting-container">
+
+            <!-- CABEÇALHO DA SEMANA -->
+            <section class="meeting-hero">
+
+                <a href="index.html" class="back-link">
+                    ← Voltar para programação
+                </a>
+
+                <p class="eyebrow">
+                    Programação do meio de semana
+                </p>
+
+                <h1>Semana 03</h1>
+
+                <p class="meeting-period">
+                    15 de Janeiro
+                </p>
+
+                <div class="weekly-reading">
+                    <span>Leitura semanal da Bíblia</span>
+                    <strong>Deuteronômio 12–18</strong>
+                </div>
+
+            </section>
+
+
+            <!-- RESPONSÁVEIS -->
+            <section class="meeting-info-grid">
+
+                <div class="info-card">
+                    <span>Presidente</span>
+                    <strong>Roger</strong>
+                </div>
+
+                <div class="info-card">
+                    <span>Conselheiro Sala B</span>
+                    <strong>—</strong>
+                </div>
+
+            </section>
+
+
+            <!-- ABERTURA -->
+            <section class="meeting-opening">
+
+                <div class="opening-item">
+                    <span class="opening-label">Cântico inicial</span>
+                    <strong>25</strong>
+                </div>
+
+                <div class="opening-item">
+                    <span class="opening-label">Oração</span>
+                    <strong>Heitor</strong>
+                </div>
+
+                <div class="opening-item">
+                    <span class="opening-label">Comentários iniciais</span>
+                    <strong>1 min</strong>
+                </div>
+
+            </section>
+
+
+            <!-- TESOUROS -->
+            <section class="program-section treasures">
+
+                <header class="program-section-header">
+                    <span class="section-dot"></span>
+
+                    <div>
+                        <p>Parte 1</p>
+                        <h2>Tesouros da Palavra de Deus</h2>
+                    </div>
+                </header>
+
+
+                <div class="program-list">
+
+                    <article class="program-item">
+
+                        <div class="program-main">
+                            <span class="program-time">10 min</span>
+
+                            <div>
+                                <h3>
+                                    Santificado seja o nome de Jeová para sempre
+                                </h3>
+
+                                <p>Discurso</p>
+                            </div>
+                        </div>
+
+                        <div class="assignment">
+                            <span>Designado</span>
+                            <strong>Gilmar</strong>
+                        </div>
+
+                    </article>
+
+
+                    <article class="program-item">
+
+                        <div class="program-main">
+                            <span class="program-time">10 min</span>
+
+                            <div>
+                                <h3>Joias Espirituais</h3>
+                                <p>Consideração</p>
+                            </div>
+                        </div>
+
+                        <div class="assignment">
+                            <span>Designado</span>
+                            <strong>Jonatan</strong>
+                        </div>
+
+                    </article>
+
+
+                    <article class="program-item">
+
+                        <div class="program-main">
+                            <span class="program-time">4 min</span>
+
+                            <div>
+                                <h3>Leitura da Bíblia</h3>
+                                <p>Leitura</p>
+                            </div>
+                        </div>
+
+                        <div class="assignment">
+                            <span>Designado</span>
+                            <strong>Gustavo</strong>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- MINISTÉRIO -->
+            <section class="program-section ministry">
+
+                <header class="program-section-header">
+                    <span class="section-dot"></span>
+
+                    <div>
+                        <p>Parte 2</p>
+                        <h2>Faça Seu Melhor no Ministério</h2>
+                    </div>
+                </header>
+
+
+                <div class="program-list">
+
+                    <article class="program-item">
+
+                        <div class="program-main">
+                            <span class="program-time">4 min</span>
+
+                            <div>
+                                <h3>Primeira Visita</h3>
+                                <p>Demonstração</p>
+                            </div>
+                        </div>
+
+                        <div class="assignment">
+                            <span>Designadas</span>
+                            <strong>Sineia / Ticielen</strong>
+                        </div>
+
+                    </article>
+
+
+                    <article class="program-item">
+
+                        <div class="program-main">
+                            <span class="program-time">4 min</span>
+
+                            <div>
+                                <h3>Revisita</h3>
+                                <p>Demonstração</p>
+                            </div>
+                        </div>
+
+                        <div class="assignment">
+                            <span>Designadas</span>
+                            <strong>Amanda / Sulamita</strong>
+                        </div>
+
+                    </article>
+
+
+                    <article class="program-item">
+
+                        <div class="program-main">
+                            <span class="program-time">4 min</span>
+
+                            <div>
+                                <h3>Estudo Bíblico</h3>
+                                <p>Demonstração</p>
+                            </div>
+                        </div>
+
+                        <div class="assignment">
+                            <span>Designadas</span>
+                            <strong>Claudia / Larissa</strong>
+                        </div>
+
+                    </article>
+
+
+                    <article class="program-item">
+
+                        <div class="program-main">
+                            <span class="program-time">5 min</span>
+
+                            <div>
+                                <h3>Discurso</h3>
+                                <p>Parte de estudante</p>
+                            </div>
+                        </div>
+
+                        <div class="assignment">
+                            <span>Designado</span>
+                            <strong>Felipe</strong>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- VIDA CRISTÃ -->
+            <section class="program-section christian-life">
+
+                <header class="program-section-header">
+                    <span class="section-dot"></span>
+
+                    <div>
+                        <p>Parte 3</p>
+                        <h2>Nossa Vida Cristã</h2>
+                    </div>
+                </header>
+
+
+                <div class="section-song">
+                    <span>Cântico</span>
+                    <strong>89</strong>
+                </div>
+
+
+                <div class="program-list">
+
+                    <article class="program-item">
+
+                        <div class="program-main">
+                            <span class="program-time">10 min</span>
+
+                            <div>
+                                <h3>Primeira Parte</h3>
+                                <p>Nossa Vida Cristã</p>
+                            </div>
+                        </div>
+
+                        <div class="assignment">
+                            <span>Designado</span>
+                            <strong>Josias</strong>
+                        </div>
+
+                    </article>
+
+
+                    <article class="program-item">
+
+                        <div class="program-main">
+                            <span class="program-time">5 min</span>
+
+                            <div>
+                                <h3>Segunda Parte</h3>
+                                <p>Nossa Vida Cristã</p>
+                            </div>
+                        </div>
+
+                        <div class="assignment">
+                            <span>Designado</span>
+                            <strong>Paulo</strong>
+                        </div>
+
+                    </article>
+
+
+                    <article class="program-item">
+
+                        <div class="program-main">
+                            <span class="program-time">30 min</span>
+
+                            <div>
+                                <h3>Estudo Bíblico</h3>
+                                <p>Estudo Bíblico de Congregação</p>
+                            </div>
+                        </div>
+
+                        <div class="assignment">
+                            <span>Dirigente</span>
+                            <strong>Pedro</strong>
+                        </div>
+
+                    </article>
+
+
+                    <article class="program-item">
+
+                        <div class="program-main">
+                            <span class="program-time">3 min</span>
+
+                            <div>
+                                <h3>Comentários finais</h3>
+                                <p>Encerramento</p>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ENCERRAMENTO -->
+            <section class="meeting-closing">
+
+                <div>
+                    <span>Cântico final</span>
+                    <strong>100</strong>
+                </div>
+
+                <div>
+                    <span>Oração final</span>
+                    <strong>Claudio</strong>
+                </div>
+
+            </section>
+
+
+            <!-- NAVEGAÇÃO ENTRE SEMANAS -->
+            <nav class="week-navigation" aria-label="Navegação entre semanas">
+
+                <span class="week-navigation-disabled">
+                    ← Semana anterior
+                </span>
+
+                <a href="designacaoSemana02.html">← Semana 02</a>
+                <a href="designacaoSemana04.html">Semana 04 →</a>
+                </a>
+
+            </nav>
+
         </div>
 
-        <table>
-            <tr>
-                <td 
-                colspan="10" width="800" valign="bottom" style="border: none; padding: 0.2cm"><p class="western" align="center" 
-                    style="orphans: 2; widows: 2; text-indent: 0cm"><font face="Cambria, serif"><font size="5" style="font-size: 18pt"><span 
-                    lang="pt-BR"><b>03 Semana - Programaçãoda Reunião </b></span></font></font></p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td 
-                width="500" height="5" style="border: none; padding: 0cm"><p class="western"  style="orphans: 2; widows: 2; text-indent: 1cm">
-                <font face="Calibri, serif"><font size="2" style="font-size: 11pt"><span 
-                lang="pt-BR"><b>15 - 15 Janeiro | LEITURA SEMANAL DA BÍBLIA | 12-18 Deuteronomio</b></span></font></font></p>
-                </td>
-                <td width="158" style="border: none; padding: 0cm"><p class="western" align="right" 
-                    style="orphans: 2; widows: 2; text-indent: 0.2cm"><font color="#575a5d"><font face="Calibri, serif"><font size="1" 
-                    style="font-size: 8pt"><span lang="pt-BR"><b>Presidente:</b></span></font></font></font></p>
-                </td>
-                <td width="153" style="border: none; padding: 0cm"><p class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0.2cm">
-                    <font face="Calibri, serif"><font size="2" style="font-size: 11pt"><span 
-                        lang="pt-BR">Roger</span></font></font></p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td width="660" style="border: none; padding: 0cm"><p class="western" align="right" 
-                    style="orphans: 2; widows: 2; text-indent: 0.2cm"><font color="#575a5d"><font face="Calibri, serif"><font size="1" 
-                    style="font-size: 8pt"><span lang="pt-BR"><b>Conselheiro Sala B:</b></span></font></font></font></p>
-                </td>
-                <td width="153" style="border: none; padding: 0cm"><p class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0.2cm">
-                    <font face="Calibri, serif"><font size="2" style="font-size: 11pt"><span 
-                        lang="pt-BR">Roger</span></font></font></p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td width="289" style="border: none; padding: 0cm"><ul><li><p class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 1cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt"><span lang="pt-BR">Cântico: 100</span></font></font></p></ul>
-                </td>
-                <td width="370" style="border: none; padding: 0cm"><p class="western" align="right" 
-                    style="orphans: 2; widows: 2; text-indent: 8cm"><font color="#575a5d"><font face="Calibri, serif"><font size="1" 
-                    style="font-size: 8pt"><span lang="pt-BR"><b>Oração:</b></span></font></font></font></p>
-                </td>
-                <td width="153" style="border: none; padding: 0cm"><p class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0.2cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt"><span lang="pt-BR"> Roger</span></font></font></p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td width="300" style="border: none; padding: 0cm"><ul><li><p lang="en-US" class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 1cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt">Comentários iniciais</font></font><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 10pt"> (1 min)</font></font></p></ul>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td width="710" height="5" bgcolor="#575a5d" 
-                style="background: #575a5d; border: none; padding: 0.2cm"><p class="western" align="left" 
-                style="orphans: 2; widows: 2; text-indent: 0.8cm"><font color="#ffffff"><font face="Calibri, serif"><font size="2" 
-                style="font-size: 11pt"><span lang="pt-BR"><b>TESOUROS DA PALAVRA DE DEUS</b></span></font></font></font></p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td width="660" style="border: none; padding: 0.1cm"><ul><li><p lang="en-US" class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0.8cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt">Santificado seja o nome de Jeová para sempre</font></font><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 10pt"> (10 min)</font></font></p></ul>
-                </td>
-                <td width="700" style="border: none; padding: 0cm"><p class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt"><span lang="pt-BR">Roger</span></font></font></p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td width="660" style="border: none; padding: 0.1cm"><ul><li><p lang="en-US" class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0.8cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt">Joias Espirituais</font></font><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 10pt"> (10 min)</font></font></p></ul>
-                </td>
-                <td width="700" style="border: none; padding: 0cm"><p class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt"><span lang="pt-BR">Roger</span></font></font></p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td width="660" style="border: none; padding: 0.1cm"><ul><li><p lang="en-US" class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0.8cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt">Leitura da Bíblia</font></font><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 10pt"> (4 min)</font></font></p></ul>
-                </td>
-                <td width="700" style="border: none; padding: 0cm"><p class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt"><span lang="pt-BR">Roger</span></font></font></p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td width="710" height="5" bgcolor="#575a5d" 
-                style="background: #be8900; border: none; padding: 0.2cm"><p class="western" align="left" 
-                style="orphans: 2; widows: 2; text-indent: 0.8cm"><font color="#ffffff"><font face="Calibri, serif"><font size="2" 
-                style="font-size: 11pt"><span lang="pt-BR"><b>FAÇA SEU MELHOR NO MINISTÉRIO</b></span></font></font></font></p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td width="620" style="border: none; padding: 0.1cm"><ul><li><p lang="en-US" class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0.8cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt">Primeira Visita</font></font><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 10pt"> (4 min)</font></font></p></ul>
-                </td>
-                <td width="700" style="border: none; padding: 0cm"><p class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt"><span lang="pt-BR">Roger / Roger</span></font></font></p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td width="620" style="border: none; padding: 0.1cm"><ul><li><p lang="en-US" class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0.8cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt">Revisita</font></font><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 10pt"> (4 min)</font></font></p></ul>
-                </td>
-                <td width="700" style="border: none; padding: 0cm"><p class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt"><span lang="pt-BR">Roger / Roger</span></font></font></p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td width="620" style="border: none; padding: 0.1cm"><ul><li><p lang="en-US" class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0.8cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt">Estudo Bíblico</font></font><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 10pt"> (4 min)</font></font></p></ul>
-                </td>
-                <td width="700" style="border: none; padding: 0cm"><p class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt"><span lang="pt-BR">Roger / Roger</span></font></font></p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td width="620" style="border: none; padding: 0.1cm"><ul><li><p lang="en-US" class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0.8cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt">Discurso</font></font><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 10pt"> (5 min)</font></font></p></ul>
-                </td>
-                <td width="700" style="border: none; padding: 0cm"><p class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt"><span lang="pt-BR">Roger / Roger</span></font></font></p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td width="710" height="5" bgcolor="#575a5d" 
-                style="background: #851717; border: none; padding: 0.2cm"><p class="western" align="left" 
-                style="orphans: 2; widows: 2; text-indent: 0.8cm"><font color="#ffffff"><font face="Calibri, serif"><font size="2" 
-                style="font-size: 11pt"><span lang="pt-BR"><b>NOSSA VIDA CRISTÃ</b></span></font></font></font></p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td width="289" style="border: none; padding: 0cm"><ul><li><p class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 1cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt"><span lang="pt-BR">Cântico: 100</span></font></font></p></ul>
-                </td>
-        </table>
-        <table>
-            <tr>
-                <td width="660" style="border: none; padding: 0.1cm"><ul><li><p lang="en-US" class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0.8cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt">Primeira Parte</font></font><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 10pt"> (10 min)</font></font></p></ul>
-                </td>
-                <td width="700" style="border: none; padding: 0cm"><p class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt"><span lang="pt-BR">Roger</span></font></font></p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td width="660" style="border: none; padding: 0.1cm"><ul><li><p lang="en-US" class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0.8cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt">Segunda Parte</font></font><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 10pt"> (5 min)</font></font></p></ul>
-                </td>
-                <td width="700" style="border: none; padding: 0cm"><p class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt"><span lang="pt-BR">Roger</span></font></font></p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td width="660" style="border: none; padding: 0.1cm"><ul><li><p lang="en-US" class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0.8cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt">Estudo Bíblico</font></font><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 10pt"> (30 min)</font></font></p></ul>
-                </td>
-                <td width="700" style="border: none; padding: 0cm"><p class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt"><span lang="pt-BR">Roger</span></font></font></p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td width="300" style="border: none; padding: 0cm"><ul><li><p lang="en-US" class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 1cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt">Comentários iniciais</font></font><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 10pt"> (3 min)</font></font></p></ul>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td width="289" style="border: none; padding: 0cm"><ul><li><p class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 1cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt"><span lang="pt-BR">Cântico: 100</span></font></font></p></ul>
-                </td>
-                <td width="370" style="border: none; padding: 0cm"><p class="western" align="right" 
-                    style="orphans: 2; widows: 2; text-indent: 8cm"><font color="#575a5d"><font face="Calibri, serif"><font size="1" 
-                    style="font-size: 8pt"><span lang="pt-BR"><b>Oração:</b></span></font></font></font></p>
-                </td>
-                <td width="153" style="border: none; padding: 0cm"><p class="western" align="left" 
-                    style="orphans: 2; widows: 2; text-indent: 0.2cm"><font face="Calibri, serif"><font size="2" 
-                    style="font-size: 11pt"><span lang="pt-BR"> Roger</span></font></font></p>
-                </td>
-            </tr>
-        </table>
-        
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                Harmonia • Congregação Noroeste
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
