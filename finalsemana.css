@@ -1,0 +1,775 @@
+/* =====================================================
+   HARMONIA
+   Reunião de Final de Semana
+===================================================== */
+
+
+/* =====================================================
+   ESTRUTURA GERAL
+===================================================== */
+
+.weekend-page {
+    padding: 38px 0 64px;
+}
+
+.weekend-container {
+    max-width: 860px;
+}
+
+
+/* =====================================================
+   CABEÇALHO
+===================================================== */
+
+.weekend-hero {
+    margin-bottom: 22px;
+}
+
+.weekend-hero .back-link {
+    display: inline-flex;
+    align-items: center;
+
+    margin-bottom: 26px;
+
+    color: var(--text-soft);
+
+    font-size: 0.82rem;
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+}
+
+.weekend-hero .back-link:hover {
+    color: var(--primary);
+}
+
+.weekend-hero .eyebrow {
+    margin-bottom: 8px;
+}
+
+.weekend-hero h1 {
+    margin: 0 0 6px;
+
+    font-size: clamp(2.2rem, 5vw, 3.3rem);
+    line-height: 1;
+
+    letter-spacing: -0.04em;
+}
+
+.weekend-date {
+    margin: 0;
+
+    color: var(--text-soft);
+
+    font-size: 0.95rem;
+}
+
+
+/* =====================================================
+   INFORMAÇÕES GERAIS
+===================================================== */
+
+.weekend-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.weekend-info-card {
+    min-height: 58px;
+    padding: 14px 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 14px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.weekend-info-card span {
+    color: var(--text-soft);
+
+    font-size: 0.76rem;
+}
+
+.weekend-info-card strong {
+    color: var(--text);
+
+    font-size: 0.92rem;
+    font-weight: 600;
+
+    text-align: right;
+}
+
+
+/* =====================================================
+   ABERTURA
+===================================================== */
+
+.weekend-opening {
+    margin-bottom: 28px;
+    padding: 15px 18px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.weekend-opening-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 16px;
+}
+
+.weekend-opening-item span {
+    color: var(--text-soft);
+
+    font-size: 0.72rem;
+}
+
+.weekend-opening-item strong {
+    color: var(--text);
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   SEÇÕES PRINCIPAIS
+===================================================== */
+
+.weekend-section {
+    --weekend-color: var(--primary);
+
+    margin-bottom: 18px;
+
+    overflow: hidden;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 15px;
+
+    box-shadow: 0 4px 18px rgba(25, 42, 55, 0.04);
+}
+
+
+/* Discurso Público */
+
+.weekend-section.public-talk {
+    --weekend-color: #315b7d;
+}
+
+
+/* Estudo de A Sentinela */
+
+.weekend-section.watchtower {
+    --weekend-color: #5f7180;
+}
+
+
+/* =====================================================
+   CABEÇALHO DAS SEÇÕES
+===================================================== */
+
+.weekend-section-header {
+    padding: 17px 20px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.weekend-section-bar {
+    width: 8px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    background: var(--weekend-color);
+
+    border-radius: 20px;
+}
+
+.weekend-section-header p {
+    margin: 0 0 2px;
+
+    color: var(--text-soft);
+
+    font-size: 0.65rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.1em;
+}
+
+.weekend-section-header h2 {
+    margin: 0;
+
+    color: var(--text);
+
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    line-height: 1.25;
+}
+
+
+/* =====================================================
+   CONTEÚDO DAS SEÇÕES
+===================================================== */
+
+.weekend-section-content {
+    padding: 0 20px;
+}
+
+.weekend-program-item {
+    min-height: 100px;
+    padding: 17px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 28px;
+}
+
+
+/* =====================================================
+   PARTE / TEMA
+===================================================== */
+
+.weekend-program-main {
+    min-width: 0;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 13px;
+}
+
+.weekend-time {
+    min-width: 56px;
+    padding: 5px 7px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: var(--weekend-color);
+
+    background: color-mix(
+        in srgb,
+        var(--weekend-color) 10%,
+        white
+    );
+
+    border-radius: 7px;
+
+    font-size: 0.66rem;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.weekend-program-main h3 {
+    margin: 0 0 4px;
+
+    color: var(--text);
+
+    font-size: 0.96rem;
+    font-weight: 600;
+
+    line-height: 1.35;
+}
+
+.weekend-program-main p {
+    margin: 0;
+
+    color: var(--text-soft);
+
+    font-size: 0.73rem;
+
+    line-height: 1.45;
+}
+
+
+/* =====================================================
+   DESIGNAÇÕES
+===================================================== */
+
+.weekend-assignment {
+    width: 180px;
+    min-width: 180px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    text-align: right;
+}
+
+.weekend-assignment div {
+    display: flex;
+    flex-direction: column;
+}
+
+.weekend-assignment span {
+    color: var(--text-soft);
+
+    font-size: 0.61rem;
+    font-weight: 500;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.07em;
+}
+
+.weekend-assignment strong {
+    margin-top: 2px;
+
+    color: var(--text);
+
+    font-size: 0.86rem;
+    font-weight: 600;
+
+    line-height: 1.35;
+}
+
+
+/* =====================================================
+   CÂNTICO ENTRE AS PARTES
+===================================================== */
+
+.weekend-transition {
+    margin-bottom: 18px;
+    padding: 12px 18px;
+
+    background: var(--primary-light);
+
+    border: 1px solid rgba(49, 91, 125, 0.08);
+    border-radius: 11px;
+}
+
+.weekend-transition div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.weekend-transition span {
+    color: var(--text-soft);
+
+    font-size: 0.74rem;
+}
+
+.weekend-transition strong {
+    color: var(--primary-dark);
+
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   ENCERRAMENTO
+===================================================== */
+
+.weekend-closing {
+    margin-top: 10px;
+    padding: 15px 18px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.weekend-closing div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.weekend-closing span {
+    color: var(--text-soft);
+
+    font-size: 0.7rem;
+}
+
+.weekend-closing strong {
+    color: var(--text);
+
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   AÇÕES
+===================================================== */
+
+.weekend-actions {
+    margin-top: 28px;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.weekend-secondary-action {
+    padding: 9px 13px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 9px;
+
+    font-size: 0.76rem;
+    font-weight: 500;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.weekend-secondary-action:hover {
+    color: var(--primary);
+
+    background: var(--primary-light);
+
+    border-color: #b7c8d4;
+
+    transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .weekend-container {
+        max-width: 720px;
+    }
+
+    .weekend-page {
+        padding-top: 30px;
+    }
+
+    .weekend-assignment {
+        width: 155px;
+        min-width: 155px;
+    }
+}
+
+
+/* =====================================================
+   TABLET PEQUENO
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .weekend-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .weekend-program-item {
+        gap: 20px;
+    }
+
+    .weekend-assignment {
+        width: 145px;
+        min-width: 145px;
+    }
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 560px) {
+
+    .weekend-page {
+        padding: 22px 0 44px;
+    }
+
+
+    /* Cabeçalho */
+
+    .weekend-hero {
+        margin-bottom: 18px;
+    }
+
+    .weekend-hero .back-link {
+        margin-bottom: 20px;
+
+        font-size: 0.76rem;
+    }
+
+    .weekend-hero .eyebrow {
+        margin-bottom: 6px;
+
+        font-size: 0.65rem;
+    }
+
+    .weekend-hero h1 {
+        margin-bottom: 5px;
+
+        font-size: 2.05rem;
+    }
+
+    .weekend-date {
+        font-size: 0.86rem;
+    }
+
+
+    /* Informações gerais */
+
+    .weekend-info-grid {
+        margin-top: 16px;
+        margin-bottom: 7px;
+
+        gap: 7px;
+    }
+
+    .weekend-info-card {
+        min-height: 48px;
+        padding: 11px 14px;
+    }
+
+    .weekend-info-card span {
+        font-size: 0.7rem;
+    }
+
+    .weekend-info-card strong {
+        font-size: 0.85rem;
+    }
+
+
+    /* Abertura */
+
+    .weekend-opening {
+        margin-bottom: 20px;
+        padding: 12px 14px;
+
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+    }
+
+    .weekend-opening-item span {
+        font-size: 0.69rem;
+    }
+
+    .weekend-opening-item strong {
+        font-size: 0.84rem;
+    }
+
+
+    /* Seções */
+
+    .weekend-section {
+        margin-bottom: 14px;
+
+        border-radius: 12px;
+    }
+
+    .weekend-section-header {
+        padding: 14px;
+
+        gap: 11px;
+    }
+
+    .weekend-section-bar {
+        width: 7px;
+        height: 32px;
+    }
+
+    .weekend-section-header p {
+        font-size: 0.6rem;
+    }
+
+    .weekend-section-header h2 {
+        font-size: 0.96rem;
+    }
+
+
+    /* Conteúdo */
+
+    .weekend-section-content {
+        padding: 0 14px;
+    }
+
+    .weekend-program-item {
+        min-height: 0;
+        padding: 14px 0;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 12px;
+    }
+
+    .weekend-program-main {
+        gap: 10px;
+    }
+
+    .weekend-time {
+        min-width: 50px;
+        padding: 4px 6px;
+
+        font-size: 0.62rem;
+    }
+
+    .weekend-program-main h3 {
+        margin-bottom: 2px;
+
+        font-size: 0.87rem;
+    }
+
+    .weekend-program-main p {
+        font-size: 0.69rem;
+    }
+
+
+    /* Designações */
+
+    .weekend-assignment {
+        width: auto;
+        min-width: 0;
+
+        padding-left: 60px;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+
+        text-align: left;
+    }
+
+    .weekend-assignment span {
+        font-size: 0.57rem;
+    }
+
+    .weekend-assignment strong {
+        font-size: 0.8rem;
+    }
+
+
+    /* Cântico */
+
+    .weekend-transition {
+        margin-bottom: 14px;
+        padding: 10px 14px;
+    }
+
+    .weekend-transition span {
+        font-size: 0.7rem;
+    }
+
+    .weekend-transition strong {
+        font-size: 0.84rem;
+    }
+
+
+    /* Encerramento */
+
+    .weekend-closing {
+        padding: 12px 14px;
+
+        grid-template-columns: 1fr;
+
+        gap: 9px;
+    }
+
+    .weekend-closing div {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 14px;
+    }
+
+    .weekend-closing span {
+        font-size: 0.69rem;
+    }
+
+    .weekend-closing strong {
+        font-size: 0.83rem;
+    }
+
+
+    /* Botão */
+
+    .weekend-actions {
+        margin-top: 20px;
+    }
+
+    .weekend-secondary-action {
+        font-size: 0.7rem;
+    }
+}
+
+
+/* =====================================================
+   CELULARES PEQUENOS
+===================================================== */
+
+@media (max-width: 370px) {
+
+    .weekend-hero h1 {
+        font-size: 1.85rem;
+    }
+
+    .weekend-section-header h2 {
+        font-size: 0.9rem;
+    }
+
+    .weekend-assignment {
+        grid-template-columns: 1fr;
+
+        gap: 7px;
+    }
+}
