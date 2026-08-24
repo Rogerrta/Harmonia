@@ -1,0 +1,178 @@
+{
+  "titulo": "Arranjo de Campo",
+  "congregacao": "Congregação Harmonia",
+
+  "programacaoSemanal": [
+    {
+      "dia": "Segunda-feira",
+      "horario": "15:00",
+      "dirigente": "Javier Vaquero / Fabiano",
+      "local": "Salão do Reino"
+    },
+    {
+      "dia": "Terça-feira",
+      "horario": "09:00",
+      "dirigente": "Eduardo Nichele / Daniel Queiroz",
+      "local": "Salão do Reino"
+    },
+    {
+      "dia": "Quarta-feira",
+      "horario": null,
+      "dirigente": null,
+      "local": null
+    },
+    {
+      "dia": "Quinta-feira",
+      "horario": "15:00",
+      "dirigente": "Mauro Cunha / Javier Vaquero",
+      "local": "Salão do Reino"
+    },
+    {
+      "dia": "Sexta-feira",
+      "horario": "09:00",
+      "dirigente": "Franklin Silva / Daniel Queiroz",
+      "local": "Salão do Reino"
+    },
+    {
+      "dia": "Sábado",
+      "horario": "09:00",
+      "dirigente": "Escala por data",
+      "local": "Salão do Reino"
+    },
+    {
+      "dia": "Domingo",
+      "horario": "09:00",
+      "dirigente": "Grupo",
+      "local": "Grupo"
+    }
+  ],
+
+  "dirigentesFimDeSemana": [
+    {
+      "data": "2026-08-15",
+      "dirigente": "Roger Aragão"
+    },
+    {
+      "data": "2026-08-22",
+      "dirigente": "Fabiano Santos"
+    },
+    {
+      "data": "2026-08-29",
+      "dirigente": "Jeferson Isse"
+    },
+    {
+      "data": "2026-08-30",
+      "dirigente": "Ruan Flores"
+    },
+    {
+      "data": "2026-09-05",
+      "dirigente": "Carlos Davi"
+    },
+    {
+      "data": "2026-09-12",
+      "dirigente": "Alan Garcia"
+    },
+    {
+      "data": "2026-09-19",
+      "dirigente": "Rafael Doico"
+    },
+    {
+      "data": "2026-09-26",
+      "dirigente": "Leandro Castro"
+    },
+    {
+      "data": "2026-09-27",
+      "dirigente": "Franklin Silva"
+    },
+    {
+      "data": "2026-10-03",
+      "dirigente": "Daniel Queiroz"
+    },
+    {
+      "data": "2026-10-10",
+      "dirigente": "Roberto Andrade"
+    },
+    {
+      "data": "2026-10-17",
+      "dirigente": "Mauro Cunha"
+    },
+    {
+      "data": "2026-10-24",
+      "dirigente": "Eduardo Nichele"
+    },
+    {
+      "data": "2026-10-25",
+      "dirigente": "Roger Aragão"
+    },
+    {
+      "data": "2026-10-31",
+      "dirigente": "Fabiano Santos"
+    },
+    {
+      "data": "2026-11-07",
+      "dirigente": "Jeferson Isse"
+    },
+    {
+      "data": "2026-11-14",
+      "dirigente": "Ruan Flores"
+    },
+    {
+      "data": "2026-11-21",
+      "dirigente": "Carlos Davi"
+    },
+    {
+      "data": "2026-11-28",
+      "dirigente": "Alan Garcia"
+    }
+  ],
+
+  "observacoes": [
+    "No último sábado do mês será realizado testemunho público.",
+    "No último domingo do mês todos os grupos se reúnem no Salão do Reino.",
+    "Após o uso dos displays, pedimos que devolvam os mesmos aos responsáveis."
+  ]
+  ,
+"displays": [
+  {
+    "nome": "Display 1",
+    "responsavel": "Victoria Isse",
+    "endereco": "Rua Brasil, 180 (Bloco A1, Apto 401) - Centro"
+  },
+  {
+    "nome": "Display 2",
+    "responsavel": "Tais Andrade",
+    "endereco": "Rua Roberto Francisco Behrens, 225 (Bloco A, Apto 402) - Mato Grande"
+  },
+  {
+    "nome": "Display 3",
+    "responsavel": "Midiã Silva",
+    "endereco": "Rua Barbosa Lessa, 95 - Harmonia"
+  },
+  {
+    "nome": "Display 4",
+    "responsavel": "Cristiane Nichele",
+    "endereco": "Alameda das Corticeiras, 115 (Apto 206) - Mato Grande"
+  },
+  {
+    "nome": "Display 5",
+    "responsavel": "Sinéia",
+    "endereco": "José Veríssimo, 137 - Harmonia"
+  },
+  {
+    "nome": "Display 6",
+    "responsavel": "Coralda",
+    "endereco": "Avenida das Canoas, 128 - Mato Grande"
+  }
+],
+
+"locaisSugeridos": [
+  "Ao lado do Unisuper (Av. Rio dos Sinos)",
+  "Em frente ao supermercado Viezzer",
+  "Em frente ao residencial Figueiras",
+  "Rua República, em frente às lojas ao lado do posto Ale",
+  "Em frente à farmácia Maxxi Econômica da esquina",
+  "Entrada da rua do condomínio Alameda das Corticeiras",
+  "Entrada da Rua 1",
+  "Ao lado da Maxxi Econômica"
+]
+}

@@ -1,0 +1,709 @@
+/* =====================================================
+   HARMONIA
+   Arranjo de Campo
+===================================================== */
+
+
+/* =====================================================
+   ESTRUTURA GERAL
+===================================================== */
+
+.field-page {
+    padding: 38px 0 64px;
+}
+
+.field-container {
+    max-width: 900px;
+}
+
+
+/* =====================================================
+   CABEÇALHO
+===================================================== */
+
+.field-hero {
+    margin-bottom: 28px;
+}
+
+.field-hero .back-link {
+    display: inline-flex;
+    align-items: center;
+
+    margin-bottom: 24px;
+
+    color: var(--text-soft);
+
+    font-size: 0.82rem;
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+}
+
+.field-hero .back-link:hover {
+    color: var(--primary);
+}
+
+.field-hero .eyebrow {
+    margin-bottom: 8px;
+}
+
+.field-hero h1 {
+    margin: 0 0 8px;
+
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    line-height: 1;
+
+    letter-spacing: -0.04em;
+}
+
+.field-description {
+    margin: 0;
+
+    color: var(--text-soft);
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   PRÓXIMO ARRANJO
+===================================================== */
+
+.next-field-card {
+    margin-bottom: 34px;
+    padding: 20px 22px;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(180px, 1fr);
+
+    align-items: center;
+    gap: 24px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+}
+
+.field-label {
+    color: var(--primary);
+
+    font-size: 0.68rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.next-field-card h2 {
+    margin: 5px 0 3px;
+
+    color: var(--text);
+
+    font-size: 1.15rem;
+    line-height: 1.35;
+}
+
+.next-field-card p {
+    margin: 0;
+
+    color: var(--text-soft);
+
+    font-size: 0.82rem;
+}
+
+.next-field-leader {
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+}
+
+.next-field-leader span {
+    color: var(--text-soft);
+
+    font-size: 0.65rem;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.next-field-leader strong {
+    margin-top: 3px;
+
+    color: var(--text);
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   SEÇÕES
+===================================================== */
+
+.field-section {
+    margin-bottom: 34px;
+}
+
+.field-section .section-heading {
+    margin-bottom: 16px;
+}
+
+.field-section .section-heading h2 {
+    margin-bottom: 0;
+}
+
+
+/* =====================================================
+   PROGRAMAÇÃO SEMANAL
+===================================================== */
+
+.field-schedule {
+    overflow: hidden;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    box-shadow: 0 4px 18px rgba(25, 42, 55, 0.035);
+}
+
+.field-schedule-row {
+    min-height: 66px;
+    padding: 13px 18px;
+
+    display: grid;
+    grid-template-columns:
+        minmax(125px, 0.8fr)
+        80px
+        minmax(220px, 1.5fr)
+        minmax(120px, 0.8fr);
+
+    align-items: center;
+
+    gap: 16px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.field-schedule-row:last-child {
+    border-bottom: none;
+}
+
+.field-schedule-day {
+    color: var(--text);
+
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+
+.field-schedule-time {
+    color: var(--primary);
+
+    font-size: 0.84rem;
+    font-weight: 700;
+}
+
+.field-schedule-leader {
+    color: var(--text);
+
+    font-size: 0.84rem;
+    line-height: 1.4;
+}
+
+.field-schedule-location {
+    color: var(--text-soft);
+
+    font-size: 0.76rem;
+    line-height: 1.4;
+
+    text-align: right;
+}
+
+
+/* =====================================================
+   DIRIGENTES DE FINAL DE SEMANA
+===================================================== */
+
+.weekend-leaders-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+}
+
+.weekend-leader-card {
+    min-height: 54px;
+    padding: 13px 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 18px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 11px;
+
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.weekend-leader-card:hover {
+    border-color: #c8d3dc;
+
+    transform: translateY(-1px);
+}
+
+.weekend-leader-card time {
+    color: var(--text-soft);
+
+    font-size: 0.75rem;
+    white-space: nowrap;
+}
+
+.weekend-leader-card strong {
+    color: var(--text);
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    text-align: right;
+}
+
+
+/* =====================================================
+   OBSERVAÇÕES
+===================================================== */
+
+.field-notes {
+    padding: 18px 20px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.field-notes ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.field-notes li {
+    margin: 8px 0;
+
+    color: var(--text-soft);
+
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   AVISO — DISPLAYS
+===================================================== */
+
+.field-info-message {
+    margin-bottom: 16px;
+    padding: 14px 17px;
+
+    background: var(--primary-light);
+
+    border: 1px solid rgba(49, 91, 125, 0.08);
+    border-radius: 11px;
+}
+
+.field-info-message p {
+    margin: 0;
+
+    color: var(--text-soft);
+
+    font-size: 0.8rem;
+    line-height: 1.45;
+}
+
+.field-info-message strong {
+    color: var(--primary-dark);
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   CARRINHOS E DISPLAYS
+===================================================== */
+
+.display-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+}
+
+.display-card {
+    min-width: 0;
+    padding: 17px 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    box-shadow: 0 3px 12px rgba(25, 42, 55, 0.025);
+
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.display-card:hover {
+    border-color: #c3d0da;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 5px 16px rgba(25, 42, 55, 0.045);
+}
+
+.display-name {
+    margin-bottom: 2px;
+
+    color: var(--primary);
+
+    font-size: 0.63rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.display-card strong {
+    color: var(--text);
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    line-height: 1.35;
+}
+
+.display-card p {
+    margin: 0;
+
+    color: var(--text-soft);
+
+    font-size: 0.74rem;
+    line-height: 1.45;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =====================================================
+   LOCAIS SUGERIDOS
+===================================================== */
+
+.field-locations-section {
+    margin-top: 30px;
+}
+
+.field-locations-card {
+    padding: 18px 20px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.field-locations-card ul {
+    margin: 0;
+    padding-left: 20px;
+
+    columns: 2;
+    column-gap: 42px;
+}
+
+.field-locations-card li {
+    margin: 0 0 9px;
+
+    break-inside: avoid;
+
+    color: var(--text-soft);
+
+    font-size: 0.8rem;
+    line-height: 1.45;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .field-container {
+        max-width: 720px;
+    }
+
+    .field-page {
+        padding-top: 30px;
+    }
+
+    .field-schedule-row {
+        grid-template-columns:
+            minmax(110px, 0.8fr)
+            70px
+            minmax(180px, 1.4fr)
+            minmax(105px, 0.7fr);
+
+        gap: 12px;
+    }
+}
+
+
+/* =====================================================
+   TABLET PEQUENO
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .next-field-card {
+        grid-template-columns: 1fr;
+    }
+
+    .next-field-leader {
+        padding-top: 12px;
+
+        text-align: left;
+
+        border-top: 1px solid var(--border);
+    }
+
+    .field-schedule-row {
+        grid-template-columns: 1fr 70px;
+    }
+
+    .field-schedule-leader {
+        grid-column: 1 / -1;
+    }
+
+    .field-schedule-location {
+        grid-column: 1 / -1;
+
+        text-align: left;
+    }
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 560px) {
+
+    .field-page {
+        padding: 22px 0 44px;
+    }
+
+
+    /* Cabeçalho */
+
+    .field-hero {
+        margin-bottom: 22px;
+    }
+
+    .field-hero .back-link {
+        margin-bottom: 20px;
+
+        font-size: 0.76rem;
+    }
+
+    .field-hero h1 {
+        font-size: 2.05rem;
+    }
+
+    .field-description {
+        font-size: 0.84rem;
+    }
+
+
+    /* Próximo arranjo */
+
+    .next-field-card {
+        margin-bottom: 26px;
+        padding: 15px;
+
+        gap: 12px;
+    }
+
+    .next-field-card h2 {
+        font-size: 1rem;
+    }
+
+    .next-field-card p {
+        font-size: 0.76rem;
+    }
+
+
+    /* Seções */
+
+    .field-section {
+        margin-bottom: 28px;
+    }
+
+
+    /* Programação */
+
+    .field-schedule-row {
+        min-height: 0;
+        padding: 13px 14px;
+
+        grid-template-columns: 1fr 64px;
+
+        gap: 6px 10px;
+    }
+
+    .field-schedule-day {
+        font-size: 0.82rem;
+    }
+
+    .field-schedule-time {
+        font-size: 0.78rem;
+
+        text-align: right;
+    }
+
+    .field-schedule-leader {
+        grid-column: 1 / -1;
+
+        font-size: 0.78rem;
+    }
+
+    .field-schedule-location {
+        grid-column: 1 / -1;
+
+        font-size: 0.71rem;
+
+        text-align: left;
+    }
+
+
+    /* Dirigentes */
+
+    .weekend-leaders-list {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+    }
+
+    .weekend-leader-card {
+        min-height: 48px;
+        padding: 11px 13px;
+    }
+
+    .weekend-leader-card time {
+        font-size: 0.7rem;
+    }
+
+    .weekend-leader-card strong {
+        font-size: 0.8rem;
+    }
+
+
+    /* Observações */
+
+    .field-notes {
+        padding: 14px 16px;
+    }
+
+    .field-notes li {
+        font-size: 0.76rem;
+    }
+
+
+    /* Displays */
+
+    .display-grid {
+        grid-template-columns: 1fr;
+
+        gap: 9px;
+    }
+
+    .display-card {
+        padding: 14px 15px;
+    }
+
+    .display-card strong {
+        font-size: 0.85rem;
+    }
+
+    .display-card p {
+        font-size: 0.72rem;
+    }
+
+
+    /* Locais */
+
+    .field-locations-section {
+        margin-top: 26px;
+    }
+
+    .field-locations-card {
+        padding: 14px 16px;
+    }
+
+    .field-locations-card ul {
+        columns: 1;
+
+        padding-left: 18px;
+    }
+
+    .field-locations-card li {
+        margin-bottom: 8px;
+
+        font-size: 0.76rem;
+    }
+}
+
+
+/* =====================================================
+   CELULARES PEQUENOS
+===================================================== */
+
+@media (max-width: 370px) {
+
+    .field-hero h1 {
+        font-size: 1.85rem;
+    }
+
+    .next-field-card h2 {
+        font-size: 0.94rem;
+    }
+
+    .weekend-leader-card {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 3px;
+    }
+
+    .weekend-leader-card strong {
+        text-align: left;
+    }
+}

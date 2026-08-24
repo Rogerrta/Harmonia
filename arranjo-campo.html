@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Arranjo de Campo da Congregação Harmonia"
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="arranjo-campo.css">
+
+    <title>Arranjo de Campo | Congregação Harmonia</title>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="index.html" class="brand">
+                <span class="brand-title">Congregação Harmonia</span>
+                <span class="brand-subtitle">Congregação Harmonia</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="finalsemana.html">Final de Semana</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main class="field-page">
+
+        <div class="container field-container">
+
+            <!-- ========================================
+                 CABEÇALHO
+            ========================================= -->
+
+            <section class="field-hero">
+
+                <a href="index.html" class="back-link">
+                    ← Voltar para início
+                </a>
+
+                <p class="eyebrow">
+                    Serviço de Pregação
+                </p>
+
+                <h1>
+                    Arranjo de Campo
+                </h1>
+
+                <p class="field-description">
+                    Consulte os horários, locais e dirigentes do serviço de pregação.
+                </p>
+
+            </section>
+
+
+            <!-- ========================================
+                 PRÓXIMO ARRANJO
+            ========================================= -->
+
+            <section
+                class="next-field-card"
+                data-proximo-arranjo
+            >
+
+                <div>
+
+                    <span class="field-label">
+                        Próximo arranjo
+                    </span>
+
+                    <h2>
+                        <span data-campo="proximoDia">
+                            Carregando...
+                        </span>
+
+                        <span aria-hidden="true">
+                            •
+                        </span>
+
+                        <span data-campo="proximoHorario">
+                            —
+                        </span>
+                    </h2>
+
+                    <p data-campo="proximoLocal">
+                        Carregando...
+                    </p>
+
+                </div>
+
+
+                <div class="next-field-leader">
+
+                    <span>
+                        Dirigente
+                    </span>
+
+                    <strong data-campo="proximoDirigente">
+                        Carregando...
+                    </strong>
+
+                </div>
+
+            </section>
+
+
+            <!-- ========================================
+                 PROGRAMAÇÃO SEMANAL
+            ========================================= -->
+
+            <section class="field-section">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        Programação regular
+                    </p>
+
+                    <h2>
+                        Durante a semana
+                    </h2>
+
+                </div>
+
+
+                <div
+                    class="field-schedule"
+                    data-programacao-semanal
+                >
+                    <!-- Preenchido pelo JavaScript -->
+                </div>
+
+            </section>
+
+
+            <!-- ========================================
+                 DIRIGENTES DE FINAL DE SEMANA
+            ========================================= -->
+
+            <section class="field-section">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        Escala
+                    </p>
+
+                    <h2>
+                        Dirigentes de Final de Semana
+                    </h2>
+
+                </div>
+
+
+                <div
+                    class="weekend-leaders-list"
+                    data-dirigentes-fim-semana
+                >
+                    <!-- Preenchido pelo JavaScript -->
+                </div>
+
+            </section>
+
+
+            <!-- ========================================
+                 OBSERVAÇÕES
+            ========================================= -->
+
+            <section class="field-section">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        Importante
+                    </p>
+
+                    <h2>
+                        Observações
+                    </h2>
+
+                </div>
+
+
+                <div class="field-notes">
+
+                    <ul data-observacoes>
+                        <!-- Preenchido pelo JavaScript -->
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+            <!-- ========================================
+                 CARRINHOS E DISPLAYS
+            ========================================= -->
+
+            <section class="field-section">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        Testemunho público
+                    </p>
+
+                    <h2>
+                        Carrinhos e Displays
+                    </h2>
+
+                </div>
+
+
+                <!-- AVISO -->
+                <div class="field-info-message">
+
+                    <p>
+                        <strong>Importante:</strong>
+                        combine previamente a retirada do display
+                        com o responsável.
+                    </p>
+
+                </div>
+
+
+                <!-- DISPLAYS -->
+                <div
+                    class="display-grid"
+                    data-displays
+                >
+                    <!-- Preenchido pelo JavaScript -->
+                </div>
+
+
+                <!-- ====================================
+                     LOCAIS SUGERIDOS
+                ===================================== -->
+
+                <div class="field-locations-section">
+
+                    <div class="section-heading">
+
+                        <p class="eyebrow">
+                            Sugestões
+                        </p>
+
+                        <h2>
+                            Locais para testemunho público
+                        </h2>
+
+                    </div>
+
+
+                    <div class="field-locations-card">
+
+                        <ul data-locais-sugeridos>
+                            <!-- Preenchido pelo JavaScript -->
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- ========================================
+         RODAPÉ
+    ========================================= -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <p>
+                • Congregação Harmonia
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="arranjo-campo-pagina.js"></script>
+
+</body>
+</html>
