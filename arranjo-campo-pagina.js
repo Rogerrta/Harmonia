@@ -8,8 +8,9 @@ document.addEventListener(
 
 async function carregarPaginaArranjo() {
     try {
-        const resposta =
-            await fetch("data/arranjo-campo.json");
+        const resposta = await fetch(
+    `data/arranjo-campo.json?v=${Date.now()}`
+);
 
         if (!resposta.ok) {
             throw new Error(
