@@ -40,6 +40,7 @@ JSONS=(
     "data/meio-semana.json"
     "data/final-semana.json"
     "data/arranjo-campo.json"
+    "data/anuncios.json"
 )
 
 for arquivo in "${JSONS[@]}"; do

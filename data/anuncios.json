@@ -1,0 +1,12 @@
+{
+  "anuncios": [
+    {
+      "id": 1,
+      "titulo": "Anúncio de teste",
+      "mensagem": "Este é um anúncio de teste da Congregação Harmonia.",
+      "inicio": "2026-08-24",
+      "fim": "2026-08-31",
+      "destaque": true
+    }
+  ]
+}
