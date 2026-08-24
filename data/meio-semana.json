@@ -8,12 +8,12 @@
       "periodo": "17-23 DE AGOSTO",
       "leituraBiblica": "JEREMIAS 26-28",
 
-      "presidente": "Daneiel Aragão",
+      "presidente": "Daneiel ",
       "conselheiro": null,
 
       "abertura": {
         "cantico": 77,
-        "oracao": "Ruan Flores",
+        "oracao": "Ruan ",
         "comentarios": "1 min"
       },
 
@@ -22,19 +22,19 @@
           "titulo": "Não seja enganado por falsos profetas",
           "subtitulo": "Discurso",
           "tempo": "10 min",
-          "designado": "Fabiano Santos"
+          "designado": "Fabiano "
         },
         {
           "titulo": "Joias Espirituais",
           "subtitulo": "Consideração",
           "tempo": "10 min",
-          "designado": "Rafael Robb"
+          "designado": "Rafael "
         },
         {
           "titulo": "Leitura da Bíblia",
           "subtitulo": "Jer. 28:5-17 (th lição 5)",
           "tempo": "4 min",
-          "designado": "Rian Souza"
+          "designado": "Rian "
         }
       ],
 
@@ -43,19 +43,19 @@
           "titulo": "Iniciando Conversa",
           "subtitulo": "Testemunho Publico",
           "tempo": "3 min",
-          "designado": "Adriana / Eduarda"
+          "designado": "Adriana / teste"
         },
         {
           "titulo": "Cultivando Interesse",
           "subtitulo": "De casa em casa ",
           "tempo": "4 min",
-          "designado": "Sineia / Liria"
+          "designado": "Sineia / teste"
         },
         {
           "titulo": "Fazendo Discipulos",
           "subtitulo": "",
           "tempo": "4 min",
-          "designado": "Regina / Victoria"
+          "designado": "Regina / teste"
         },
         {
           "titulo": "",
@@ -73,20 +73,20 @@
             "titulo": "Necessidades locais",
             "subtitulo": "Tema",
             "tempo": "15 min",
-            "designado": "Daniel Queiroz"
+            "designado": "Daniel "
           },
           {
             "titulo": "Segunda Parte",
             "subtitulo": "Nossa Vida Cristã",
             "tempo": "5 min",
-            "designado": "Javier Vaquero"
+            "designado": "Javier "
           },
           {
             "titulo": "Estudo Bíblico de Congregação",
             "subtitulo": "Leitor do Estudo - Pedro Garcia",
             "tempo": "30 min",
             "designado": "Roberto",
-            "leitor": "Gustavo Silva"
+            "leitor": "Gustavo "
           }
         ]
       },
@@ -94,7 +94,7 @@
       "encerramento": {
         "comentarios": "3 min",
         "cantico": 56,
-        "oracao": "Pedro Marins"
+        "oracao": "Pedro "
       }
     },
 
