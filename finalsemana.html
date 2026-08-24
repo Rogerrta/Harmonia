@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,13 +6,13 @@
 
     <meta
         name="description"
-        content="Programação da reunião do final de semana — Congregação Noroeste"
+        content="Programação da reunião do final de semana — Congregação Harmonia"
     >
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="finalsemana.css">
 
-    <title>Final de Semana | Harmonia</title>
+    <title>Final de Semana | Congregação Harmonia</title>
 </head>
 
 <body>
@@ -22,13 +21,15 @@
         <div class="container header-content">
 
             <a href="index.html" class="brand">
-                <span class="brand-title">Harmonia</span>
-                <span class="brand-subtitle">Congregação Noroeste</span>
+                <span class="brand-title">Congregação Harmonia</span>
+                <span class="brand-subtitle">Congregação Harmonia</span>
             </a>
 
             <nav class="main-nav" aria-label="Navegação principal">
                 <a href="index.html">Início</a>
-                <a href="finalsemana.html" class="active">Final de Semana</a>
+                <a href="finalsemana.html" class="active">
+                    Final de Semana
+                </a>
             </nav>
 
         </div>
@@ -50,10 +51,15 @@
                     Programação da reunião
                 </p>
 
-                <h1>Final de Semana</h1>
+                <h1>
+                    Final de Semana
+                </h1>
 
-                <p class="weekend-date">
-                    Data a definir
+                <p
+                    class="weekend-date"
+                    data-final="data"
+                >
+                    Carregando...
                 </p>
 
             </section>
@@ -63,13 +69,28 @@
             <section class="weekend-info-grid">
 
                 <div class="weekend-info-card">
-                    <span>Presidente</span>
-                    <strong>A definir</strong>
+
+                    <span>
+                        Presidente
+                    </span>
+
+                    <strong data-final="presidente">
+                        Carregando...
+                    </strong>
+
                 </div>
 
+
                 <div class="weekend-info-card">
-                    <span>Oração inicial</span>
-                    <strong>A definir</strong>
+
+                    <span>
+                        Oração inicial
+                    </span>
+
+                    <strong data-final="oracaoInicial">
+                        Carregando...
+                    </strong>
+
                 </div>
 
             </section>
@@ -79,13 +100,28 @@
             <section class="weekend-opening">
 
                 <div class="weekend-opening-item">
-                    <span>Cântico inicial</span>
-                    <strong>—</strong>
+
+                    <span>
+                        Cântico inicial
+                    </span>
+
+                    <strong data-final="canticoInicial">
+                        —
+                    </strong>
+
                 </div>
 
+
                 <div class="weekend-opening-item">
-                    <span>Comentários iniciais</span>
-                    <strong>1 min</strong>
+
+                    <span>
+                        Comentários iniciais
+                    </span>
+
+                    <strong>
+                        1 min
+                    </strong>
+
                 </div>
 
             </section>
@@ -95,12 +131,19 @@
             <section class="weekend-section public-talk">
 
                 <header class="weekend-section-header">
+
                     <span class="weekend-section-bar"></span>
 
                     <div>
-                        <p>Primeira parte</p>
-                        <h2>Discurso Público</h2>
+                        <p>
+                            Primeira parte
+                        </p>
+
+                        <h2>
+                            Discurso Público
+                        </h2>
                     </div>
+
                 </header>
 
 
@@ -115,13 +158,15 @@
                             </span>
 
                             <div>
-                                <h3>
-                                    Tema do discurso
+
+                                <h3 data-final="temaDiscurso">
+                                    Carregando...
                                 </h3>
 
                                 <p>
-                                    A definir
+                                    Discurso público
                                 </p>
+
                             </div>
 
                         </div>
@@ -130,13 +175,28 @@
                         <div class="weekend-assignment">
 
                             <div>
-                                <span>Orador</span>
-                                <strong>A definir</strong>
+
+                                <span>
+                                    Orador
+                                </span>
+
+                                <strong data-final="orador">
+                                    Carregando...
+                                </strong>
+
                             </div>
 
+
                             <div>
-                                <span>Congregação</span>
-                                <strong>A definir</strong>
+
+                                <span>
+                                    Congregação
+                                </span>
+
+                                <strong data-final="congregacaoOrador">
+                                    Carregando...
+                                </strong>
+
                             </div>
 
                         </div>
@@ -148,12 +208,19 @@
             </section>
 
 
-            <!-- INTERVALO / CÂNTICO -->
+            <!-- CÂNTICO ENTRE AS PARTES -->
             <section class="weekend-transition">
 
                 <div>
-                    <span>Cântico</span>
-                    <strong>—</strong>
+
+                    <span>
+                        Cântico
+                    </span>
+
+                    <strong data-final="canticoIntermediario">
+                        —
+                    </strong>
+
                 </div>
 
             </section>
@@ -163,12 +230,19 @@
             <section class="weekend-section watchtower">
 
                 <header class="weekend-section-header">
+
                     <span class="weekend-section-bar"></span>
 
                     <div>
-                        <p>Segunda parte</p>
-                        <h2>Estudo de A Sentinela</h2>
+                        <p>
+                            Segunda parte
+                        </p>
+
+                        <h2>
+                            Estudo de A Sentinela
+                        </h2>
                     </div>
+
                 </header>
 
 
@@ -183,13 +257,15 @@
                             </span>
 
                             <div>
-                                <h3>
-                                    Artigo de estudo
+
+                                <h3 data-final="artigoSentinela">
+                                    Carregando...
                                 </h3>
 
-                                <p>
-                                    Tema a definir
+                                <p data-final="temaSentinela">
+                                    Carregando...
                                 </p>
+
                             </div>
 
                         </div>
@@ -198,13 +274,28 @@
                         <div class="weekend-assignment">
 
                             <div>
-                                <span>Dirigente</span>
-                                <strong>A definir</strong>
+
+                                <span>
+                                    Dirigente
+                                </span>
+
+                                <strong data-final="dirigenteSentinela">
+                                    Carregando...
+                                </strong>
+
                             </div>
 
+
                             <div>
-                                <span>Leitor</span>
-                                <strong>A definir</strong>
+
+                                <span>
+                                    Leitor
+                                </span>
+
+                                <strong data-final="leitorSentinela">
+                                    Carregando...
+                                </strong>
+
                             </div>
 
                         </div>
@@ -220,18 +311,41 @@
             <section class="weekend-closing">
 
                 <div>
-                    <span>Comentários finais</span>
-                    <strong>3 min</strong>
+
+                    <span>
+                        Comentários finais
+                    </span>
+
+                    <strong>
+                        3 min
+                    </strong>
+
                 </div>
 
-                <div>
-                    <span>Cântico final</span>
-                    <strong>—</strong>
-                </div>
 
                 <div>
-                    <span>Oração final</span>
-                    <strong>A definir</strong>
+
+                    <span>
+                        Cântico final
+                    </span>
+
+                    <strong data-final="canticoFinal">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Oração final
+                    </span>
+
+                    <strong data-final="oracaoFinal">
+                        Carregando...
+                    </strong>
+
                 </div>
 
             </section>
@@ -240,7 +354,10 @@
             <!-- AÇÕES -->
             <section class="weekend-actions">
 
-                <a href="index.html" class="weekend-secondary-action">
+                <a
+                    href="index.html"
+                    class="weekend-secondary-action"
+                >
                     Voltar para início
                 </a>
 
@@ -252,12 +369,19 @@
 
 
     <footer class="site-footer">
+
         <div class="container">
+
             <p>
-                Harmonia • Congregação Noroeste
+                • Congregação Harmonia
             </p>
+
         </div>
+
     </footer>
+
+
+    <script src="finalsemana.js"></script>
 
 </body>
 </html>
