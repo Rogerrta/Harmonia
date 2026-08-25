@@ -1,0 +1,67 @@
+{
+  "configuracao": {
+    "titulo": "Controle de Territórios",
+    "congregacao": "Congregação Harmonia",
+    "diasUsoProlongado": 30,
+    "diasSemUsoAlerta": 90
+  },
+
+  "territorios": [
+    {
+      "id": 1,
+      "numero": "01",
+      "nome": "Território 01",
+      "regiao": "A definir",
+
+      "status": "disponivel",
+
+      "dirigenteAtual": null,
+      "dataEntrega": null,
+      "dataDevolucao": null,
+
+      "ultimaUtilizacao": null,
+
+      "observacoes": "",
+
+      "historico": []
+    },
+
+    {
+      "id": 2,
+      "numero": "02",
+      "nome": "Território 02",
+      "regiao": "A definir",
+
+      "status": "disponivel",
+
+      "dirigenteAtual": null,
+      "dataEntrega": null,
+      "dataDevolucao": null,
+
+      "ultimaUtilizacao": null,
+
+      "observacoes": "",
+
+      "historico": []
+    },
+
+    {
+      "id": 3,
+      "numero": "03",
+      "nome": "Território 03",
+      "regiao": "A definir",
+
+      "status": "disponivel",
+
+      "dirigenteAtual": null,
+      "dataEntrega": null,
+      "dataDevolucao": null,
+
+      "ultimaUtilizacao": null,
+
+      "observacoes": "",
+
+      "historico": []
+    }
+  ]
+}

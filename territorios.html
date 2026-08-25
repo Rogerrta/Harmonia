@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Controle de territórios da Congregação Harmonia"
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="territorios.css">
+
+    <title>Controle de Territórios | Congregação Harmonia</title>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="index.html" class="brand">
+                <span class="brand-title">
+                    Congregação Harmonia
+                </span>
+
+                <span class="brand-subtitle">
+                    Congregação Harmonia
+                </span>
+            </a>
+
+            <nav
+                class="main-nav"
+                aria-label="Navegação principal"
+            >
+                <a href="index.html">
+                    Início
+                </a>
+
+                <a
+                    href="territorios.html"
+                    class="active"
+                >
+                    Territórios
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main class="territory-page">
+
+        <div class="container territory-container">
+
+            <!-- CABEÇALHO -->
+            <section class="territory-hero">
+
+                <a
+                    href="index.html"
+                    class="back-link"
+                >
+                    ← Voltar para início
+                </a>
+
+                <p class="eyebrow">
+                    Serviço de Pregação
+                </p>
+
+                <h1>
+                    Controle de Territórios
+                </h1>
+
+                <p class="territory-description">
+                    Acompanhe os territórios disponíveis,
+                    em uso e o histórico de utilização.
+                </p>
+
+            </section>
+
+
+            <!-- RESUMO -->
+            <section class="territory-summary">
+
+                <article class="territory-summary-card">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong data-resumo="total">
+                        —
+                    </strong>
+
+                </article>
+
+
+                <article class="territory-summary-card">
+
+                    <span>
+                        Disponíveis
+                    </span>
+
+                    <strong data-resumo="disponiveis">
+                        —
+                    </strong>
+
+                </article>
+
+
+                <article class="territory-summary-card">
+
+                    <span>
+                        Em uso
+                    </span>
+
+                    <strong data-resumo="emUso">
+                        —
+                    </strong>
+
+                </article>
+
+
+                <article class="territory-summary-card">
+
+                    <span>
+                        Sem uso há muito tempo
+                    </span>
+
+                    <strong data-resumo="semUso">
+                        —
+                    </strong>
+
+                </article>
+
+            </section>
+
+
+            <!-- FILTROS -->
+            <section class="territory-tools">
+
+                <div class="territory-search">
+
+                    <label for="territory-search">
+                        Pesquisar território
+                    </label>
+
+                    <input
+                        type="search"
+                        id="territory-search"
+                        placeholder="Número, nome ou região"
+                        data-territory-search
+                    >
+
+                </div>
+
+
+                <div
+                    class="territory-filters"
+                    aria-label="Filtros de território"
+                >
+
+                    <button
+                        type="button"
+                        class="territory-filter active"
+                        data-filter="todos"
+                    >
+                        Todos
+                    </button>
+
+                    <button
+                        type="button"
+                        class="territory-filter"
+                        data-filter="disponivel"
+                    >
+                        Disponíveis
+                    </button>
+
+                    <button
+                        type="button"
+                        class="territory-filter"
+                        data-filter="em-uso"
+                    >
+                        Em uso
+                    </button>
+
+                    <button
+                        type="button"
+                        class="territory-filter"
+                        data-filter="alerta"
+                    >
+                        Atenção
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- LISTA -->
+            <section class="territory-section">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        Territórios
+                    </p>
+
+                    <h2>
+                        Situação atual
+                    </h2>
+
+                </div>
+
+
+                <div
+                    class="territory-grid"
+                    data-territory-list
+                >
+                    <!-- Preenchido pelo JavaScript -->
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <p>
+                • Congregação Harmonia
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ========================================
+     MODAL DE MOVIMENTAÇÃO
+========================================= -->
+
+<div
+    class="territory-modal"
+    data-territory-modal
+    hidden
+>
+
+    <div
+        class="territory-modal-backdrop"
+        data-modal-close
+    ></div>
+
+
+    <section
+        class="territory-modal-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="territory-modal-title"
+    >
+
+        <header class="territory-modal-header">
+
+            <div>
+
+                <p class="eyebrow">
+                    Controle de Territórios
+                </p>
+
+                <h2
+                    id="territory-modal-title"
+                    data-modal-title
+                >
+                    Movimentação
+                </h2>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="territory-modal-close"
+                data-modal-close
+                aria-label="Fechar"
+            >
+                ×
+            </button>
+
+        </header>
+
+
+        <!-- ENTREGA -->
+        <form
+            class="territory-form"
+            data-form-delivery
+            hidden
+        >
+
+            <input
+                type="hidden"
+                data-delivery-id
+            >
+
+
+            <div class="territory-form-info">
+
+                <span>
+                    Território
+                </span>
+
+                <strong data-delivery-territory>
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="territory-form-group">
+
+                <label for="delivery-leader">
+                    Dirigente
+                </label>
+
+                <input
+                    type="text"
+                    id="delivery-leader"
+                    data-delivery-leader
+                    placeholder="Nome do dirigente"
+                    required
+                >
+
+            </div>
+
+
+            <div class="territory-form-group">
+
+                <label for="delivery-date">
+                    Data da entrega
+                </label>
+
+                <input
+                    type="date"
+                    id="delivery-date"
+                    data-delivery-date
+                    required
+                >
+
+            </div>
+
+
+            <div class="territory-form-group">
+
+                <label for="delivery-note">
+                    Observação
+                </label>
+
+                <textarea
+                    id="delivery-note"
+                    data-delivery-note
+                    placeholder="Opcional"
+                ></textarea>
+
+            </div>
+
+
+            <div class="territory-form-actions">
+
+                <button
+                    type="button"
+                    class="territory-action"
+                    data-modal-close
+                >
+                    Cancelar
+                </button>
+
+                <button
+                    type="submit"
+                    class="territory-action primary"
+                >
+                    Confirmar entrega
+                </button>
+
+            </div>
+
+        </form>
+
+
+        <!-- DEVOLUÇÃO -->
+        <form
+            class="territory-form"
+            data-form-return
+            hidden
+        >
+
+            <input
+                type="hidden"
+                data-return-id
+            >
+
+
+            <div class="territory-form-summary">
+
+                <div>
+                    <span>
+                        Território
+                    </span>
+
+                    <strong data-return-territory>
+                        —
+                    </strong>
+                </div>
+
+
+                <div>
+                    <span>
+                        Dirigente
+                    </span>
+
+                    <strong data-return-leader>
+                        —
+                    </strong>
+                </div>
+
+
+                <div>
+                    <span>
+                        Entregue em
+                    </span>
+
+                    <strong data-return-delivery-date>
+                        —
+                    </strong>
+                </div>
+
+
+                <div>
+                    <span>
+                        Tempo em uso
+                    </span>
+
+                    <strong data-return-days>
+                        —
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div class="territory-form-group">
+
+                <label for="return-date">
+                    Data da devolução
+                </label>
+
+                <input
+                    type="date"
+                    id="return-date"
+                    data-return-date
+                    required
+                >
+
+            </div>
+
+
+            <div class="territory-form-group">
+
+                <label for="return-note">
+                    Observação da devolução
+                </label>
+
+                <textarea
+                    id="return-note"
+                    data-return-note
+                    placeholder="Opcional"
+                ></textarea>
+
+            </div>
+
+
+            <div class="territory-form-actions">
+
+                <button
+                    type="button"
+                    class="territory-action"
+                    data-modal-close
+                >
+                    Cancelar
+                </button>
+
+                <button
+                    type="submit"
+                    class="territory-action primary"
+                >
+                    Confirmar devolução
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+</div>
+
+
+
+    <script src="territorios.js"></script>
+
+</body>
+</html>
