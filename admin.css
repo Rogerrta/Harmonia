@@ -1,0 +1,895 @@
+/* =====================================================
+   HARMONIA
+   Painel Administrativo
+===================================================== */
+
+
+/* =====================================================
+   ESTRUTURA GERAL
+===================================================== */
+
+.admin-page {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+
+    background: var(--background, #f5f7f9);
+}
+
+
+/* Garante que elementos com hidden realmente desapareçam */
+[hidden] {
+    display: none !important;
+}
+
+
+/* =====================================================
+   LOGIN
+===================================================== */
+
+.admin-login {
+    width: 100%;
+    max-width: 460px;
+}
+
+
+.admin-login-card {
+    padding: 36px;
+
+    background: var(--surface, #ffffff);
+
+    border: 1px solid var(--border, #dfe5ea);
+    border-radius: 18px;
+
+    box-shadow:
+        0 12px 40px rgba(25, 42, 55, 0.08);
+}
+
+
+.admin-login-header {
+    margin-bottom: 28px;
+}
+
+
+.admin-login-header .eyebrow {
+    margin-bottom: 8px;
+}
+
+
+.admin-login-header h1 {
+    margin: 0 0 10px;
+
+    color: var(--text, #1f2933);
+
+    font-size: 2rem;
+    line-height: 1.1;
+
+    letter-spacing: -0.035em;
+}
+
+
+.admin-login-header > p:last-child {
+    margin: 0;
+
+    color: var(--text-soft, #697784);
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   FORMULÁRIO DE LOGIN
+===================================================== */
+
+.admin-login-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+.admin-field {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.admin-field label {
+    color: var(--text, #1f2933);
+
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+
+.admin-field input {
+    width: 100%;
+    min-height: 48px;
+
+    padding: 0 14px;
+
+    color: var(--text, #1f2933);
+
+    font-family: inherit;
+    font-size: 0.9rem;
+
+    background: #ffffff;
+
+    border: 1px solid var(--border, #dfe5ea);
+    border-radius: 10px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.admin-field input::placeholder {
+    color: #9aa5ae;
+}
+
+
+.admin-field input:focus {
+    border-color: var(--primary, #315b7d);
+
+    box-shadow:
+        0 0 0 3px rgba(49, 91, 125, 0.1);
+}
+
+
+/* =====================================================
+   BOTÃO PRINCIPAL
+===================================================== */
+
+.admin-primary-button {
+    min-height: 48px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 20px;
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 650;
+
+    background: var(--primary, #315b7d);
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.admin-primary-button:hover {
+    background: var(--primary-dark, #244863);
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 14px rgba(49, 91, 125, 0.18);
+}
+
+
+.admin-primary-button:active {
+    transform: translateY(0);
+}
+
+
+/* =====================================================
+   ERRO DE LOGIN
+===================================================== */
+
+.admin-login-error {
+    margin: -4px 0 0;
+
+    padding: 10px 12px;
+
+    color: #9b2c2c;
+
+    font-size: 0.78rem;
+    font-weight: 500;
+
+    background: #fff5f5;
+
+    border: 1px solid #fed7d7;
+    border-radius: 8px;
+}
+
+
+/* =====================================================
+   VOLTAR PARA O SITE
+===================================================== */
+
+.admin-back-link {
+    display: inline-flex;
+
+    margin-top: 24px;
+
+    color: var(--text-soft, #697784);
+
+    font-size: 0.78rem;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+
+.admin-back-link:hover {
+    color: var(--primary, #315b7d);
+}
+
+
+/* =====================================================
+   DASHBOARD
+===================================================== */
+
+.admin-dashboard {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: auto;
+
+    background: var(--surface, #ffffff);
+
+    border: 1px solid var(--border, #dfe5ea);
+    border-radius: 18px;
+
+    box-shadow:
+        0 12px 40px rgba(25, 42, 55, 0.07);
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   CABEÇALHO DO PAINEL
+===================================================== */
+
+.admin-header {
+    padding: 26px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 24px;
+
+    border-bottom: 1px solid var(--border, #dfe5ea);
+}
+
+
+.admin-header .eyebrow {
+    margin-bottom: 5px;
+}
+
+
+.admin-header h1 {
+    margin: 0;
+
+    color: var(--text, #1f2933);
+
+    font-size: 1.5rem;
+
+    letter-spacing: -0.025em;
+}
+
+
+/* =====================================================
+   BOTÃO SAIR
+===================================================== */
+
+.admin-logout-button {
+    min-height: 38px;
+
+    padding: 0 15px;
+
+    color: var(--text-soft, #697784);
+
+    font-family: inherit;
+    font-size: 0.76rem;
+    font-weight: 600;
+
+    background: transparent;
+
+    border: 1px solid var(--border, #dfe5ea);
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.admin-logout-button:hover {
+    color: var(--primary, #315b7d);
+
+    background: #f7f9fa;
+
+    border-color: #c8d3dc;
+}
+
+
+/* =====================================================
+   CONTEÚDO
+===================================================== */
+
+.admin-content {
+    padding: 34px 30px 40px;
+}
+
+
+.admin-content > .eyebrow {
+    margin-bottom: 5px;
+}
+
+
+.admin-content > h2 {
+    margin: 0 0 24px;
+
+    color: var(--text, #1f2933);
+
+    font-size: 1.45rem;
+
+    letter-spacing: -0.025em;
+}
+
+
+/* =====================================================
+   MENU ADMINISTRATIVO
+===================================================== */
+
+.admin-menu {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+}
+
+
+.admin-menu-card {
+    min-height: 110px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 5px;
+
+    text-align: left;
+
+    font-family: inherit;
+
+    background: var(--surface, #ffffff);
+
+    border: 1px solid var(--border, #dfe5ea);
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.admin-menu-card:hover {
+    background: #f8fafb;
+
+    border-color: #bdcad4;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 18px rgba(25, 42, 55, 0.05);
+}
+
+
+.admin-menu-card strong {
+    color: var(--text, #1f2933);
+
+    font-size: 0.95rem;
+    font-weight: 650;
+}
+
+
+.admin-menu-card span {
+    color: var(--text-soft, #697784);
+
+    font-size: 0.78rem;
+    line-height: 1.4;
+}
+
+
+/* =====================================================
+   RODAPÉ DO PAINEL
+===================================================== */
+
+.admin-footer {
+    padding: 18px 30px;
+
+    display: flex;
+    align-items: center;
+
+    background: #fafbfc;
+
+    border-top: 1px solid var(--border, #dfe5ea);
+}
+
+
+.admin-footer a {
+    color: var(--text-soft, #697784);
+
+    font-size: 0.76rem;
+    font-weight: 500;
+
+    text-decoration: none;
+}
+
+
+.admin-footer a:hover {
+    color: var(--primary, #315b7d);
+}
+
+
+/* =====================================================
+   ELEMENTOS PARA OS FORMULÁRIOS FUTUROS
+===================================================== */
+
+.admin-editor {
+    margin-top: 28px;
+
+    padding-top: 28px;
+
+    border-top: 1px solid var(--border, #dfe5ea);
+}
+
+
+.admin-form {
+    display: grid;
+
+    gap: 18px;
+}
+
+
+.admin-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+
+.admin-form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.admin-form-group.full {
+    grid-column: 1 / -1;
+}
+
+
+.admin-form-group label {
+    color: var(--text, #1f2933);
+
+    font-size: 0.76rem;
+    font-weight: 600;
+}
+
+
+.admin-form-group input,
+.admin-form-group select,
+.admin-form-group textarea {
+    width: 100%;
+
+    padding: 11px 13px;
+
+    color: var(--text, #1f2933);
+
+    font-family: inherit;
+    font-size: 0.84rem;
+
+    background: #ffffff;
+
+    border: 1px solid var(--border, #dfe5ea);
+    border-radius: 9px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.admin-form-group textarea {
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+
+.admin-form-group input:focus,
+.admin-form-group select:focus,
+.admin-form-group textarea:focus {
+    border-color: var(--primary, #315b7d);
+
+    box-shadow:
+        0 0 0 3px rgba(49, 91, 125, 0.08);
+}
+
+
+/* =====================================================
+   BOTÕES SECUNDÁRIOS
+===================================================== */
+
+.admin-secondary-button {
+    min-height: 42px;
+
+    padding: 0 16px;
+
+    color: var(--primary, #315b7d);
+
+    font-family: inherit;
+    font-size: 0.78rem;
+    font-weight: 600;
+
+    background: #ffffff;
+
+    border: 1px solid var(--border, #dfe5ea);
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.admin-secondary-button:hover {
+    background: #f7f9fa;
+
+    border-color: #bdcad4;
+}
+
+
+/* =====================================================
+   MENSAGENS DO PAINEL
+===================================================== */
+
+.admin-message {
+    margin: 16px 0 0;
+
+    padding: 11px 13px;
+
+    font-size: 0.78rem;
+    line-height: 1.4;
+
+    border-radius: 8px;
+}
+
+
+.admin-message.success {
+    color: #276749;
+
+    background: #f0fff4;
+
+    border: 1px solid #c6f6d5;
+}
+
+
+.admin-message.error {
+    color: #9b2c2c;
+
+    background: #fff5f5;
+
+    border: 1px solid #fed7d7;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 760px) {
+
+    .admin-page {
+        align-items: flex-start;
+
+        padding: 24px 16px;
+    }
+
+    .admin-dashboard {
+        border-radius: 14px;
+    }
+
+    .admin-header {
+        padding: 22px;
+    }
+
+    .admin-content {
+        padding: 28px 22px 34px;
+    }
+
+    .admin-footer {
+        padding: 16px 22px;
+    }
+
+    .admin-menu {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-form-group.full {
+        grid-column: auto;
+    }
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 520px) {
+
+    .admin-page {
+        padding: 18px 12px;
+    }
+
+
+    /* Login */
+
+    .admin-login-card {
+        padding: 26px 20px;
+
+        border-radius: 14px;
+    }
+
+    .admin-login-header {
+        margin-bottom: 24px;
+    }
+
+    .admin-login-header h1 {
+        font-size: 1.65rem;
+    }
+
+    .admin-login-header > p:last-child {
+        font-size: 0.82rem;
+    }
+
+
+    /* Dashboard */
+
+    .admin-header {
+        padding: 18px;
+
+        align-items: flex-start;
+    }
+
+    .admin-header h1 {
+        font-size: 1.2rem;
+    }
+
+    .admin-logout-button {
+        min-height: 34px;
+
+        padding: 0 12px;
+    }
+
+    .admin-content {
+        padding: 24px 18px 30px;
+    }
+
+    .admin-content > h2 {
+        margin-bottom: 18px;
+
+        font-size: 1.25rem;
+    }
+
+
+    /* Cards */
+
+    .admin-menu {
+        gap: 10px;
+    }
+
+    .admin-menu-card {
+        min-height: 92px;
+
+        padding: 16px;
+    }
+
+    .admin-menu-card strong {
+        font-size: 0.88rem;
+    }
+
+    .admin-menu-card span {
+        font-size: 0.74rem;
+    }
+
+
+    /* Rodapé */
+
+    .admin-footer {
+        padding: 14px 18px;
+    }
+}
+
+
+/* =====================================================
+   CELULARES PEQUENOS
+===================================================== */
+
+@media (max-width: 360px) {
+
+    .admin-login-card {
+        padding: 22px 17px;
+    }
+
+    .admin-login-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .admin-header {
+        gap: 12px;
+    }
+
+    .admin-header h1 {
+        font-size: 1.08rem;
+    }
+}
+/* =====================================================
+   EDITOR DE ANÚNCIOS
+===================================================== */
+
+.admin-editor {
+    padding: 30px;
+}
+
+.admin-editor-header {
+    margin-bottom: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.admin-announcements-list {
+    display: grid;
+    gap: 14px;
+
+    margin-bottom: 16px;
+}
+
+.admin-announcement-card {
+    padding: 18px;
+
+    background: #ffffff;
+
+    border: 1px solid var(--border, #dfe5ea);
+    border-radius: 12px;
+}
+
+.admin-announcement-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+}
+
+.admin-announcement-grid .full {
+    grid-column: 1 / -1;
+}
+
+.admin-announcement-actions {
+    margin-top: 14px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.admin-remove-button {
+    min-height: 36px;
+
+    padding: 0 12px;
+
+    color: #9b2c2c;
+
+    background: #fff5f5;
+
+    border: 1px solid #fed7d7;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.admin-actions {
+    margin-top: 18px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.admin-json-result {
+    margin-top: 24px;
+}
+
+.admin-json-result label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.admin-json-result textarea {
+    width: 100%;
+    min-height: 280px;
+
+    padding: 14px;
+
+    font-family: monospace;
+    font-size: 0.78rem;
+
+    border: 1px solid var(--border, #dfe5ea);
+    border-radius: 10px;
+
+    resize: vertical;
+}
+
+@media (max-width: 700px) {
+
+    .admin-editor {
+        padding: 22px 18px;
+    }
+
+    .admin-announcement-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-announcement-grid .full {
+        grid-column: auto;
+    }
+}

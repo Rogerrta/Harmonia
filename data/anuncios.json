@@ -2,8 +2,8 @@
   "anuncios": [
     {
       "id": 1,
-      "titulo": "Anúncio de teste",
-      "mensagem": "Este é um anúncio de teste da Congregação Harmonia.",
+      "titulo": "Somente teste NOVO",
+      "mensagem": "Este é um anúncio de teste da Congregação Harmonia. Teste Novo",
       "inicio": "2026-08-24",
       "fim": "2026-08-31",
       "destaque": true

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Painel administrativo da Congregação Harmonia"
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
+
+    <title>Painel Administrativo | Congregação Harmonia</title>
+</head>
+
+<body>
+
+    <main class="admin-page">
+
+        <!-- ========================================
+             LOGIN
+        ========================================= -->
+
+        <section
+            class="admin-login"
+            data-admin-login
+        >
+
+            <div class="admin-login-card">
+
+                <div class="admin-login-header">
+
+                    <p class="eyebrow">
+                        Congregação Harmonia
+                    </p>
+
+                    <h1>
+                        Painel Administrativo
+                    </h1>
+
+                    <p>
+                        Entre para administrar a programação.
+                    </p>
+
+                </div>
+
+
+                <form
+                    class="admin-login-form"
+                    data-login-form
+                >
+
+                    <div class="admin-field">
+
+                        <label for="admin-password">
+                            Senha
+                        </label>
+
+                        <input
+                            type="password"
+                            id="admin-password"
+                            placeholder="Digite sua senha"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="admin-primary-button"
+                    >
+                        Entrar
+                    </button>
+
+
+                    <p
+                        class="admin-login-error"
+                        data-login-error
+                        hidden
+                    >
+                        Senha incorreta.
+                    </p>
+
+                </form>
+
+
+                <a
+                    href="index.html"
+                    class="admin-back-link"
+                >
+                    ← Voltar para o site
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             PAINEL
+        ========================================= -->
+
+        <section
+            class="admin-dashboard"
+            data-admin-dashboard
+            hidden
+        >
+
+            <!-- CABEÇALHO -->
+
+            <header class="admin-header">
+
+                <div>
+
+                    <p class="eyebrow">
+                        Administração
+                    </p>
+
+                    <h1>
+                        Congregação Harmonia
+                    </h1>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="admin-logout-button"
+                    data-admin-logout
+                >
+                    Sair
+                </button>
+
+            </header>
+
+
+            <!-- ====================================
+                 MENU PRINCIPAL
+            ===================================== -->
+
+            <div class="admin-content">
+
+                <p class="eyebrow">
+                    Programação
+                </p>
+
+                <h2>
+                    O que deseja editar?
+                </h2>
+
+
+                <div class="admin-menu">
+
+                    <!-- MEIO DE SEMANA -->
+
+                    <button
+                        type="button"
+                        class="admin-menu-card"
+                        data-admin-section="meio-semana"
+                    >
+
+                        <strong>
+                            Meio de Semana
+                        </strong>
+
+                        <span>
+                            Semanas, partes e designações
+                        </span>
+
+                    </button>
+
+
+                    <!-- FINAL DE SEMANA -->
+
+                    <button
+                        type="button"
+                        class="admin-menu-card"
+                        data-admin-section="final-semana"
+                    >
+
+                        <strong>
+                            Final de Semana
+                        </strong>
+
+                        <span>
+                            Discurso público e Sentinela
+                        </span>
+
+                    </button>
+
+
+                    <!-- ARRANJO DE CAMPO -->
+
+                    <button
+                        type="button"
+                        class="admin-menu-card"
+                        data-admin-section="arranjo-campo"
+                    >
+
+                        <strong>
+                            Arranjo de Campo
+                        </strong>
+
+                        <span>
+                            Horários, dirigentes e displays
+                        </span>
+
+                    </button>
+
+
+                    <!-- ANÚNCIOS -->
+
+                    <button
+                        type="button"
+                        class="admin-menu-card"
+                        data-admin-section="anuncios"
+                    >
+
+                        <strong>
+                            Anúncios
+                        </strong>
+
+                        <span>
+                            Avisos exibidos na página inicial
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ====================================
+                 EDITOR DE ANÚNCIOS
+            ===================================== -->
+
+            <section
+                class="admin-editor"
+                data-editor-anuncios
+                hidden
+            >
+
+                <div class="admin-editor-header">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Anúncios
+                        </p>
+
+                        <h2>
+                            Editar anúncios
+                        </h2>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="admin-secondary-button"
+                        data-voltar-menu
+                    >
+                        Voltar
+                    </button>
+
+                </div>
+
+
+                <!-- LISTA DE ANÚNCIOS -->
+
+                <div
+                    class="admin-announcements-list"
+                    data-admin-anuncios-list
+                >
+                    <!-- Preenchido pelo JavaScript -->
+                </div>
+
+
+                <!-- ADICIONAR -->
+
+                <button
+                    type="button"
+                    class="admin-secondary-button"
+                    data-adicionar-anuncio
+                >
+                    + Adicionar anúncio
+                </button>
+
+
+                <!-- GERAR JSON -->
+
+                <div class="admin-actions">
+
+                    <button
+                        type="button"
+                        class="admin-primary-button"
+                        data-gerar-anuncios-json
+                    >
+                        Gerar JSON
+                    </button>
+
+                </div>
+
+
+                <!-- RESULTADO JSON -->
+
+                <div
+                    class="admin-json-result"
+                    data-json-result
+                    hidden
+                >
+
+                    <label for="json-anuncios">
+                        JSON gerado
+                    </label>
+
+
+                    <textarea
+                        id="json-anuncios"
+                        data-json-output
+                        spellcheck="false"
+                    ></textarea>
+
+
+                    <div class="admin-actions">
+
+                        <button
+                            type="button"
+                            class="admin-secondary-button"
+                            data-copiar-json
+                        >
+                            Copiar JSON
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="admin-secondary-button"
+                            data-baixar-json
+                        >
+                            Baixar anuncios.json
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ====================================
+                 RODAPÉ
+            ===================================== -->
+
+            <footer class="admin-footer">
+
+                <a href="index.html">
+                    Ver site
+                </a>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <script src="admin.js"></script>
+
+</body>
+</html>
