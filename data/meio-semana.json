@@ -94,102 +94,102 @@
       "encerramento": {
         "comentarios": "3 min",
         "cantico": 143,
-        "oracao": "Roger Aragao "
+        "oracao": "Roger Aragao"
       }
     },
 
    {
       "id": 2,
-      "periodo": "09 de Setembro",
-      "leituraBiblica": "JEREMIAS 32-33",
+      "periodo": "16 de Setembro",
+      "leituraBiblica": "JEREMIAS 34-35",
 
-      "presidente": "Roger Aragao ",
+      "presidente": "Alan Garcia",
       "conselheiro": null,
 
       "abertura": {
-        "cantico": 1,
-        "oracao": "Gustavo Maciel ",
+        "cantico": 161,
+        "oracao": "Mauro Cunha",
         "comentarios": "1 min"
       },
 
       "tesouros": [
         {
-          "titulo": "Meditar nas qualidades de Jeová fortalece a nossa fé ",
+          "titulo": "Jeová recompensa quem sempre é obediente a ele",
           "subtitulo": "Discurso",
           "tempo": "10 min",
-          "designado": "Leandro Castro "
+          "designado": "Carlos Davi"
         },
         {
           "titulo": "Joias Espirituais",
           "subtitulo": "Consideração",
           "tempo": "10 min",
-          "designado": "Mauro Cunha "
+          "designado": "Ruan Flores"
         },
         {
           "titulo": "Leitura da Bíblia",
-          "subtitulo": "Jer. 32:6-18 (th lição 2)",
+          "subtitulo": "Jer. 35:1-14 (th lição 5)",
           "tempo": "4 min",
-          "designado": "Alfred Malta"
+          "designado": "Pedro Rodel"
         }
       ],
 
       "ministerio": [
         {
           "titulo": "Iniciando Conversa",
-          "subtitulo": "De casa em casa (Imd Licao 4 ponto 3)",
-          "tempo": "3 min",
-          "designado": "Rafael Emerin / Rogerio Maciel"
+          "subtitulo": "De casa em casa (Imd Licao 3 ponto 3)",
+          "tempo": "2 min",
+          "designado": "Rian Costa / Maria Raquel"
         },
         {
           "titulo": "Iniciando Conversa",
-          "subtitulo": "Testemunho Informal (Imd Licao 4 ponto 4)",
-          "tempo": "4 min",
-          "designado": "Daniela Rodel / Marcia Garcia"
+          "subtitulo": "De casa em casa (Imd Licao 3 ponto 5)",
+          "tempo": "2 min",
+          "designado": "Iris Lima / Luciana Diniz"
         },
         {
           "titulo": "Cultivando o Interesse",
-          "subtitulo": "De casa em casa (Imd Licao 8 ponto 3)",
-          "tempo": "5 min",
-          "designado": "Dilana Silva / Lourdes Aguiar"
+          "subtitulo": "Testemunho Informal (Imd Licao 7 ponto 4)",
+          "tempo": "3 min",
+          "designado": "Daiana Bandinelli / Jussara Rodrigues"
         },
         {
-          "titulo": "",
-          "subtitulo": "",
-          "tempo": "",
-          "designado": ""
+          "titulo": "Fazendo Discipulos",
+          "subtitulo": "(Imd Licao 7 ponto 4",
+          "tempo": "4 min",
+          "designado": "Maria Eduarda / Patricia Aguiar"
         }
       ],
 
       "vidaCrista": {
-        "cantico": 128,
+        "cantico": 121,
 
         "partes": [
           {
-            "titulo": "Use Seu Tempo da Melhor Forma Durante a Campanha",
+            "titulo": " O autodomínio nos ajuda a obedecer",
             "subtitulo": "Consideração",
-            "tempo": "15 min",
-            "designado": "Eduardo Nichele "
+            "tempo": "6 min",
+            "designado": "Jeferson Isse"
           },
           {
-            "titulo": "--",
-            "subtitulo": "--",
-            "tempo": "--",
-            "designado": "-- "
+            "titulo": "Realizações da Organização, Setembro",
+            "subtitulo": "Consideração",
+            "tempo": "9 min",
+            "designado": "Fabiano Silva"
           },
           {
             "titulo": "Estudo Bíblico de Congregação",
             "subtitulo": "Leitor do Estudo - Jeferson Isse",
             "tempo": "30 min",
-            "designado": "Roberto Andrade",
-            "leitor": "Jeferson Isse"
+            "designado": "Rafael Doico",
+            "leitor": "Franklin Silva"
           }
         ]
       },
 
       "encerramento": {
         "comentarios": "3 min",
-        "cantico": 143,
-        "oracao": "Roger Aragao "
+        "cantico": 28,
+        "oracao": "Alan Garcia"
       }
     },
 
