@@ -594,6 +594,25 @@
       "observacoes": "",
 
       "historico": []
+    },
+
+    {
+      "id": 32,
+      "numero": "32",
+      "nome": "Território 32",
+      "regiao": "Mato Grande",
+
+      "status": "disponivel",
+
+      "dirigenteAtual": null,
+      "dataEntrega": null,
+      "dataDevolucao": null,
+
+      "ultimaUtilizacao": null,
+
+      "observacoes": "",
+
+      "historico": []
     }
 
     
