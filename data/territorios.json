@@ -11,17 +11,24 @@
       "numero": "01",
       "nome": "Território 01",
       "regiao": "Vila Cerne",
-      "status": "em-uso",
-      "dirigenteAtual": "Roger Aragao",
-      "dataEntrega": "2026-08-10",
-      "dataDevolucao": null,
-      "ultimaUtilizacao": "2026-08-10",
+      "status": "disponivel",
+      "dirigenteAtual": null,
+      "dataEntrega": null,
+      "dataDevolucao": "2026-08-24",
+      "ultimaUtilizacao": "2026-08-24",
       "observacoes": "",
       "historico": [
         {
-          "entregueEm": "2026-08-10",
-          "devolvidoEm": null,
+          "entregueEm": "2026-08-28",
+          "devolvidoEm": "2026-08-28",
           "dirigente": "Roger Aragao",
+          "observacaoEntrega": "",
+          "observacaoDevolucao": ""
+        },
+        {
+          "entregueEm": "2026-08-23",
+          "devolvidoEm": "2026-08-24",
+          "dirigente": "Ruan Flores",
           "observacaoEntrega": "",
           "observacaoDevolucao": ""
         }
@@ -32,16 +39,23 @@
       "numero": "02",
       "nome": "Território 02",
       "regiao": "Vila Cerne",
-      "status": "em-uso",
-      "dirigenteAtual": "Roger Aragao",
-      "dataEntrega": "2026-08-10",
-      "dataDevolucao": null,
-      "ultimaUtilizacao": "2026-08-10",
+      "status": "disponivel",
+      "dirigenteAtual": null,
+      "dataEntrega": null,
+      "dataDevolucao": "2026-08-23",
+      "ultimaUtilizacao": "2026-08-23",
       "observacoes": "",
       "historico": [
         {
-          "entregueEm": "2026-08-10",
-          "devolvidoEm": null,
+          "entregueEm": "2026-08-20",
+          "devolvidoEm": "2026-08-21",
+          "dirigente": "Daniel Queiroz",
+          "observacaoEntrega": "",
+          "observacaoDevolucao": ""
+        },
+        {
+          "entregueEm": "2026-08-21",
+          "devolvidoEm": "2026-08-23",
           "dirigente": "Roger Aragao",
           "observacaoEntrega": "",
           "observacaoDevolucao": ""
@@ -53,42 +67,26 @@
       "numero": "03",
       "nome": "Território 03",
       "regiao": "Vila Cerne",
-      "status": "em-uso",
-      "dirigenteAtual": "Roger Aragao",
-      "dataEntrega": "2026-08-10",
+      "status": "disponivel",
+      "dirigenteAtual": null,
+      "dataEntrega": null,
       "dataDevolucao": null,
-      "ultimaUtilizacao": "2026-08-10",
+      "ultimaUtilizacao": null,
       "observacoes": "",
-      "historico": [
-        {
-          "entregueEm": "2026-08-10",
-          "devolvidoEm": null,
-          "dirigente": "Roger Aragao",
-          "observacaoEntrega": "",
-          "observacaoDevolucao": ""
-        }
-      ]
+      "historico": []
     },
     {
       "id": 4,
       "numero": "04",
       "nome": "Território 04",
       "regiao": "Vila Cerne",
-      "status": "em-uso",
-      "dirigenteAtual": "Javier Vaquero",
-      "dataEntrega": "2026-08-10",
+      "status": "disponivel",
+      "dirigenteAtual": null,
+      "dataEntrega": null,
       "dataDevolucao": null,
-      "ultimaUtilizacao": "2026-08-10",
+      "ultimaUtilizacao": null,
       "observacoes": "",
-      "historico": [
-        {
-          "entregueEm": "2026-08-10",
-          "devolvidoEm": null,
-          "dirigente": "Javier Vaquero",
-          "observacaoEntrega": "",
-          "observacaoDevolucao": ""
-        }
-      ]
+      "historico": []
     },
     {
       "id": 5,
@@ -98,60 +96,36 @@
       "status": "disponivel",
       "dirigenteAtual": null,
       "dataEntrega": null,
-      "dataDevolucao": "2026-08-10",
-      "ultimaUtilizacao": "2026-08-10",
+      "dataDevolucao": null,
+      "ultimaUtilizacao": null,
       "observacoes": "",
-      "historico": [
-        {
-          "entregueEm": "2026-08-01",
-          "devolvidoEm": "2026-08-10",
-          "dirigente": "Javier Vaquero",
-          "observacaoEntrega": "",
-          "observacaoDevolucao": ""
-        }
-      ]
+      "historico": []
     },
     {
       "id": 6,
       "numero": "06",
       "nome": "Território 06",
       "regiao": "Vila Cerne",
-      "status": "em-uso",
-      "dirigenteAtual": "Roberto Andrade",
-      "dataEntrega": "2026-08-10",
+      "status": "disponivel",
+      "dirigenteAtual": null,
+      "dataEntrega": null,
       "dataDevolucao": null,
-      "ultimaUtilizacao": "2026-08-10",
+      "ultimaUtilizacao": null,
       "observacoes": "",
-      "historico": [
-        {
-          "entregueEm": "2026-08-10",
-          "devolvidoEm": null,
-          "dirigente": "Roberto Andrade",
-          "observacaoEntrega": "",
-          "observacaoDevolucao": ""
-        }
-      ]
+      "historico": []
     },
     {
       "id": 7,
       "numero": "07",
       "nome": "Território 07",
       "regiao": "Vila Cerne",
-      "status": "em-uso",
-      "dirigenteAtual": "Eduardo Nichele",
-      "dataEntrega": "2026-08-10",
+      "status": "disponivel",
+      "dirigenteAtual": null,
+      "dataEntrega": null,
       "dataDevolucao": null,
-      "ultimaUtilizacao": "2026-08-10",
+      "ultimaUtilizacao": null,
       "observacoes": "",
-      "historico": [
-        {
-          "entregueEm": "2026-08-10",
-          "devolvidoEm": null,
-          "dirigente": "Eduardo Nichele",
-          "observacaoEntrega": "",
-          "observacaoDevolucao": ""
-        }
-      ]
+      "historico": []
     },
     {
       "id": 8,
@@ -252,18 +226,10 @@
       "status": "disponivel",
       "dirigenteAtual": null,
       "dataEntrega": null,
-      "dataDevolucao": "2026-08-25",
-      "ultimaUtilizacao": "2026-08-25",
+      "dataDevolucao": null,
+      "ultimaUtilizacao": null,
       "observacoes": "",
-      "historico": [
-        {
-          "entregueEm": "2026-08-21",
-          "devolvidoEm": "2026-08-25",
-          "dirigente": "Fabiano Silva",
-          "observacaoEntrega": "",
-          "observacaoDevolucao": ""
-        }
-      ]
+      "historico": []
     },
     {
       "id": 16,
@@ -273,18 +239,10 @@
       "status": "disponivel",
       "dirigenteAtual": null,
       "dataEntrega": null,
-      "dataDevolucao": "2026-08-12",
-      "ultimaUtilizacao": "2026-08-12",
+      "dataDevolucao": null,
+      "ultimaUtilizacao": null,
       "observacoes": "",
-      "historico": [
-        {
-          "entregueEm": "2026-08-08",
-          "devolvidoEm": "2026-08-12",
-          "dirigente": "Eduardo Nichele",
-          "observacaoEntrega": "",
-          "observacaoDevolucao": ""
-        }
-      ]
+      "historico": []
     },
     {
       "id": 17,
@@ -304,42 +262,26 @@
       "numero": "18",
       "nome": "Território 18",
       "regiao": "Central Park",
-      "status": "em-uso",
-      "dirigenteAtual": "Daniel Queiroz",
-      "dataEntrega": "2026-08-12",
+      "status": "disponivel",
+      "dirigenteAtual": null,
+      "dataEntrega": null,
       "dataDevolucao": null,
-      "ultimaUtilizacao": "2026-08-12",
+      "ultimaUtilizacao": null,
       "observacoes": "",
-      "historico": [
-        {
-          "entregueEm": "2026-08-12",
-          "devolvidoEm": null,
-          "dirigente": "Daniel Queiroz",
-          "observacaoEntrega": "",
-          "observacaoDevolucao": ""
-        }
-      ]
+      "historico": []
     },
     {
       "id": 19,
       "numero": "19",
       "nome": "Território 19",
       "regiao": "Central Park",
-      "status": "em-uso",
-      "dirigenteAtual": "Jeferson Isse",
-      "dataEntrega": "2026-08-15",
+      "status": "disponivel",
+      "dirigenteAtual": null,
+      "dataEntrega": null,
       "dataDevolucao": null,
-      "ultimaUtilizacao": "2026-08-15",
+      "ultimaUtilizacao": null,
       "observacoes": "",
-      "historico": [
-        {
-          "entregueEm": "2026-08-15",
-          "devolvidoEm": null,
-          "dirigente": "Jeferson Isse",
-          "observacaoEntrega": "",
-          "observacaoDevolucao": ""
-        }
-      ]
+      "historico": []
     },
     {
       "id": 20,
@@ -398,42 +340,26 @@
       "numero": "24",
       "nome": "Território 24",
       "regiao": "Central Park",
-      "status": "em-uso",
-      "dirigenteAtual": "Daniel Queiroz",
-      "dataEntrega": "2026-08-20",
+      "status": "disponivel",
+      "dirigenteAtual": null,
+      "dataEntrega": null,
       "dataDevolucao": null,
-      "ultimaUtilizacao": "2026-08-20",
+      "ultimaUtilizacao": null,
       "observacoes": "",
-      "historico": [
-        {
-          "entregueEm": "2026-08-20",
-          "devolvidoEm": null,
-          "dirigente": "Daniel Queiroz",
-          "observacaoEntrega": "",
-          "observacaoDevolucao": ""
-        }
-      ]
+      "historico": []
     },
     {
       "id": 25,
       "numero": "25",
       "nome": "Território 25",
       "regiao": "Central Park",
-      "status": "em-uso",
-      "dirigenteAtual": "Leandro Castro",
-      "dataEntrega": "2026-08-25",
+      "status": "disponivel",
+      "dirigenteAtual": null,
+      "dataEntrega": null,
       "dataDevolucao": null,
-      "ultimaUtilizacao": "2026-08-25",
+      "ultimaUtilizacao": null,
       "observacoes": "",
-      "historico": [
-        {
-          "entregueEm": "2026-08-25",
-          "devolvidoEm": null,
-          "dirigente": "Leandro Castro",
-          "observacaoEntrega": "",
-          "observacaoDevolucao": ""
-        }
-      ]
+      "historico": []
     },
     {
       "id": 26,
@@ -453,84 +379,52 @@
       "numero": "27",
       "nome": "Território 27",
       "regiao": "Mato Grande",
-      "status": "em-uso",
-      "dirigenteAtual": "Eduardo Nichele",
-      "dataEntrega": "2026-08-25",
+      "status": "disponivel",
+      "dirigenteAtual": null,
+      "dataEntrega": null,
       "dataDevolucao": null,
-      "ultimaUtilizacao": "2026-08-25",
+      "ultimaUtilizacao": null,
       "observacoes": "",
-      "historico": [
-        {
-          "entregueEm": "2026-08-25",
-          "devolvidoEm": null,
-          "dirigente": "Eduardo Nichele",
-          "observacaoEntrega": "",
-          "observacaoDevolucao": ""
-        }
-      ]
+      "historico": []
     },
     {
       "id": 28,
       "numero": "28",
       "nome": "Território 28",
       "regiao": "Mato Grande",
-      "status": "em-uso",
-      "dirigenteAtual": "Ruan Flores",
-      "dataEntrega": "2026-08-22",
+      "status": "disponivel",
+      "dirigenteAtual": null,
+      "dataEntrega": null,
       "dataDevolucao": null,
-      "ultimaUtilizacao": "2026-08-22",
+      "ultimaUtilizacao": null,
       "observacoes": "",
-      "historico": [
-        {
-          "entregueEm": "2026-08-22",
-          "devolvidoEm": null,
-          "dirigente": "Ruan Flores",
-          "observacaoEntrega": "",
-          "observacaoDevolucao": ""
-        }
-      ]
+      "historico": []
     },
     {
       "id": 29,
       "numero": "29",
       "nome": "Território 29",
       "regiao": "Mato Grande",
-      "status": "em-uso",
-      "dirigenteAtual": "Daniel Queiroz",
-      "dataEntrega": "2026-08-24",
+      "status": "disponivel",
+      "dirigenteAtual": null,
+      "dataEntrega": null,
       "dataDevolucao": null,
-      "ultimaUtilizacao": "2026-08-24",
+      "ultimaUtilizacao": null,
       "observacoes": "",
-      "historico": [
-        {
-          "entregueEm": "2026-08-24",
-          "devolvidoEm": null,
-          "dirigente": "Daniel Queiroz",
-          "observacaoEntrega": "",
-          "observacaoDevolucao": ""
-        }
-      ]
+      "historico": []
     },
     {
       "id": 30,
       "numero": "30",
       "nome": "Território 30",
       "regiao": "Vila Cerne",
-      "status": "em-uso",
-      "dirigenteAtual": "Roberto Andrade",
-      "dataEntrega": "2026-08-22",
+      "status": "disponivel",
+      "dirigenteAtual": null,
+      "dataEntrega": null,
       "dataDevolucao": null,
-      "ultimaUtilizacao": "2026-08-22",
+      "ultimaUtilizacao": null,
       "observacoes": "",
-      "historico": [
-        {
-          "entregueEm": "2026-08-22",
-          "devolvidoEm": null,
-          "dirigente": "Roberto Andrade",
-          "observacaoEntrega": "",
-          "observacaoDevolucao": ""
-        }
-      ]
+      "historico": []
     },
     {
       "id": 31,
@@ -547,9 +441,9 @@
     },
     {
       "id": 32,
-      "numero": 32,
+      "numero": "32",
       "nome": "Território 32",
-      "regiao": "A definir",
+      "regiao": "Mato Grande",
       "status": "disponivel",
       "dirigenteAtual": null,
       "dataEntrega": null,
