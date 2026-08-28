@@ -2450,6 +2450,274 @@ function normalizarTextoAdmin(
    EVENTOS DO EDITOR DE TERRITÓRIOS
 ===================================================== */
 
+/* =====================================================
+   CONTROLE DOS MODAIS DE TERRITÓRIOS
+===================================================== */
+
+function abrirModalAdmin(modal) {
+
+    if (!modal) {
+        return;
+    }
+
+    modal.hidden = false;
+
+    document.body.classList.add(
+        "admin-modal-open"
+    );
+}
+
+
+function fecharModaisTerritoriosAdmin() {
+
+    document
+        .querySelectorAll(".admin-modal")
+        .forEach(
+            modal => {
+                modal.hidden = true;
+            }
+        );
+
+    document.body.classList.remove(
+        "admin-modal-open"
+    );
+}
+
+function abrirModalNovoTerritorioAdmin() {
+
+    const modal =
+        document.querySelector(
+            "[data-admin-territory-create-modal]"
+        );
+
+    if (!modal) {
+        console.error(
+            "Modal de cadastro de território não encontrado."
+        );
+        return;
+    }
+
+    const numero =
+        modal.querySelector(
+            "[data-admin-territory-number]"
+        );
+
+    const nome =
+        modal.querySelector(
+            "[data-admin-territory-name]"
+        );
+
+    const regiao =
+        modal.querySelector(
+            "[data-admin-territory-region]"
+        );
+
+    const observacao =
+        modal.querySelector(
+            "[data-admin-territory-observation]"
+        );
+
+
+    /* Descobre automaticamente o próximo número */
+
+    const numerosExistentes =
+        territoriosAdmin
+            .map(
+                territorio =>
+                    Number(territorio.numero)
+            )
+            .filter(
+                numero =>
+                    Number.isFinite(numero)
+            );
+
+
+    const proximoNumero =
+        numerosExistentes.length
+            ? Math.max(...numerosExistentes) + 1
+            : 1;
+
+
+    if (numero) {
+        numero.value = proximoNumero;
+    }
+
+    if (nome) {
+        nome.value =
+            `Território ${String(proximoNumero).padStart(2, "0")}`;
+    }
+
+    if (regiao) {
+        regiao.value = "";
+    }
+
+    if (observacao) {
+        observacao.value = "";
+    }
+
+
+    abrirModalAdmin(modal);
+
+
+    setTimeout(
+        () => {
+            numero?.focus();
+        },
+        50
+    );
+}
+
+
+/* =====================================================
+   CADASTRAR TERRITÓRIO
+===================================================== */
+
+function cadastrarTerritorioAdmin(evento) {
+
+    evento.preventDefault();
+
+
+    const formulario =
+        evento.currentTarget;
+
+
+    const numero =
+        Number(
+            formulario.querySelector(
+                "[data-admin-territory-number]"
+            )?.value
+        );
+
+
+    const nome =
+        formulario.querySelector(
+            "[data-admin-territory-name]"
+        )?.value.trim();
+
+
+    const regiao =
+        formulario.querySelector(
+            "[data-admin-territory-region]"
+        )?.value.trim();
+
+
+    const observacao =
+        formulario.querySelector(
+            "[data-admin-territory-observation]"
+        )?.value.trim();
+
+
+    if (
+        !Number.isInteger(numero) ||
+        numero < 1
+    ) {
+        alert(
+            "Informe um número de território válido."
+        );
+        return;
+    }
+
+
+    if (!nome) {
+        alert(
+            "Informe o nome do território."
+        );
+        return;
+    }
+
+
+    const numeroJaExiste =
+        territoriosAdmin.some(
+            territorio =>
+                Number(territorio.numero) === numero
+        );
+
+
+    if (numeroJaExiste) {
+        alert(
+            `O território ${numero} já está cadastrado.`
+        );
+        return;
+    }
+
+
+    /* Gera um ID que ainda não existe */
+
+    const ids =
+        territoriosAdmin
+            .map(
+                territorio =>
+                    Number(territorio.id)
+            )
+            .filter(
+                id =>
+                    Number.isFinite(id)
+            );
+
+
+    const novoId =
+        ids.length
+            ? Math.max(...ids) + 1
+            : 1;
+
+
+    const novoTerritorio = {
+
+        id: novoId,
+
+        numero: numero,
+
+        nome: nome,
+
+        regiao:
+            regiao || "A definir",
+
+        status:
+            "disponivel",
+
+        dirigenteAtual:
+            null,
+
+        dataEntrega:
+            null,
+
+        dataDevolucao:
+            null,
+
+        ultimaUtilizacao:
+            null,
+
+        observacoes:
+            observacao || "",
+
+        historico: []
+    };
+
+
+    territoriosAdmin.push(
+        novoTerritorio
+    );
+
+
+    territoriosAdmin.sort(
+        (a, b) =>
+            Number(a.numero) -
+            Number(b.numero)
+    );
+
+
+    fecharModaisTerritoriosAdmin();
+
+    atualizarResumoTerritoriosAdmin();
+
+    renderizarTerritoriosAdmin();
+
+
+    console.log(
+        `Harmonia Admin: Território ${numero} cadastrado.`
+    );
+}
+
 function configurarEditorTerritorios() {
 
     const pesquisa =
@@ -2523,6 +2791,36 @@ function configurarEditorTerritorios() {
         baixar.addEventListener(
             "click",
             baixarTerritoriosJSONAdmin
+        );
+    }
+        /* NOVO TERRITÓRIO */
+
+    const botaoNovoTerritorio =
+        document.querySelector(
+            "[data-admin-add-territory]"
+        );
+
+
+    if (botaoNovoTerritorio) {
+
+        botaoNovoTerritorio.addEventListener(
+            "click",
+            abrirModalNovoTerritorioAdmin
+        );
+    }
+
+
+    const formularioNovoTerritorio =
+        document.querySelector(
+            "[data-admin-territory-create-form]"
+        );
+
+
+    if (formularioNovoTerritorio) {
+
+        formularioNovoTerritorio.addEventListener(
+            "submit",
+            cadastrarTerritorioAdmin
         );
     }
 }

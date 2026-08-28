@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
 
     <meta
@@ -13,263 +15,653 @@
         content="Painel administrativo da Congregação Harmonia"
     >
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="admin.css">
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 
-    <title>Painel Administrativo | Congregação Harmonia</title>
+    <link
+        rel="stylesheet"
+        href="admin.css"
+    >
+
+    <title>
+        Painel Administrativo | Congregação Harmonia
+    </title>
+
 </head>
+
 
 <body>
 
-    <main class="admin-page">
 
-        <!-- ========================================
-             LOGIN
-        ========================================= -->
+<main class="admin-page">
 
-        <section
-            class="admin-login"
-            data-admin-login
-        >
 
-            <div class="admin-login-card">
+    <!-- ==================================================
+         LOGIN
+    =================================================== -->
 
-                <div class="admin-login-header">
+    <section
+        class="admin-login"
+        data-admin-login
+    >
 
-                    <p class="eyebrow">
-                        Congregação Harmonia
-                    </p>
+        <div class="admin-login-card">
 
-                    <h1>
-                        Painel Administrativo
-                    </h1>
 
-                    <p>
-                        Entre para administrar a programação.
-                    </p>
+            <div class="admin-login-header">
+
+                <p class="eyebrow">
+                    Congregação Harmonia
+                </p>
+
+                <h1>
+                    Painel Administrativo
+                </h1>
+
+                <p>
+                    Entre para administrar a programação.
+                </p>
+
+            </div>
+
+
+            <form
+                class="admin-login-form"
+                data-login-form
+            >
+
+                <div class="admin-field">
+
+                    <label for="admin-password">
+                        Senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="admin-password"
+                        placeholder="Digite sua senha"
+                        autocomplete="current-password"
+                        required
+                    >
 
                 </div>
 
 
-                <form
-                    class="admin-login-form"
-                    data-login-form
+                <button
+                    type="submit"
+                    class="admin-primary-button"
                 >
-
-                    <div class="admin-field">
-
-                        <label for="admin-password">
-                            Senha
-                        </label>
-
-                        <input
-                            type="password"
-                            id="admin-password"
-                            placeholder="Digite sua senha"
-                            autocomplete="current-password"
-                            required
-                        >
-
-                    </div>
+                    Entrar
+                </button>
 
 
-                    <button
-                        type="submit"
-                        class="admin-primary-button"
-                    >
-                        Entrar
-                    </button>
-
-
-                    <p
-                        class="admin-login-error"
-                        data-login-error
-                        hidden
-                    >
-                        Senha incorreta.
-                    </p>
-
-                </form>
-
-
-                <a
-                    href="index.html"
-                    class="admin-back-link"
+                <p
+                    class="admin-login-error"
+                    data-login-error
+                    hidden
                 >
-                    ← Voltar para o site
-                </a>
+                    Senha incorreta.
+                </p>
+
+            </form>
+
+
+            <a
+                href="index.html"
+                class="admin-back-link"
+            >
+                ← Voltar para o site
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         PAINEL ADMINISTRATIVO
+    =================================================== -->
+
+    <section
+        class="admin-dashboard"
+        data-admin-dashboard
+        hidden
+    >
+
+
+        <!-- CABEÇALHO -->
+
+        <header class="admin-header">
+
+            <div>
+
+                <p class="eyebrow">
+                    Administração
+                </p>
+
+                <h1>
+                    Congregação Harmonia
+                </h1>
 
             </div>
 
-        </section>
+
+            <button
+                type="button"
+                class="admin-logout-button"
+                data-admin-logout
+            >
+                Sair
+            </button>
+
+        </header>
 
 
-        <!-- ========================================
-             PAINEL
-        ========================================= -->
+
+        <!-- ==================================================
+             MENU PRINCIPAL
+        =================================================== -->
+
+        <div class="admin-content">
+
+
+            <p class="eyebrow">
+                Programação
+            </p>
+
+
+            <h2>
+                O que deseja editar?
+            </h2>
+
+
+            <div class="admin-menu">
+
+
+                <!-- MEIO DE SEMANA -->
+
+                <button
+                    type="button"
+                    class="admin-menu-card"
+                    data-admin-section="meio-semana"
+                >
+
+                    <strong>
+                        Meio de Semana
+                    </strong>
+
+                    <span>
+                        Semanas, partes e designações
+                    </span>
+
+                </button>
+
+
+
+                <!-- FINAL DE SEMANA -->
+
+                <button
+                    type="button"
+                    class="admin-menu-card"
+                    data-admin-section="final-semana"
+                >
+
+                    <strong>
+                        Final de Semana
+                    </strong>
+
+                    <span>
+                        Discurso público e Sentinela
+                    </span>
+
+                </button>
+
+
+
+                <!-- ARRANJO DE CAMPO -->
+
+                <button
+                    type="button"
+                    class="admin-menu-card"
+                    data-admin-section="arranjo-campo"
+                >
+
+                    <strong>
+                        Arranjo de Campo
+                    </strong>
+
+                    <span>
+                        Horários, dirigentes e displays
+                    </span>
+
+                </button>
+
+
+
+                <!-- ANÚNCIOS -->
+
+                <button
+                    type="button"
+                    class="admin-menu-card"
+                    data-admin-section="anuncios"
+                >
+
+                    <strong>
+                        Anúncios
+                    </strong>
+
+                    <span>
+                        Avisos exibidos na página inicial
+                    </span>
+
+                </button>
+
+
+
+                <!-- TERRITÓRIOS -->
+
+                <button
+                    type="button"
+                    class="admin-menu-card"
+                    data-admin-section="territorios"
+                >
+
+                    <strong>
+                        Territórios
+                    </strong>
+
+                    <span>
+                        Entregas, devoluções e histórico
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==================================================
+             EDITOR DE ANÚNCIOS
+        =================================================== -->
 
         <section
-            class="admin-dashboard"
-            data-admin-dashboard
+            class="admin-editor"
+            data-editor-anuncios
             hidden
         >
 
-            <!-- CABEÇALHO -->
 
-            <header class="admin-header">
+            <div class="admin-editor-header">
 
                 <div>
 
                     <p class="eyebrow">
-                        Administração
+                        Anúncios
                     </p>
 
-                    <h1>
-                        Congregação Harmonia
-                    </h1>
+                    <h2>
+                        Editar anúncios
+                    </h2>
 
                 </div>
 
 
                 <button
                     type="button"
-                    class="admin-logout-button"
-                    data-admin-logout
+                    class="admin-secondary-button"
+                    data-voltar-menu
                 >
-                    Sair
+                    Voltar
                 </button>
 
-            </header>
+            </div>
 
 
-            <!-- ====================================
-                 MENU PRINCIPAL
-            ===================================== -->
 
-            <div class="admin-content">
+            <!-- LISTA -->
 
-                <p class="eyebrow">
-                    Programação
-                </p>
-
-                <h2>
-                    O que deseja editar?
-                </h2>
+            <div
+                class="admin-announcements-list"
+                data-admin-anuncios-list
+            >
+                <!-- preenchido pelo JavaScript -->
+            </div>
 
 
-                <div class="admin-menu">
 
-                    <!-- MEIO DE SEMANA -->
+            <!-- ADICIONAR -->
 
-                    <button
-                        type="button"
-                        class="admin-menu-card"
-                        data-admin-section="meio-semana"
-                    >
-
-                        <strong>
-                            Meio de Semana
-                        </strong>
-
-                        <span>
-                            Semanas, partes e designações
-                        </span>
-
-                    </button>
+            <button
+                type="button"
+                class="admin-secondary-button"
+                data-adicionar-anuncio
+            >
+                + Adicionar anúncio
+            </button>
 
 
-                    <!-- FINAL DE SEMANA -->
 
-                    <button
-                        type="button"
-                        class="admin-menu-card"
-                        data-admin-section="final-semana"
-                    >
+            <!-- GERAR JSON -->
 
-                        <strong>
-                            Final de Semana
-                        </strong>
+            <div class="admin-actions">
 
-                        <span>
-                            Discurso público e Sentinela
-                        </span>
+                <button
+                    type="button"
+                    class="admin-primary-button"
+                    data-gerar-anuncios-json
+                >
+                    Gerar JSON
+                </button>
 
-                    </button>
+            </div>
 
 
-                    <!-- ARRANJO DE CAMPO -->
 
-                    <button
-                        type="button"
-                        class="admin-menu-card"
-                        data-admin-section="arranjo-campo"
-                    >
+            <!-- RESULTADO JSON -->
 
-                        <strong>
-                            Arranjo de Campo
-                        </strong>
+            <div
+                class="admin-json-result"
+                data-json-result
+                hidden
+            >
 
-                        <span>
-                            Horários, dirigentes e displays
-                        </span>
-
-                    </button>
+                <label for="json-anuncios">
+                    JSON gerado
+                </label>
 
 
-                    <!-- ANÚNCIOS -->
+                <textarea
+                    id="json-anuncios"
+                    data-json-output
+                    spellcheck="false"
+                ></textarea>
+
+
+                <div class="admin-actions">
 
                     <button
                         type="button"
-                        class="admin-menu-card"
-                            data-admin-section="anuncios"
+                        class="admin-secondary-button"
+                        data-copiar-json
                     >
-
-                        <strong>
-                            Anúncios
-                        </strong>
-
-                        <span>
-                            Avisos exibidos na página inicial
-                        </span>
-
+                        Copiar JSON
                     </button>
 
-                    <button
-                         type="button"
-                         class="admin-menu-card"
-                            data-admin-section="territorios"
->
-                             <strong>Territórios</strong>
 
-    <span>
-        Entregas, devoluções e histórico
-    </span>
-</button>
+                    <button
+                        type="button"
+                        class="admin-secondary-button"
+                        data-baixar-json
+                    >
+                        Baixar anuncios.json
+                    </button>
+
                 </div>
 
             </div>
 
 
-            <!-- ====================================
-                 EDITOR DE ANÚNCIOS
-            ===================================== -->
+        </section>
 
-            <section
-                class="admin-editor"
-                data-editor-anuncios
+
+
+        <!-- ==================================================
+             EDITOR DE TERRITÓRIOS
+        =================================================== -->
+
+        <section
+            class="admin-editor"
+            data-editor-territorios
+            hidden
+        >
+
+
+            <div class="admin-editor-header">
+
+                <div>
+
+                    <p class="eyebrow">
+                        Territórios
+                    </p>
+
+                    <h2>
+                        Controle de Territórios
+                    </h2>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="admin-secondary-button"
+                    data-voltar-territorios
+                >
+                    Voltar
+                </button>
+
+            </div>
+
+
+
+            <!-- RESUMO -->
+
+            <div class="admin-territory-summary">
+
+
+                <article>
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong
+                        data-admin-territory-summary="total"
+                    >
+                        —
+                    </strong>
+
+                </article>
+
+
+                <article>
+
+                    <span>
+                        Disponíveis
+                    </span>
+
+                    <strong
+                        data-admin-territory-summary="disponiveis"
+                    >
+                        —
+                    </strong>
+
+                </article>
+
+
+                <article>
+
+                    <span>
+                        Em uso
+                    </span>
+
+                    <strong
+                        data-admin-territory-summary="emUso"
+                    >
+                        —
+                    </strong>
+
+                </article>
+
+
+                <article>
+
+                    <span>
+                        Atenção
+                    </span>
+
+                    <strong
+                        data-admin-territory-summary="atencao"
+                    >
+                        —
+                    </strong>
+
+                </article>
+
+
+            </div>
+
+
+
+            <!-- PESQUISA -->
+
+            <div class="admin-form-group">
+
+                <label for="admin-territory-search">
+                    Pesquisar território
+                </label>
+
+                <input
+                    type="search"
+                    id="admin-territory-search"
+                    data-admin-territory-search
+                    placeholder="Número, nome, região ou dirigente"
+                >
+
+            </div>
+
+
+
+            <!-- LISTA -->
+
+            <div
+                class="admin-territory-list"
+                data-admin-territory-list
+            >
+                <!-- preenchido pelo JavaScript -->
+            </div>
+
+
+
+            <!-- AÇÕES -->
+
+            <div class="admin-actions">
+
+
+                <button
+                    type="button"
+                    class="admin-secondary-button"
+                    data-admin-add-territory
+                >
+                    + Cadastrar território
+                </button>
+
+
+                <button
+                    type="button"
+                    class="admin-primary-button"
+                    data-admin-generate-territories-json
+                >
+                    Gerar JSON
+                </button>
+
+
+            </div>
+
+
+
+            <!-- JSON TERRITÓRIOS -->
+
+            <div
+                class="admin-json-result"
+                data-admin-territories-json-result
                 hidden
             >
 
-                <div class="admin-editor-header">
+                <label for="admin-territories-json">
+                    JSON gerado
+                </label>
+
+
+                <textarea
+                    id="admin-territories-json"
+                    data-admin-territories-json-output
+                    spellcheck="false"
+                ></textarea>
+
+
+                <div class="admin-actions">
+
+
+                    <button
+                        type="button"
+                        class="admin-secondary-button"
+                        data-admin-copy-territories-json
+                    >
+                        Copiar JSON
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="admin-secondary-button"
+                        data-admin-download-territories-json
+                    >
+                        Baixar territorios.json
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             MODAL - NOVO TERRITÓRIO
+        =================================================== -->
+
+        <div
+            class="admin-modal"
+            data-admin-territory-create-modal
+            hidden
+        >
+
+
+            <div
+                class="admin-modal-backdrop"
+                data-admin-modal-close
+            ></div>
+
+
+            <section
+                class="admin-modal-card"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="admin-create-territory-title"
+            >
+
+
+                <header class="admin-modal-header">
+
 
                     <div>
 
                         <p class="eyebrow">
-                            Anúncios
+                            Territórios
                         </p>
 
-                        <h2>
-                            Editar anúncios
+                        <h2 id="admin-create-territory-title">
+                            Novo território
                         </h2>
 
                     </div>
@@ -277,606 +669,580 @@
 
                     <button
                         type="button"
-                        class="admin-secondary-button"
-                        data-voltar-menu
+                        class="admin-modal-close"
+                        data-admin-modal-close
+                        aria-label="Fechar"
                     >
-                        Voltar
+                        ×
                     </button>
 
-                </div>
+
+                </header>
 
 
-                <!-- LISTA DE ANÚNCIOS -->
 
-                <div
-                    class="admin-announcements-list"
-                    data-admin-anuncios-list
-                >
-                    <!-- Preenchido pelo JavaScript -->
-                </div>
-
-
-                <!-- ADICIONAR -->
-
-                <button
-                    type="button"
-                    class="admin-secondary-button"
-                    data-adicionar-anuncio
-                >
-                    + Adicionar anúncio
-                </button>
-
-
-                <!-- GERAR JSON -->
-
-                <div class="admin-actions">
-
-                    <button
-                        type="button"
-                        class="admin-primary-button"
-                        data-gerar-anuncios-json
-                    >
-                        Gerar JSON
-                    </button>
-
-                </div>
-
-
-                <!-- RESULTADO JSON -->
-
-                <div
-                    class="admin-json-result"
-                    data-json-result
-                    hidden
+                <form
+                    class="admin-modal-form"
+                    data-admin-territory-create-form
                 >
 
-                    <label for="json-anuncios">
-                        JSON gerado
-                    </label>
 
+                    <div class="admin-form-group">
 
-                    <textarea
-                        id="json-anuncios"
-                        data-json-output
-                        spellcheck="false"
-                    ></textarea>
+                        <label for="admin-territory-number">
+                            Número
+                        </label>
 
-
-                    <div class="admin-actions">
-
-                        <button
-                            type="button"
-                            class="admin-secondary-button"
-                            data-copiar-json
+                        <input
+                            type="number"
+                            id="admin-territory-number"
+                            data-admin-territory-number
+                            min="1"
+                            required
                         >
-                            Copiar JSON
-                        </button>
-
-
-                        <button
-                            type="button"
-                            class="admin-secondary-button"
-                            data-baixar-json
-                        >
-                            Baixar anuncios.json
-                        </button>
 
                     </div>
 
-                </div>
+
+
+                    <div class="admin-form-group">
+
+                        <label for="admin-territory-name">
+                            Nome
+                        </label>
+
+                        <input
+                            type="text"
+                            id="admin-territory-name"
+                            data-admin-territory-name
+                            placeholder="Ex.: Território 04"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="admin-form-group">
+
+                        <label for="admin-territory-region">
+                            Região
+                        </label>
+
+                        <input
+                            type="text"
+                            id="admin-territory-region"
+                            data-admin-territory-region
+                            placeholder="Ex.: Centro, Jardim..."
+                        >
+
+                    </div>
+
+
+
+                    <div class="admin-form-group">
+
+                        <label for="admin-territory-observation">
+                            Observações
+                        </label>
+
+                        <textarea
+                            id="admin-territory-observation"
+                            data-admin-territory-observation
+                            placeholder="Opcional"
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <div class="admin-modal-actions">
+
+
+                        <button
+                            type="button"
+                            class="admin-secondary-button"
+                            data-admin-modal-close
+                        >
+                            Cancelar
+                        </button>
+
+
+                        <button
+                            type="submit"
+                            class="admin-primary-button"
+                        >
+                            Cadastrar território
+                        </button>
+
+
+                    </div>
+
+
+                </form>
+
 
             </section>
 
+        </div>
 
-            <!-- ====================================
-                 RODAPÉ
-            ===================================== -->
-<!-- ====================================
-     MODAL - ENTREGA DE TERRITÓRIO
-===================================== -->
 
-<div
-    class="admin-modal"
-    data-admin-territory-delivery-modal
-    hidden
->
-    <div
-        class="admin-modal-backdrop"
-        data-admin-modal-close
-    ></div>
 
-    <section
-        class="admin-modal-card"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="admin-delivery-title"
-    >
-
-        <header class="admin-modal-header">
-
-            <div>
-                <p class="eyebrow">
-                    Territórios
-                </p>
-
-                <h2 id="admin-delivery-title">
-                    Entregar território
-                </h2>
-            </div>
-
-            <button
-                type="button"
-                class="admin-modal-close"
-                data-admin-modal-close
-                aria-label="Fechar"
-            >
-                ×
-            </button>
-
-        </header>
-
-
-        <form
-            class="admin-modal-form"
-            data-admin-territory-delivery-form
-        >
-
-            <input
-                type="hidden"
-                data-admin-delivery-id
-            >
-
-
-            <div class="admin-modal-info">
-
-                <span>
-                    Território
-                </span>
-
-                <strong data-admin-delivery-territory>
-                    —
-                </strong>
-
-            </div>
-
-
-            <div class="admin-form-group">
-
-                <label for="admin-delivery-leader">
-                    Dirigente
-                </label>
-
-                <input
-                    type="text"
-                    id="admin-delivery-leader"
-                    data-admin-delivery-leader
-                    placeholder="Nome do dirigente"
-                    required
-                >
-
-            </div>
-
-
-            <div class="admin-form-group">
-
-                <label for="admin-delivery-date">
-                    Data da entrega
-                </label>
-
-                <input
-                    type="date"
-                    id="admin-delivery-date"
-                    data-admin-delivery-date
-                    required
-                >
-
-            </div>
-
-
-            <div class="admin-form-group">
-
-                <label for="admin-delivery-note">
-                    Observação
-                </label>
-
-                <textarea
-                    id="admin-delivery-note"
-                    data-admin-delivery-note
-                    placeholder="Opcional"
-                ></textarea>
-
-            </div>
-
-
-            <div class="admin-modal-actions">
-
-                <button
-                    type="button"
-                    class="admin-secondary-button"
-                    data-admin-modal-close
-                >
-                    Cancelar
-                </button>
-
-                <button
-                    type="submit"
-                    class="admin-primary-button"
-                >
-                    Confirmar entrega
-                </button>
-
-            </div>
-
-        </form>
-
-    </section>
-</div>
-
-
-<!-- ====================================
-     MODAL - DEVOLUÇÃO
-===================================== -->
-
-<div
-    class="admin-modal"
-    data-admin-territory-return-modal
-    hidden
->
-    <div
-        class="admin-modal-backdrop"
-        data-admin-modal-close
-    ></div>
-
-    <section
-        class="admin-modal-card"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="admin-return-title"
-    >
-
-        <header class="admin-modal-header">
-
-            <div>
-                <p class="eyebrow">
-                    Territórios
-                </p>
-
-                <h2 id="admin-return-title">
-                    Devolver território
-                </h2>
-            </div>
-
-            <button
-                type="button"
-                class="admin-modal-close"
-                data-admin-modal-close
-                aria-label="Fechar"
-            >
-                ×
-            </button>
-
-        </header>
-
-
-        <form
-            class="admin-modal-form"
-            data-admin-territory-return-form
-        >
-
-            <input
-                type="hidden"
-                data-admin-return-id
-            >
-
-
-            <div class="admin-return-summary">
-
-                <div>
-                    <span>
-                        Território
-                    </span>
-
-                    <strong data-admin-return-territory>
-                        —
-                    </strong>
-                </div>
-
-                <div>
-                    <span>
-                        Dirigente
-                    </span>
-
-                    <strong data-admin-return-leader>
-                        —
-                    </strong>
-                </div>
-
-                <div>
-                    <span>
-                        Entregue em
-                    </span>
-
-                    <strong data-admin-return-delivery-date>
-                        —
-                    </strong>
-                </div>
-
-                <div>
-                    <span>
-                        Tempo em uso
-                    </span>
-
-                    <strong data-admin-return-days>
-                        —
-                    </strong>
-                </div>
-
-            </div>
-
-
-            <div class="admin-form-group">
-
-                <label for="admin-return-date">
-                    Data da devolução
-                </label>
-
-                <input
-                    type="date"
-                    id="admin-return-date"
-                    data-admin-return-date
-                    required
-                >
-
-            </div>
-
-
-            <div class="admin-form-group">
-
-                <label for="admin-return-note">
-                    Observação
-                </label>
-
-                <textarea
-                    id="admin-return-note"
-                    data-admin-return-note
-                    placeholder="Opcional"
-                ></textarea>
-
-            </div>
-
-
-            <div class="admin-modal-actions">
-
-                <button
-                    type="button"
-                    class="admin-secondary-button"
-                    data-admin-modal-close
-                >
-                    Cancelar
-                </button>
-
-                <button
-                    type="submit"
-                    class="admin-primary-button"
-                >
-                    Confirmar devolução
-                </button>
-
-            </div>
-
-        </form>
-
-    </section>
-</div>
-
-
-<!-- ====================================
-     MODAL - HISTÓRICO
-===================================== -->
-
-<div
-    class="admin-modal"
-    data-admin-territory-history-modal
-    hidden
->
-    <div
-        class="admin-modal-backdrop"
-        data-admin-modal-close
-    ></div>
-
-    <section
-        class="admin-modal-card admin-history-modal-card"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="admin-history-title"
-    >
-
-        <header class="admin-modal-header">
-
-            <div>
-                <p class="eyebrow">
-                    Territórios
-                </p>
-
-                <h2 id="admin-history-title">
-                    Histórico
-                </h2>
-
-                <p
-                    class="admin-history-subtitle"
-                    data-admin-history-territory
-                >
-                    —
-                </p>
-            </div>
-
-            <button
-                type="button"
-                class="admin-modal-close"
-                data-admin-modal-close
-                aria-label="Fechar"
-            >
-                ×
-            </button>
-
-        </header>
-
+        <!-- ==================================================
+             MODAL - ENTREGA
+        =================================================== -->
 
         <div
-            class="admin-history-list"
-            data-admin-history-list
+            class="admin-modal"
+            data-admin-territory-delivery-modal
+            hidden
         >
-            <!-- preenchido pelo JavaScript -->
+
+
+            <div
+                class="admin-modal-backdrop"
+                data-admin-modal-close
+            ></div>
+
+
+            <section
+                class="admin-modal-card"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="admin-delivery-title"
+            >
+
+
+                <header class="admin-modal-header">
+
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Territórios
+                        </p>
+
+                        <h2 id="admin-delivery-title">
+                            Entregar território
+                        </h2>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="admin-modal-close"
+                        data-admin-modal-close
+                        aria-label="Fechar"
+                    >
+                        ×
+                    </button>
+
+
+                </header>
+
+
+
+                <form
+                    class="admin-modal-form"
+                    data-admin-territory-delivery-form
+                >
+
+
+                    <input
+                        type="hidden"
+                        data-admin-delivery-id
+                    >
+
+
+
+                    <div class="admin-modal-info">
+
+                        <span>
+                            Território
+                        </span>
+
+                        <strong data-admin-delivery-territory>
+                            —
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="admin-form-group">
+
+                        <label for="admin-delivery-leader">
+                            Dirigente
+                        </label>
+
+                        <input
+                            type="text"
+                            id="admin-delivery-leader"
+                            data-admin-delivery-leader
+                            placeholder="Nome do dirigente"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="admin-form-group">
+
+                        <label for="admin-delivery-date">
+                            Data da entrega
+                        </label>
+
+                        <input
+                            type="date"
+                            id="admin-delivery-date"
+                            data-admin-delivery-date
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="admin-form-group">
+
+                        <label for="admin-delivery-note">
+                            Observação
+                        </label>
+
+                        <textarea
+                            id="admin-delivery-note"
+                            data-admin-delivery-note
+                            placeholder="Opcional"
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <div class="admin-modal-actions">
+
+
+                        <button
+                            type="button"
+                            class="admin-secondary-button"
+                            data-admin-modal-close
+                        >
+                            Cancelar
+                        </button>
+
+
+                        <button
+                            type="submit"
+                            class="admin-primary-button"
+                        >
+                            Confirmar entrega
+                        </button>
+
+
+                    </div>
+
+
+                </form>
+
+
+            </section>
+
         </div>
+
+
+
+        <!-- ==================================================
+             MODAL - DEVOLUÇÃO
+        =================================================== -->
+
+        <div
+            class="admin-modal"
+            data-admin-territory-return-modal
+            hidden
+        >
+
+
+            <div
+                class="admin-modal-backdrop"
+                data-admin-modal-close
+            ></div>
+
+
+            <section
+                class="admin-modal-card"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="admin-return-title"
+            >
+
+
+                <header class="admin-modal-header">
+
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Territórios
+                        </p>
+
+                        <h2 id="admin-return-title">
+                            Devolver território
+                        </h2>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="admin-modal-close"
+                        data-admin-modal-close
+                        aria-label="Fechar"
+                    >
+                        ×
+                    </button>
+
+
+                </header>
+
+
+
+                <form
+                    class="admin-modal-form"
+                    data-admin-territory-return-form
+                >
+
+
+                    <input
+                        type="hidden"
+                        data-admin-return-id
+                    >
+
+
+
+                    <div class="admin-return-summary">
+
+
+                        <div>
+
+                            <span>
+                                Território
+                            </span>
+
+                            <strong data-admin-return-territory>
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Dirigente
+                            </span>
+
+                            <strong data-admin-return-leader>
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Entregue em
+                            </span>
+
+                            <strong data-admin-return-delivery-date>
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Tempo em uso
+                            </span>
+
+                            <strong data-admin-return-days>
+                                —
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="admin-form-group">
+
+                        <label for="admin-return-date">
+                            Data da devolução
+                        </label>
+
+                        <input
+                            type="date"
+                            id="admin-return-date"
+                            data-admin-return-date
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="admin-form-group">
+
+                        <label for="admin-return-note">
+                            Observação
+                        </label>
+
+                        <textarea
+                            id="admin-return-note"
+                            data-admin-return-note
+                            placeholder="Opcional"
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <div class="admin-modal-actions">
+
+
+                        <button
+                            type="button"
+                            class="admin-secondary-button"
+                            data-admin-modal-close
+                        >
+                            Cancelar
+                        </button>
+
+
+                        <button
+                            type="submit"
+                            class="admin-primary-button"
+                        >
+                            Confirmar devolução
+                        </button>
+
+
+                    </div>
+
+
+                </form>
+
+
+            </section>
+
+        </div>
+
+
+
+        <!-- ==================================================
+             MODAL - HISTÓRICO
+        =================================================== -->
+
+        <div
+            class="admin-modal"
+            data-admin-territory-history-modal
+            hidden
+        >
+
+
+            <div
+                class="admin-modal-backdrop"
+                data-admin-modal-close
+            ></div>
+
+
+            <section
+                class="admin-modal-card admin-history-modal-card"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="admin-history-title"
+            >
+
+
+                <header class="admin-modal-header">
+
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Territórios
+                        </p>
+
+                        <h2 id="admin-history-title">
+                            Histórico
+                        </h2>
+
+                        <p
+                            class="admin-history-subtitle"
+                            data-admin-history-territory
+                        >
+                            —
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="admin-modal-close"
+                        data-admin-modal-close
+                        aria-label="Fechar"
+                    >
+                        ×
+                    </button>
+
+
+                </header>
+
+
+
+                <div
+                    class="admin-history-list"
+                    data-admin-history-list
+                >
+                    <!-- preenchido pelo JavaScript -->
+                </div>
+
+
+            </section>
+
+        </div>
+
+
+
+        <!-- ==================================================
+             RODAPÉ
+        =================================================== -->
+
+        <footer class="admin-footer">
+
+            <a href="index.html">
+                Ver site
+            </a>
+
+        </footer>
+
 
     </section>
-</div>
-            <footer class="admin-footer">
-                <section
-    class="admin-editor"
-    data-editor-territorios
-    hidden
->
-
-    <div class="admin-editor-header">
-
-        <div>
-            <p class="eyebrow">Territórios</p>
-            <h2>Controle de Territórios</h2>
-        </div>
-
-        <button
-            type="button"
-            class="admin-secondary-button"
-            data-voltar-territorios
-        >
-            Voltar
-        </button>
-
-    </div>
 
 
-    <div class="admin-territory-summary">
-
-        <article>
-            <span>Total</span>
-            <strong data-admin-territory-summary="total">—</strong>
-        </article>
-
-        <article>
-            <span>Disponíveis</span>
-            <strong data-admin-territory-summary="disponiveis">—</strong>
-        </article>
-
-        <article>
-            <span>Em uso</span>
-            <strong data-admin-territory-summary="emUso">—</strong>
-        </article>
-
-        <article>
-            <span>Atenção</span>
-            <strong data-admin-territory-summary="atencao">—</strong>
-        </article>
-
-    </div>
+</main>
 
 
-    <div class="admin-form-group">
+<script src="admin.js"></script>
 
-        <label for="admin-territory-search">
-            Pesquisar território
-        </label>
-
-        <input
-            type="search"
-            id="admin-territory-search"
-            data-admin-territory-search
-            placeholder="Número, nome, região ou dirigente"
-        >
-
-    </div>
-
-
-    <div
-        class="admin-territory-list"
-        data-admin-territory-list
-    >
-    </div>
-
-
-    <div class="admin-actions">
-
-        <button
-            type="button"
-            class="admin-secondary-button"
-            data-admin-add-territory
-        >
-            + Cadastrar território
-        </button>
-
-        <button
-            type="button"
-            class="admin-primary-button"
-            data-admin-generate-territories-json
-        >
-            Gerar JSON
-        </button>
-
-    </div>
-
-
-    <div
-        class="admin-json-result"
-        data-admin-territories-json-result
-        hidden
-    >
-
-        <label for="admin-territories-json">
-            JSON gerado
-        </label>
-
-        <textarea
-            id="admin-territories-json"
-            data-admin-territories-json-output
-            spellcheck="false"
-        ></textarea>
-
-        <div class="admin-actions">
-
-            <button
-                type="button"
-                class="admin-secondary-button"
-                data-admin-copy-territories-json
-            >
-                Copiar JSON
-            </button>
-
-            <button
-                type="button"
-                class="admin-secondary-button"
-                data-admin-download-territories-json
-            >
-                Baixar territorios.json
-            </button>
-
-        </div>
-
-    </div>
-
-</section>
-
-                <a href="index.html">
-                    Ver site
-                </a>
-
-            </footer>
-
-        </section>
-
-    </main>
-
-
-    <script src="admin.js"></script>
 
 </body>
+
 </html>
