@@ -8,27 +8,27 @@
       "periodo": "09 de Setembro",
       "leituraBiblica": "JEREMIAS 32-33",
 
-      "presidente": "Roger Aragao ",
+      "presidente": "Roger Aragao",
       "conselheiro": null,
 
       "abertura": {
         "cantico": 1,
-        "oracao": "Gustavo Maciel ",
+        "oracao": "Gustavo Maciel",
         "comentarios": "1 min"
       },
 
       "tesouros": [
         {
-          "titulo": "Meditar nas qualidades de Jeová fortalece a nossa fé ",
+          "titulo": "Meditar nas qualidades de Jeová fortalece a nossa fé",
           "subtitulo": "Discurso",
           "tempo": "10 min",
-          "designado": "Leandro Castro "
+          "designado": "Leandro Castro"
         },
         {
           "titulo": "Joias Espirituais",
           "subtitulo": "Consideração",
           "tempo": "10 min",
-          "designado": "Mauro Cunha "
+          "designado": "Mauro Cunha"
         },
         {
           "titulo": "Leitura da Bíblia",
@@ -195,57 +195,57 @@
 
     {
       "id": 3,
-      "periodo": "09 de Setembro",
-      "leituraBiblica": "JEREMIAS 32-33",
+      "periodo": "23 de Setembro",
+      "leituraBiblica": "JEREMIAS 36-37",
 
-      "presidente": "Roger Aragao ",
+      "presidente": "Javier Vaquero",
       "conselheiro": null,
 
       "abertura": {
-        "cantico": 1,
-        "oracao": "Gustavo Maciel ",
+        "cantico": 74,
+        "oracao": "Danilo Bandinelli",
         "comentarios": "1 min"
       },
 
       "tesouros": [
         {
-          "titulo": "Meditar nas qualidades de Jeová fortalece a nossa fé ",
+          "titulo": "Jeová apoia aqueles que apoiam o Seu Reino",
           "subtitulo": "Discurso",
           "tempo": "10 min",
-          "designado": "Leandro Castro "
+          "designado": "Daniel Queiroz"
         },
         {
           "titulo": "Joias Espirituais",
           "subtitulo": "Consideração",
           "tempo": "10 min",
-          "designado": "Mauro Cunha "
+          "designado": "Leandro Castro"
         },
         {
           "titulo": "Leitura da Bíblia",
-          "subtitulo": "Jer. 32:6-18 (th lição 2)",
+          "subtitulo": "Jer. 36:1-13 (th lição 10)",
           "tempo": "4 min",
-          "designado": "Alfred Malta"
+          "designado": "Heitor Pook"
         }
       ],
 
       "ministerio": [
         {
           "titulo": "Iniciando Conversa",
-          "subtitulo": "De casa em casa (Imd Licao 4 ponto 3)",
+          "subtitulo": "Testemunho Publico (Imd Licao 5 ponto 5)",
           "tempo": "3 min",
-          "designado": "Rafael Emerin / Rogerio Maciel"
+          "designado": "Maria Elisa / Juliana Silva"
         },
         {
-          "titulo": "Iniciando Conversa",
-          "subtitulo": "Testemunho Informal (Imd Licao 4 ponto 4)",
+          "titulo": "Cultivando o Interesse",
+          "subtitulo": "De casa em casa (Imd Licao 9 ponto 4)",
           "tempo": "4 min",
           "designado": "Daniela Rodel / Marcia Garcia"
         },
         {
-          "titulo": "Cultivando o Interesse",
-          "subtitulo": "De casa em casa (Imd Licao 8 ponto 3)",
-          "tempo": "5 min",
-          "designado": "Dilana Silva / Lourdes Aguiar"
+          "titulo": "O que você diria?",
+          "subtitulo": "De casa em casa (Consideracao)",
+          "tempo": "6 min",
+          "designado": "Roger Aragão"
         },
         {
           "titulo": "",
@@ -256,14 +256,14 @@
       ],
 
       "vidaCrista": {
-        "cantico": 128,
+        "cantico": 142,
 
         "partes": [
           {
-            "titulo": "Use Seu Tempo da Melhor Forma Durante a Campanha",
+            "titulo": "Continue neutro no seu coração",
             "subtitulo": "Consideração",
             "tempo": "15 min",
-            "designado": "Eduardo Nichele "
+            "designado": "Franklin Silva "
           },
           {
             "titulo": "--",
@@ -273,74 +273,74 @@
           },
           {
             "titulo": "Estudo Bíblico de Congregação",
-            "subtitulo": "Leitor do Estudo - Jeferson Isse",
+            "subtitulo": "Leitor do Estudo - Pedro Garcia",
             "tempo": "30 min",
-            "designado": "Roberto Andrade",
-            "leitor": "Jeferson Isse"
+            "designado": "Fabiano Silva",
+            "leitor": ""
           }
         ]
       },
 
       "encerramento": {
         "comentarios": "3 min",
-        "cantico": 143,
-        "oracao": "Roger Aragao "
+        "cantico": 134,
+        "oracao": "Javier Vaquero"
       }
     },
 
     {
       "id": 4,
-      "periodo": "09 de Setembro",
-      "leituraBiblica": "JEREMIAS 32-33",
+      "periodo": "30 de Setembro",
+      "leituraBiblica": "JEREMIAS 38-39",
 
-      "presidente": "Roger Aragao ",
+      "presidente": "Carlos Davi",
       "conselheiro": null,
 
       "abertura": {
-        "cantico": 1,
-        "oracao": "Gustavo Maciel ",
+        "cantico": 102,
+        "oracao": "Jeferson Isse",
         "comentarios": "1 min"
       },
 
       "tesouros": [
         {
-          "titulo": "Meditar nas qualidades de Jeová fortalece a nossa fé ",
+          "titulo": "Continuem ajudando uns aos outros",
           "subtitulo": "Discurso",
           "tempo": "10 min",
-          "designado": "Leandro Castro "
+          "designado": "Rafael Doico"
         },
         {
           "titulo": "Joias Espirituais",
           "subtitulo": "Consideração",
           "tempo": "10 min",
-          "designado": "Mauro Cunha "
+          "designado": "Gustavo Maciel"
         },
         {
           "titulo": "Leitura da Bíblia",
-          "subtitulo": "Jer. 32:6-18 (th lição 2)",
+          "subtitulo": "Jer. 38:1-13 (th lição 12)",
           "tempo": "4 min",
-          "designado": "Alfred Malta"
+          "designado": "Ruan Flores"
         }
       ],
 
       "ministerio": [
         {
           "titulo": "Iniciando Conversa",
-          "subtitulo": "De casa em casa (Imd Licao 4 ponto 3)",
+          "subtitulo": "Iniciando Conversas (Imd Licao 9 ponto 3)",
           "tempo": "3 min",
-          "designado": "Rafael Emerin / Rogerio Maciel"
-        },
-        {
-          "titulo": "Iniciando Conversa",
-          "subtitulo": "Testemunho Informal (Imd Licao 4 ponto 4)",
-          "tempo": "4 min",
-          "designado": "Daniela Rodel / Marcia Garcia"
+          "designado": "Coralda da Costa / Tatielen Rocha"
         },
         {
           "titulo": "Cultivando o Interesse",
-          "subtitulo": "De casa em casa (Imd Licao 8 ponto 3)",
-          "tempo": "5 min",
-          "designado": "Dilana Silva / Lourdes Aguiar"
+          "subtitulo": "Testemunho Informal (Imd Licao 9 ponto 5)",
+          "tempo": "4 min",
+          "designado": "Patricia Alves / Adriana Queiroz"
+        },
+        {
+          "titulo": "O que você diria?",
+          "subtitulo": "De casa em casa (Consideracao)",
+          "tempo": "6 min",
+          "designado": "Eduardo Nichele"
         },
         {
           "titulo": "",
@@ -351,14 +351,14 @@
       ],
 
       "vidaCrista": {
-        "cantico": 128,
+        "cantico": 90,
 
         "partes": [
           {
-            "titulo": "Use Seu Tempo da Melhor Forma Durante a Campanha",
+            "titulo": " “Quem me Tocou?”",
             "subtitulo": "Consideração",
             "tempo": "15 min",
-            "designado": "Eduardo Nichele "
+            "designado": "Roberto Andrade"
           },
           {
             "titulo": "--",
@@ -368,18 +368,18 @@
           },
           {
             "titulo": "Estudo Bíblico de Congregação",
-            "subtitulo": "Leitor do Estudo - Jeferson Isse",
+            "subtitulo": "Leitor do Estudo - Danilo Bandinelli",
             "tempo": "30 min",
-            "designado": "Roberto Andrade",
-            "leitor": "Jeferson Isse"
+            "designado": "Alan Garcia",
+            "leitor": ""
           }
         ]
       },
 
       "encerramento": {
         "comentarios": "3 min",
-        "cantico": 143,
-        "oracao": "Roger Aragao "
+        "cantico": 56,
+        "oracao": "Carlos Davi"
       }
     },
 
