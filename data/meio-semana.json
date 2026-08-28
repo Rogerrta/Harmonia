@@ -5,7 +5,7 @@
   "semanas": [
     {
       "id": 1,
-      "periodo": "09-09 de Setembro",
+      "periodo": "09 de Setembro",
       "leituraBiblica": "JEREMIAS 32-33",
 
       "presidente": "Roger Aragao ",
@@ -47,7 +47,102 @@
         },
         {
           "titulo": "Iniciando Conversa",
-          "subtitulo": "Testemunho Informal (Imd Licao 4 ponto 4",
+          "subtitulo": "Testemunho Informal (Imd Licao 4 ponto 4)",
+          "tempo": "4 min",
+          "designado": "Daniela Rodel / Marcia Garcia"
+        },
+        {
+          "titulo": "Cultivando o Interesse",
+          "subtitulo": "De casa em casa (Imd Licao 8 ponto 3)",
+          "tempo": "5 min",
+          "designado": "Dilana Silva / Lourdes Aguiar"
+        },
+        {
+          "titulo": "",
+          "subtitulo": "",
+          "tempo": "",
+          "designado": ""
+        }
+      ],
+
+      "vidaCrista": {
+        "cantico": 128,
+
+        "partes": [
+          {
+            "titulo": "Use Seu Tempo da Melhor Forma Durante a Campanha",
+            "subtitulo": "Consideração",
+            "tempo": "15 min",
+            "designado": "Eduardo Nichele "
+          },
+          {
+            "titulo": "--",
+            "subtitulo": "--",
+            "tempo": "--",
+            "designado": "-- "
+          },
+          {
+            "titulo": "Estudo Bíblico de Congregação",
+            "subtitulo": "Leitor do Estudo - Jeferson Isse",
+            "tempo": "30 min",
+            "designado": "Roberto Andrade",
+            "leitor": "Jeferson Isse"
+          }
+        ]
+      },
+
+      "encerramento": {
+        "comentarios": "3 min",
+        "cantico": 143,
+        "oracao": "Roger Aragao "
+      }
+    },
+
+   {
+      "id": 2,
+      "periodo": "09 de Setembro",
+      "leituraBiblica": "JEREMIAS 32-33",
+
+      "presidente": "Roger Aragao ",
+      "conselheiro": null,
+
+      "abertura": {
+        "cantico": 1,
+        "oracao": "Gustavo Maciel ",
+        "comentarios": "1 min"
+      },
+
+      "tesouros": [
+        {
+          "titulo": "Meditar nas qualidades de Jeová fortalece a nossa fé ",
+          "subtitulo": "Discurso",
+          "tempo": "10 min",
+          "designado": "Leandro Castro "
+        },
+        {
+          "titulo": "Joias Espirituais",
+          "subtitulo": "Consideração",
+          "tempo": "10 min",
+          "designado": "Mauro Cunha "
+        },
+        {
+          "titulo": "Leitura da Bíblia",
+          "subtitulo": "Jer. 32:6-18 (th lição 2)",
+          "tempo": "4 min",
+          "designado": "Alfred Malta"
+        }
+      ],
+
+      "ministerio": [
+        {
+          "titulo": "Iniciando Conversa",
+          "subtitulo": "De casa em casa (Imd Licao 4 ponto 3)",
+          "tempo": "3 min",
+          "designado": "Rafael Emerin / Rogerio Maciel"
+        },
+        {
+          "titulo": "Iniciando Conversa",
+          "subtitulo": "Testemunho Informal (Imd Licao 4 ponto 4)",
           "tempo": "4 min",
           "designado": "Daniela Rodel / Marcia Garcia"
         },
@@ -99,21 +194,193 @@
     },
 
     {
-      "id": 2,
-      "periodo": "A definir",
-      "leituraBiblica": "A definir"
-    },
-
-    {
       "id": 3,
-      "periodo": "A definir",
-      "leituraBiblica": "A definir"
+      "periodo": "09 de Setembro",
+      "leituraBiblica": "JEREMIAS 32-33",
+
+      "presidente": "Roger Aragao ",
+      "conselheiro": null,
+
+      "abertura": {
+        "cantico": 1,
+        "oracao": "Gustavo Maciel ",
+        "comentarios": "1 min"
+      },
+
+      "tesouros": [
+        {
+          "titulo": "Meditar nas qualidades de Jeová fortalece a nossa fé ",
+          "subtitulo": "Discurso",
+          "tempo": "10 min",
+          "designado": "Leandro Castro "
+        },
+        {
+          "titulo": "Joias Espirituais",
+          "subtitulo": "Consideração",
+          "tempo": "10 min",
+          "designado": "Mauro Cunha "
+        },
+        {
+          "titulo": "Leitura da Bíblia",
+          "subtitulo": "Jer. 32:6-18 (th lição 2)",
+          "tempo": "4 min",
+          "designado": "Alfred Malta"
+        }
+      ],
+
+      "ministerio": [
+        {
+          "titulo": "Iniciando Conversa",
+          "subtitulo": "De casa em casa (Imd Licao 4 ponto 3)",
+          "tempo": "3 min",
+          "designado": "Rafael Emerin / Rogerio Maciel"
+        },
+        {
+          "titulo": "Iniciando Conversa",
+          "subtitulo": "Testemunho Informal (Imd Licao 4 ponto 4)",
+          "tempo": "4 min",
+          "designado": "Daniela Rodel / Marcia Garcia"
+        },
+        {
+          "titulo": "Cultivando o Interesse",
+          "subtitulo": "De casa em casa (Imd Licao 8 ponto 3)",
+          "tempo": "5 min",
+          "designado": "Dilana Silva / Lourdes Aguiar"
+        },
+        {
+          "titulo": "",
+          "subtitulo": "",
+          "tempo": "",
+          "designado": ""
+        }
+      ],
+
+      "vidaCrista": {
+        "cantico": 128,
+
+        "partes": [
+          {
+            "titulo": "Use Seu Tempo da Melhor Forma Durante a Campanha",
+            "subtitulo": "Consideração",
+            "tempo": "15 min",
+            "designado": "Eduardo Nichele "
+          },
+          {
+            "titulo": "--",
+            "subtitulo": "--",
+            "tempo": "--",
+            "designado": "-- "
+          },
+          {
+            "titulo": "Estudo Bíblico de Congregação",
+            "subtitulo": "Leitor do Estudo - Jeferson Isse",
+            "tempo": "30 min",
+            "designado": "Roberto Andrade",
+            "leitor": "Jeferson Isse"
+          }
+        ]
+      },
+
+      "encerramento": {
+        "comentarios": "3 min",
+        "cantico": 143,
+        "oracao": "Roger Aragao "
+      }
     },
 
     {
       "id": 4,
-      "periodo": "A definir",
-      "leituraBiblica": "A definir"
+      "periodo": "09 de Setembro",
+      "leituraBiblica": "JEREMIAS 32-33",
+
+      "presidente": "Roger Aragao ",
+      "conselheiro": null,
+
+      "abertura": {
+        "cantico": 1,
+        "oracao": "Gustavo Maciel ",
+        "comentarios": "1 min"
+      },
+
+      "tesouros": [
+        {
+          "titulo": "Meditar nas qualidades de Jeová fortalece a nossa fé ",
+          "subtitulo": "Discurso",
+          "tempo": "10 min",
+          "designado": "Leandro Castro "
+        },
+        {
+          "titulo": "Joias Espirituais",
+          "subtitulo": "Consideração",
+          "tempo": "10 min",
+          "designado": "Mauro Cunha "
+        },
+        {
+          "titulo": "Leitura da Bíblia",
+          "subtitulo": "Jer. 32:6-18 (th lição 2)",
+          "tempo": "4 min",
+          "designado": "Alfred Malta"
+        }
+      ],
+
+      "ministerio": [
+        {
+          "titulo": "Iniciando Conversa",
+          "subtitulo": "De casa em casa (Imd Licao 4 ponto 3)",
+          "tempo": "3 min",
+          "designado": "Rafael Emerin / Rogerio Maciel"
+        },
+        {
+          "titulo": "Iniciando Conversa",
+          "subtitulo": "Testemunho Informal (Imd Licao 4 ponto 4)",
+          "tempo": "4 min",
+          "designado": "Daniela Rodel / Marcia Garcia"
+        },
+        {
+          "titulo": "Cultivando o Interesse",
+          "subtitulo": "De casa em casa (Imd Licao 8 ponto 3)",
+          "tempo": "5 min",
+          "designado": "Dilana Silva / Lourdes Aguiar"
+        },
+        {
+          "titulo": "",
+          "subtitulo": "",
+          "tempo": "",
+          "designado": ""
+        }
+      ],
+
+      "vidaCrista": {
+        "cantico": 128,
+
+        "partes": [
+          {
+            "titulo": "Use Seu Tempo da Melhor Forma Durante a Campanha",
+            "subtitulo": "Consideração",
+            "tempo": "15 min",
+            "designado": "Eduardo Nichele "
+          },
+          {
+            "titulo": "--",
+            "subtitulo": "--",
+            "tempo": "--",
+            "designado": "-- "
+          },
+          {
+            "titulo": "Estudo Bíblico de Congregação",
+            "subtitulo": "Leitor do Estudo - Jeferson Isse",
+            "tempo": "30 min",
+            "designado": "Roberto Andrade",
+            "leitor": "Jeferson Isse"
+          }
+        ]
+      },
+
+      "encerramento": {
+        "comentarios": "3 min",
+        "cantico": 143,
+        "oracao": "Roger Aragao "
+      }
     },
 
     {
