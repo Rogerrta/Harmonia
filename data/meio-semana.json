@@ -5,57 +5,57 @@
   "semanas": [
     {
       "id": 1,
-      "periodo": "17-23 DE AGOSTO",
-      "leituraBiblica": "JEREMIAS 26-28",
+      "periodo": "09-09 de Setembro",
+      "leituraBiblica": "JEREMIAS 32-33",
 
-      "presidente": "Daneiel ",
+      "presidente": "Roger Aragao ",
       "conselheiro": null,
 
       "abertura": {
-        "cantico": 77,
-        "oracao": "Ruan ",
+        "cantico": 1,
+        "oracao": "Gustavo Maciel ",
         "comentarios": "1 min"
       },
 
       "tesouros": [
         {
-          "titulo": "Não seja enganado por falsos profetas",
+          "titulo": "Meditar nas qualidades de Jeová fortalece a nossa fé ",
           "subtitulo": "Discurso",
           "tempo": "10 min",
-          "designado": "Fabiano "
+          "designado": "Leandro Castro "
         },
         {
           "titulo": "Joias Espirituais",
           "subtitulo": "Consideração",
           "tempo": "10 min",
-          "designado": "Rafael "
+          "designado": "Mauro Cunha "
         },
         {
           "titulo": "Leitura da Bíblia",
-          "subtitulo": "Jer. 28:5-17 (th lição 5)",
+          "subtitulo": "Jer. 32:6-18 (th lição 2)",
           "tempo": "4 min",
-          "designado": "Rian "
+          "designado": "Alfred Malta"
         }
       ],
 
       "ministerio": [
         {
           "titulo": "Iniciando Conversa",
-          "subtitulo": "Testemunho Publico",
+          "subtitulo": "De casa em casa (Imd Licao 4 ponto 3)",
           "tempo": "3 min",
-          "designado": "Adriana / teste"
+          "designado": "Rafael Emerin / Rogerio Maciel"
         },
         {
-          "titulo": "Cultivando Interesse",
-          "subtitulo": "De casa em casa ",
+          "titulo": "Iniciando Conversa",
+          "subtitulo": "Testemunho Informal (Imd Licao 4 ponto 4",
           "tempo": "4 min",
-          "designado": "Sineia / teste"
+          "designado": "Daniela Rodel / Marcia Garcia"
         },
         {
-          "titulo": "Fazendo Discipulos",
-          "subtitulo": "",
-          "tempo": "4 min",
-          "designado": "Regina / teste"
+          "titulo": "Cultivando o Interesse",
+          "subtitulo": "De casa em casa (Imd Licao 8 ponto 3)",
+          "tempo": "5 min",
+          "designado": "Dilana Silva / Lourdes Aguiar"
         },
         {
           "titulo": "",
@@ -66,35 +66,35 @@
       ],
 
       "vidaCrista": {
-        "cantico": 89,
+        "cantico": 128,
 
         "partes": [
           {
-            "titulo": "Necessidades locais",
-            "subtitulo": "Tema",
+            "titulo": "Use Seu Tempo da Melhor Forma Durante a Campanha",
+            "subtitulo": "Consideração",
             "tempo": "15 min",
-            "designado": "Daniel "
+            "designado": "Eduardo Nichele "
           },
           {
-            "titulo": "Segunda Parte",
-            "subtitulo": "Nossa Vida Cristã",
-            "tempo": "5 min",
-            "designado": "Javier "
+            "titulo": "--",
+            "subtitulo": "--",
+            "tempo": "--",
+            "designado": "-- "
           },
           {
             "titulo": "Estudo Bíblico de Congregação",
-            "subtitulo": "Leitor do Estudo - Pedro Garcia",
+            "subtitulo": "Leitor do Estudo - Jeferson Isse",
             "tempo": "30 min",
-            "designado": "Roberto",
-            "leitor": "Gustavo "
+            "designado": "Roberto Andrade",
+            "leitor": "Jeferson Isse"
           }
         ]
       },
 
       "encerramento": {
         "comentarios": "3 min",
-        "cantico": 56,
-        "oracao": "Pedro "
+        "cantico": 143,
+        "oracao": "Roger Aragao "
       }
     },
 
