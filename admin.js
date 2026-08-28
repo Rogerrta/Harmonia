@@ -185,6 +185,7 @@ function iniciarAdmin() {
 
     configurarMenuAdmin();
     configurarEditorAnuncios();
+    configurarEditorTerritorios();
 }
 
 
@@ -272,7 +273,12 @@ function configurarMenuAdmin() {
 
                     return;
                 }
-
+                if (secao === "territorios") {
+                
+                    abrirEditorTerritorios();
+                    
+                    return;
+                }
 
                 /*
                  * As demais seções serão
@@ -1232,6 +1238,1291 @@ function configurarEditorAnuncios() {
         voltar.addEventListener(
             "click",
             voltarMenuAdmin
+        );
+    }
+}
+/* =====================================================
+   ADMIN - TERRITÓRIOS
+===================================================== */
+
+let territoriosAdmin = [];
+
+let configuracaoTerritoriosAdmin = {
+    diasUsoProlongado: 30,
+    diasSemUsoAlerta: 90
+};
+
+
+/* =====================================================
+   ABRIR EDITOR
+===================================================== */
+
+async function abrirEditorTerritorios() {
+
+    const conteudo =
+        document.querySelector(
+            ".admin-content"
+        );
+
+    const editorAnuncios =
+        document.querySelector(
+            "[data-editor-anuncios]"
+        );
+
+    const editorTerritorios =
+        document.querySelector(
+            "[data-editor-territorios]"
+        );
+
+
+    if (!editorTerritorios) {
+
+        console.error(
+            "Harmonia Admin: editor de territórios não encontrado."
+        );
+
+        return;
+    }
+
+
+    if (conteudo) {
+        conteudo.hidden = true;
+    }
+
+
+    if (editorAnuncios) {
+        editorAnuncios.hidden = true;
+    }
+
+
+    editorTerritorios.hidden = false;
+
+
+    await carregarTerritoriosAdmin();
+}
+
+
+/* =====================================================
+   CARREGAR JSON
+===================================================== */
+
+async function carregarTerritoriosAdmin() {
+
+    try {
+
+        const resposta =
+            await fetch(
+                `data/territorios.json?v=${Date.now()}`
+            );
+
+
+        if (!resposta.ok) {
+            throw new Error(
+                `HTTP ${resposta.status}`
+            );
+        }
+
+
+        const dados =
+            await resposta.json();
+
+
+        configuracaoTerritoriosAdmin = {
+            ...configuracaoTerritoriosAdmin,
+            ...(dados.configuracao || {})
+        };
+
+
+        territoriosAdmin =
+            Array.isArray(dados.territorios)
+                ? dados.territorios.map(
+                    territorio => ({
+                        ...territorio,
+                        historico:
+                            Array.isArray(
+                                territorio.historico
+                            )
+                                ? territorio.historico.map(
+                                    item => ({
+                                        ...item
+                                    })
+                                )
+                                : []
+                    })
+                )
+                : [];
+
+
+        atualizarResumoTerritoriosAdmin();
+
+        renderizarTerritoriosAdmin();
+
+
+        console.log(
+            `Harmonia Admin: ${territoriosAdmin.length} território(s) carregado(s).`
+        );
+
+    } catch (erro) {
+
+        console.error(
+            "Erro ao carregar territórios:",
+            erro
+        );
+
+
+        territoriosAdmin = [];
+
+        atualizarResumoTerritoriosAdmin();
+
+        renderizarTerritoriosAdmin();
+    }
+}
+
+
+/* =====================================================
+   RESUMO
+===================================================== */
+
+function atualizarResumoTerritoriosAdmin() {
+
+    const total =
+        territoriosAdmin.length;
+
+
+    const disponiveis =
+        territoriosAdmin.filter(
+            territorio =>
+                territorio.status === "disponivel"
+        ).length;
+
+
+    const emUso =
+        territoriosAdmin.filter(
+            territorio =>
+                territorio.status === "em-uso"
+        ).length;
+
+
+    const atencao =
+        territoriosAdmin.filter(
+            territorio =>
+                territorioEmAtencaoAdmin(
+                    territorio
+                )
+        ).length;
+
+
+    preencherResumoTerritoriosAdmin(
+        "total",
+        total
+    );
+
+    preencherResumoTerritoriosAdmin(
+        "disponiveis",
+        disponiveis
+    );
+
+    preencherResumoTerritoriosAdmin(
+        "emUso",
+        emUso
+    );
+
+    preencherResumoTerritoriosAdmin(
+        "atencao",
+        atencao
+    );
+}
+
+
+function preencherResumoTerritoriosAdmin(
+    campo,
+    valor
+) {
+
+    const elemento =
+        document.querySelector(
+            `[data-admin-territory-summary="${campo}"]`
+        );
+
+
+    if (elemento) {
+        elemento.textContent =
+            valor;
+    }
+}
+
+
+/* =====================================================
+   RENDERIZAR LISTA
+===================================================== */
+
+function renderizarTerritoriosAdmin() {
+
+    const container =
+        document.querySelector(
+            "[data-admin-territory-list]"
+        );
+
+
+    if (!container) {
+        return;
+    }
+
+
+    const pesquisa =
+        obterPesquisaTerritoriosAdmin();
+
+
+    const lista =
+        territoriosAdmin.filter(
+            territorio =>
+                correspondePesquisaTerritoriosAdmin(
+                    territorio,
+                    pesquisa
+                )
+        );
+
+
+    container.innerHTML = "";
+
+
+    if (lista.length === 0) {
+
+        const vazio =
+            document.createElement("div");
+
+
+        vazio.className =
+            "admin-territory-empty";
+
+
+        vazio.textContent =
+            "Nenhum território encontrado.";
+
+
+        container.appendChild(
+            vazio
+        );
+
+
+        return;
+    }
+
+
+    lista.forEach(
+        territorio => {
+
+            const card =
+                criarCardTerritorioAdmin(
+                    territorio
+                );
+
+
+            container.appendChild(
+                card
+            );
+        }
+    );
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+function criarCardTerritorioAdmin(
+    territorio
+) {
+
+    const card =
+        document.createElement(
+            "article"
+        );
+
+
+    card.className =
+        "admin-territory-card";
+
+
+    const emUso =
+        territorio.status === "em-uso";
+
+
+    const statusClasse =
+        emUso
+            ? "in-use"
+            : "available";
+
+
+    const statusTexto =
+        emUso
+            ? "Em uso"
+            : "Disponível";
+
+
+    const diasEmUso =
+        calcularDiasTerritorioAdmin(
+            territorio.dataEntrega
+        );
+
+
+    const ultimaUtilizacao =
+        territorio.ultimaUtilizacao
+            ? formatarDataAdmin(
+                territorio.ultimaUtilizacao
+            )
+            : "Nunca utilizado";
+
+
+    card.innerHTML = `
+        <div class="admin-territory-card-header">
+
+            <div class="admin-territory-card-title">
+
+                <span>
+                    Território ${escaparHTML(
+                        territorio.numero || territorio.id
+                    )}
+                </span>
+
+                <strong>
+                    ${escaparHTML(
+                        territorio.nome || "Território"
+                    )}
+                </strong>
+
+                <p>
+                    ${escaparHTML(
+                        territorio.regiao || "Região não definida"
+                    )}
+                </p>
+
+            </div>
+
+
+            <span
+                class="admin-territory-status ${statusClasse}"
+            >
+                ${statusTexto}
+            </span>
+
+        </div>
+
+
+        <div class="admin-territory-card-info">
+
+            <div class="admin-territory-info">
+
+                <span>
+                    ${
+                        emUso
+                            ? "Dirigente"
+                            : "Última utilização"
+                    }
+                </span>
+
+                <strong>
+                    ${
+                        emUso
+                            ? escaparHTML(
+                                territorio.dirigenteAtual || "A definir"
+                            )
+                            : ultimaUtilizacao
+                    }
+                </strong>
+
+            </div>
+
+
+            <div class="admin-territory-info">
+
+                <span>
+                    ${
+                        emUso
+                            ? "Em uso há"
+                            : "Histórico"
+                    }
+                </span>
+
+                <strong>
+                    ${
+                        emUso
+                            ? formatarDiasAdmin(
+                                diasEmUso
+                            )
+                            : `${
+                                Array.isArray(
+                                    territorio.historico
+                                )
+                                    ? territorio.historico.length
+                                    : 0
+                            } movimentação(ões)`
+                    }
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="admin-territory-card-actions">
+
+            <button
+                type="button"
+                class="admin-territory-button"
+                data-admin-territory-history="${territorio.id}"
+            >
+                Histórico
+            </button>
+
+
+            ${
+                emUso
+                    ? `
+                        <button
+                            type="button"
+                            class="admin-territory-button primary"
+                            data-admin-territory-return="${territorio.id}"
+                        >
+                            Devolver
+                        </button>
+                    `
+                    : `
+                        <button
+                            type="button"
+                            class="admin-territory-button primary"
+                            data-admin-territory-deliver="${territorio.id}"
+                        >
+                            Entregar
+                        </button>
+                    `
+            }
+
+        </div>
+    `;
+
+
+    configurarAcoesTerritorioAdmin(
+        card,
+        territorio
+    );
+
+
+    return card;
+}
+
+
+/* =====================================================
+   AÇÕES
+===================================================== */
+
+function configurarAcoesTerritorioAdmin(
+    card,
+    territorio
+) {
+
+    const entregar =
+        card.querySelector(
+            "[data-admin-territory-deliver]"
+        );
+
+
+    if (entregar) {
+
+        entregar.addEventListener(
+            "click",
+            () => {
+
+                const dirigente =
+                    prompt(
+                        `Dirigente para o Território ${territorio.numero}:`
+                    );
+
+
+                if (!dirigente) {
+                    return;
+                }
+
+
+                const data =
+                    prompt(
+                        "Data da entrega (AAAA-MM-DD):",
+                        obterDataHojeAdmin()
+                    );
+
+
+                if (!data) {
+                    return;
+                }
+
+
+                territorio.status =
+                    "em-uso";
+
+
+                territorio.dirigenteAtual =
+                    dirigente.trim();
+
+
+                territorio.dataEntrega =
+                    data;
+
+
+                territorio.dataDevolucao =
+                    null;
+
+
+                territorio.ultimaUtilizacao =
+                    data;
+
+
+                if (
+                    !Array.isArray(
+                        territorio.historico
+                    )
+                ) {
+                    territorio.historico = [];
+                }
+
+
+                territorio.historico.push({
+                    entregueEm: data,
+                    devolvidoEm: null,
+                    dirigente:
+                        dirigente.trim(),
+                    observacaoEntrega: "",
+                    observacaoDevolucao: ""
+                });
+
+
+                atualizarResumoTerritoriosAdmin();
+
+                renderizarTerritoriosAdmin();
+            }
+        );
+    }
+
+
+    const devolver =
+        card.querySelector(
+            "[data-admin-territory-return]"
+        );
+
+
+    if (devolver) {
+
+        devolver.addEventListener(
+            "click",
+            () => {
+
+                const data =
+                    prompt(
+                        "Data da devolução (AAAA-MM-DD):",
+                        obterDataHojeAdmin()
+                    );
+
+
+                if (!data) {
+                    return;
+                }
+
+
+                if (
+                    territorio.dataEntrega &&
+                    data <
+                        territorio.dataEntrega
+                ) {
+
+                    alert(
+                        "A data da devolução não pode ser anterior à data da entrega."
+                    );
+
+                    return;
+                }
+
+
+                const movimentoAberto =
+                    [...territorio.historico]
+                        .reverse()
+                        .find(
+                            item =>
+                                !item.devolvidoEm
+                        );
+
+
+                if (movimentoAberto) {
+
+                    movimentoAberto
+                        .devolvidoEm =
+                            data;
+                }
+
+
+                territorio.status =
+                    "disponivel";
+
+
+                territorio.dataDevolucao =
+                    data;
+
+
+                territorio.ultimaUtilizacao =
+                    data;
+
+
+                territorio.dirigenteAtual =
+                    null;
+
+
+                territorio.dataEntrega =
+                    null;
+
+
+                atualizarResumoTerritoriosAdmin();
+
+                renderizarTerritoriosAdmin();
+            }
+        );
+    }
+
+
+    const historico =
+        card.querySelector(
+            "[data-admin-territory-history]"
+        );
+
+
+    if (historico) {
+
+        historico.addEventListener(
+            "click",
+            () => {
+
+                mostrarHistoricoTerritorioAdmin(
+                    territorio
+                );
+            }
+        );
+    }
+}
+
+
+/* =====================================================
+   HISTÓRICO
+===================================================== */
+
+function mostrarHistoricoTerritorioAdmin(
+    territorio
+) {
+
+    const historico =
+        Array.isArray(
+            territorio.historico
+        )
+            ? territorio.historico
+            : [];
+
+
+    if (historico.length === 0) {
+
+        alert(
+            `Território ${territorio.numero}\n\nNenhuma movimentação registrada.`
+        );
+
+        return;
+    }
+
+
+    const linhas = [
+        `Território ${territorio.numero}`,
+        "",
+        "HISTÓRICO",
+        ""
+    ];
+
+
+    historico
+        .slice()
+        .reverse()
+        .forEach(
+            movimento => {
+
+                linhas.push(
+                    `${
+                        formatarDataAdmin(
+                            movimento.entregueEm
+                        )
+                    } → ${
+                        movimento.devolvidoEm
+                            ? formatarDataAdmin(
+                                movimento.devolvidoEm
+                            )
+                            : "Em uso"
+                    }`
+                );
+
+
+                linhas.push(
+                    `Dirigente: ${
+                        movimento.dirigente || "—"
+                    }`
+                );
+
+
+                linhas.push("");
+            }
+        );
+
+
+    alert(
+        linhas.join("\n")
+    );
+}
+
+
+/* =====================================================
+   PESQUISA
+===================================================== */
+
+function obterPesquisaTerritoriosAdmin() {
+
+    const campo =
+        document.querySelector(
+            "[data-admin-territory-search]"
+        );
+
+
+    return normalizarTextoAdmin(
+        campo?.value || ""
+    );
+}
+
+
+function correspondePesquisaTerritoriosAdmin(
+    territorio,
+    pesquisa
+) {
+
+    if (!pesquisa) {
+        return true;
+    }
+
+
+    const texto =
+        normalizarTextoAdmin(
+            [
+                territorio.numero,
+                territorio.nome,
+                territorio.regiao,
+                territorio.dirigenteAtual
+            ]
+                .filter(Boolean)
+                .join(" ")
+        );
+
+
+    return texto.includes(
+        pesquisa
+    );
+}
+
+
+/* =====================================================
+   GERAR JSON
+===================================================== */
+
+function gerarTerritoriosJSONAdmin() {
+
+    const dados = {
+
+        configuracao:
+            configuracaoTerritoriosAdmin,
+
+        territorios:
+            territoriosAdmin
+    };
+
+
+    const json =
+        JSON.stringify(
+            dados,
+            null,
+            2
+        );
+
+
+    const resultado =
+        document.querySelector(
+            "[data-admin-territories-json-result]"
+        );
+
+
+    const output =
+        document.querySelector(
+            "[data-admin-territories-json-output]"
+        );
+
+
+    if (
+        !resultado ||
+        !output
+    ) {
+        return;
+    }
+
+
+    output.value =
+        json;
+
+
+    resultado.hidden =
+        false;
+}
+
+
+/* =====================================================
+   COPIAR JSON
+===================================================== */
+
+async function copiarTerritoriosJSONAdmin() {
+
+    const output =
+        document.querySelector(
+            "[data-admin-territories-json-output]"
+        );
+
+
+    if (
+        !output ||
+        !output.value
+    ) {
+        return;
+    }
+
+
+    try {
+
+        await navigator.clipboard
+            .writeText(
+                output.value
+            );
+
+
+        alert(
+            "JSON copiado."
+        );
+
+    } catch (erro) {
+
+        console.error(
+            erro
+        );
+
+
+        output.select();
+    }
+}
+
+
+/* =====================================================
+   BAIXAR JSON
+===================================================== */
+
+function baixarTerritoriosJSONAdmin() {
+
+    const output =
+        document.querySelector(
+            "[data-admin-territories-json-output]"
+        );
+
+
+    if (
+        !output ||
+        !output.value
+    ) {
+
+        alert(
+            "Primeiro clique em Gerar JSON."
+        );
+
+        return;
+    }
+
+
+    const blob =
+        new Blob(
+            [output.value],
+            {
+                type:
+                    "application/json;charset=utf-8"
+            }
+        );
+
+
+    const url =
+        URL.createObjectURL(
+            blob
+        );
+
+
+    const link =
+        document.createElement("a");
+
+
+    link.href =
+        url;
+
+
+    link.download =
+        "territorios.json";
+
+
+    document.body.appendChild(
+        link
+    );
+
+
+    link.click();
+
+    link.remove();
+
+
+    setTimeout(
+        () =>
+            URL.revokeObjectURL(
+                url
+            ),
+        100
+    );
+}
+
+
+/* =====================================================
+   VOLTAR AO MENU
+===================================================== */
+
+function voltarTerritoriosAdmin() {
+
+    const editor =
+        document.querySelector(
+            "[data-editor-territorios]"
+        );
+
+
+    const conteudo =
+        document.querySelector(
+            ".admin-content"
+        );
+
+
+    const resultado =
+        document.querySelector(
+            "[data-admin-territories-json-result]"
+        );
+
+
+    if (editor) {
+        editor.hidden = true;
+    }
+
+
+    if (resultado) {
+        resultado.hidden = true;
+    }
+
+
+    if (conteudo) {
+        conteudo.hidden = false;
+    }
+}
+
+
+/* =====================================================
+   UTILIDADES
+===================================================== */
+
+function territorioEmAtencaoAdmin(
+    territorio
+) {
+
+    if (
+        territorio.status ===
+        "em-uso"
+    ) {
+
+        const dias =
+            calcularDiasTerritorioAdmin(
+                territorio.dataEntrega
+            );
+
+
+        return (
+            dias !== null &&
+            dias >=
+                configuracaoTerritoriosAdmin
+                    .diasUsoProlongado
+        );
+    }
+
+
+    if (
+        territorio.ultimaUtilizacao
+    ) {
+
+        const dias =
+            calcularDiasTerritorioAdmin(
+                territorio.ultimaUtilizacao
+            );
+
+
+        return (
+            dias !== null &&
+            dias >=
+                configuracaoTerritoriosAdmin
+                    .diasSemUsoAlerta
+        );
+    }
+
+
+    return false;
+}
+
+
+function calcularDiasTerritorioAdmin(
+    data
+) {
+
+    if (!data) {
+        return null;
+    }
+
+
+    const inicio =
+        criarDataAdmin(
+            data
+        );
+
+
+    const fim =
+        criarDataAdmin(
+            obterDataHojeAdmin()
+        );
+
+
+    if (
+        !inicio ||
+        !fim
+    ) {
+        return null;
+    }
+
+
+    return Math.max(
+        0,
+        Math.floor(
+            (
+                fim.getTime() -
+                inicio.getTime()
+            ) /
+            86400000
+        )
+    );
+}
+
+
+function criarDataAdmin(
+    valor
+) {
+
+    const partes =
+        String(valor)
+            .split("-")
+            .map(Number);
+
+
+    if (
+        partes.length !== 3
+    ) {
+        return null;
+    }
+
+
+    return new Date(
+        partes[0],
+        partes[1] - 1,
+        partes[2]
+    );
+}
+
+
+function obterDataHojeAdmin() {
+
+    const agora =
+        new Date();
+
+
+    const ano =
+        agora.getFullYear();
+
+
+    const mes =
+        String(
+            agora.getMonth() + 1
+        ).padStart(
+            2,
+            "0"
+        );
+
+
+    const dia =
+        String(
+            agora.getDate()
+        ).padStart(
+            2,
+            "0"
+        );
+
+
+    return `${ano}-${mes}-${dia}`;
+}
+
+
+function formatarDataAdmin(
+    valor
+) {
+
+    if (!valor) {
+        return "—";
+    }
+
+
+    const partes =
+        valor.split("-");
+
+
+    return partes.length === 3
+        ? `${partes[2]}/${partes[1]}/${partes[0]}`
+        : valor;
+}
+
+
+function formatarDiasAdmin(
+    dias
+) {
+
+    if (dias === null) {
+        return "—";
+    }
+
+
+    if (dias === 0) {
+        return "Hoje";
+    }
+
+
+    if (dias === 1) {
+        return "1 dia";
+    }
+
+
+    return `${dias} dias`;
+}
+
+
+function normalizarTextoAdmin(
+    texto
+) {
+
+    return String(
+        texto || ""
+    )
+        .normalize("NFD")
+        .replace(
+            /[\u0300-\u036f]/g,
+            ""
+        )
+        .toLowerCase()
+        .trim();
+}
+
+
+/* =====================================================
+   EVENTOS DO EDITOR DE TERRITÓRIOS
+===================================================== */
+
+function configurarEditorTerritorios() {
+
+    const pesquisa =
+        document.querySelector(
+            "[data-admin-territory-search]"
+        );
+
+
+    if (pesquisa) {
+
+        pesquisa.addEventListener(
+            "input",
+            renderizarTerritoriosAdmin
+        );
+    }
+
+
+    const voltar =
+        document.querySelector(
+            "[data-voltar-territorios]"
+        );
+
+
+    if (voltar) {
+
+        voltar.addEventListener(
+            "click",
+            voltarTerritoriosAdmin
+        );
+    }
+
+
+    const gerar =
+        document.querySelector(
+            "[data-admin-generate-territories-json]"
+        );
+
+
+    if (gerar) {
+
+        gerar.addEventListener(
+            "click",
+            gerarTerritoriosJSONAdmin
+        );
+    }
+
+
+    const copiar =
+        document.querySelector(
+            "[data-admin-copy-territories-json]"
+        );
+
+
+    if (copiar) {
+
+        copiar.addEventListener(
+            "click",
+            copiarTerritoriosJSONAdmin
+        );
+    }
+
+
+    const baixar =
+        document.querySelector(
+            "[data-admin-download-territories-json]"
+        );
+
+
+    if (baixar) {
+
+        baixar.addEventListener(
+            "click",
+            baixarTerritoriosJSONAdmin
         );
     }
 }

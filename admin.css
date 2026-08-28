@@ -893,3 +893,662 @@
         grid-column: auto;
     }
 }
+/* =====================================================
+   ADMIN - TERRITÓRIOS
+===================================================== */
+
+.admin-territory-summary {
+    margin-bottom: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 10px;
+}
+
+.admin-territory-summary article {
+    padding: 14px 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+    background: #f7f9fa;
+
+    border: 1px solid var(--border, #dfe5ea);
+    border-radius: 10px;
+}
+
+.admin-territory-summary span {
+    color: var(--text-soft, #697784);
+
+    font-size: 0.62rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.admin-territory-summary strong {
+    color: var(--text, #1f2933);
+
+    font-size: 1.35rem;
+    line-height: 1;
+}
+
+
+.admin-territory-list {
+    margin-top: 18px;
+
+    display: grid;
+
+    gap: 10px;
+}
+
+
+.admin-territory-card {
+    padding: 16px;
+
+    background: #ffffff;
+
+    border: 1px solid var(--border, #dfe5ea);
+    border-radius: 11px;
+}
+
+
+.admin-territory-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 14px;
+}
+
+
+.admin-territory-card-title span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: var(--primary, #315b7d);
+
+    font-size: 0.62rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+
+.admin-territory-card-title strong {
+    display: block;
+
+    color: var(--text, #1f2933);
+
+    font-size: 0.9rem;
+}
+
+
+.admin-territory-card-title p {
+    margin: 3px 0 0;
+
+    color: var(--text-soft, #697784);
+
+    font-size: 0.74rem;
+}
+
+
+.admin-territory-status {
+    padding: 5px 8px;
+
+    flex-shrink: 0;
+
+    font-size: 0.58rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    border-radius: 999px;
+}
+
+
+.admin-territory-status.available {
+    color: #276749;
+
+    background: #f0fff4;
+
+    border: 1px solid #c6f6d5;
+}
+
+
+.admin-territory-status.in-use {
+    color: #315b7d;
+
+    background: #edf5fb;
+
+    border: 1px solid #cfe0ec;
+}
+
+
+.admin-territory-status.warning {
+    color: #975a16;
+
+    background: #fffaf0;
+
+    border: 1px solid #fbd38d;
+}
+
+
+.admin-territory-card-info {
+    margin-top: 12px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 8px;
+}
+
+
+.admin-territory-info {
+    padding: 9px 10px;
+
+    background: #fafbfc;
+
+    border: 1px solid rgba(223, 229, 234, 0.75);
+    border-radius: 8px;
+}
+
+
+.admin-territory-info span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: var(--text-soft, #697784);
+
+    font-size: 0.58rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+
+.admin-territory-info strong {
+    color: var(--text, #1f2933);
+
+    font-size: 0.76rem;
+}
+
+
+.admin-territory-card-actions {
+    margin-top: 12px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.admin-territory-button {
+    min-height: 36px;
+
+    padding: 0 12px;
+
+    color: var(--primary, #315b7d);
+
+    font-family: inherit;
+    font-size: 0.72rem;
+    font-weight: 600;
+
+    background: #ffffff;
+
+    border: 1px solid var(--border, #dfe5ea);
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+
+.admin-territory-button.primary {
+    color: #ffffff;
+
+    background: var(--primary, #315b7d);
+
+    border-color: var(--primary, #315b7d);
+}
+
+
+.admin-territory-empty {
+    padding: 20px;
+
+    text-align: center;
+
+    color: var(--text-soft, #697784);
+
+    font-size: 0.78rem;
+
+    border: 1px dashed var(--border, #dfe5ea);
+    border-radius: 10px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .admin-territory-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .admin-territory-card-info {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-territory-card-actions {
+        flex-direction: column;
+    }
+
+    .admin-territory-button {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 390px) {
+
+    .admin-territory-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-territory-card-header {
+        flex-direction: column;
+    }
+}
+/* =====================================================
+   ADMIN - MODAIS DE TERRITÓRIOS
+===================================================== */
+
+.admin-modal {
+    position: fixed;
+    inset: 0;
+
+    z-index: 2000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.admin-modal[hidden] {
+    display: none;
+}
+
+.admin-modal-backdrop {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(20, 32, 42, 0.58);
+
+    backdrop-filter: blur(3px);
+}
+
+.admin-modal-card {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 520px;
+    max-height: calc(100vh - 40px);
+
+    overflow-y: auto;
+
+    background: var(--surface, #ffffff);
+
+    border: 1px solid var(--border, #dfe5ea);
+    border-radius: 16px;
+
+    box-shadow:
+        0 24px 60px rgba(20, 32, 42, 0.22);
+}
+
+
+/* =====================================================
+   CABEÇALHO DO MODAL
+===================================================== */
+
+.admin-modal-header {
+    padding: 22px 22px 18px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-bottom: 1px solid var(--border, #dfe5ea);
+}
+
+.admin-modal-header .eyebrow {
+    margin: 0 0 5px;
+}
+
+.admin-modal-header h2 {
+    margin: 0;
+
+    color: var(--text, #1f2933);
+
+    font-size: 1.25rem;
+    line-height: 1.25;
+}
+
+.admin-modal-close {
+    width: 36px;
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    color: var(--text-soft, #697784);
+
+    font-family: inherit;
+    font-size: 1.45rem;
+    line-height: 1;
+
+    background: #f7f9fa;
+
+    border: 1px solid var(--border, #dfe5ea);
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.admin-modal-close:hover {
+    color: var(--text, #1f2933);
+
+    background: #ffffff;
+
+    border-color: #bdcad4;
+}
+
+
+/* =====================================================
+   FORMULÁRIOS
+===================================================== */
+
+.admin-modal-form {
+    padding: 22px;
+
+    display: grid;
+
+    gap: 18px;
+}
+
+.admin-modal-info {
+    padding: 14px 16px;
+
+    background: #f7f9fa;
+
+    border: 1px solid var(--border, #dfe5ea);
+    border-radius: 10px;
+}
+
+.admin-modal-info span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: var(--text-soft, #697784);
+
+    font-size: 0.63rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.admin-modal-info strong {
+    color: var(--text, #1f2933);
+
+    font-size: 0.92rem;
+}
+
+
+/* =====================================================
+   RESUMO DA DEVOLUÇÃO
+===================================================== */
+
+.admin-return-summary {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 9px;
+}
+
+.admin-return-summary > div {
+    min-width: 0;
+
+    padding: 12px;
+
+    background: #f7f9fa;
+
+    border: 1px solid var(--border, #dfe5ea);
+    border-radius: 9px;
+}
+
+.admin-return-summary span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: var(--text-soft, #697784);
+
+    font-size: 0.59rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.admin-return-summary strong {
+    display: block;
+
+    color: var(--text, #1f2933);
+
+    font-size: 0.79rem;
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =====================================================
+   AÇÕES DOS MODAIS
+===================================================== */
+
+.admin-modal-actions {
+    padding-top: 4px;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    gap: 9px;
+}
+
+.admin-modal-actions .admin-primary-button,
+.admin-modal-actions .admin-secondary-button {
+    min-width: 130px;
+}
+
+
+/* =====================================================
+   HISTÓRICO
+===================================================== */
+
+.admin-history-modal-card {
+    max-width: 620px;
+}
+
+.admin-history-subtitle {
+    margin: 5px 0 0;
+
+    color: var(--text-soft, #697784);
+
+    font-size: 0.78rem;
+}
+
+.admin-history-list {
+    padding: 20px 22px 22px;
+
+    display: grid;
+
+    gap: 10px;
+}
+
+.admin-history-item {
+    padding: 14px 16px;
+
+    background: #f7f9fa;
+
+    border: 1px solid var(--border, #dfe5ea);
+    border-radius: 10px;
+}
+
+.admin-history-item-header {
+    margin-bottom: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+}
+
+.admin-history-item-header strong {
+    color: var(--text, #1f2933);
+
+    font-size: 0.82rem;
+}
+
+.admin-history-item-header span {
+    color: var(--text-soft, #697784);
+
+    font-size: 0.68rem;
+}
+
+.admin-history-item p {
+    margin: 3px 0 0;
+
+    color: var(--text-soft, #697784);
+
+    font-size: 0.75rem;
+    line-height: 1.45;
+}
+
+.admin-history-empty {
+    padding: 24px 18px;
+
+    text-align: center;
+
+    color: var(--text-soft, #697784);
+
+    font-size: 0.78rem;
+
+    border: 1px dashed var(--border, #dfe5ea);
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   MODAL ABERTO
+===================================================== */
+
+body.admin-modal-open {
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .admin-modal {
+        padding: 12px;
+
+        align-items: flex-end;
+    }
+
+    .admin-modal-card {
+        max-height: calc(100vh - 24px);
+
+        border-radius: 15px 15px 10px 10px;
+    }
+
+    .admin-modal-header {
+        padding: 18px 16px 15px;
+    }
+
+    .admin-modal-header h2 {
+        font-size: 1.1rem;
+    }
+
+    .admin-modal-close {
+        width: 34px;
+        height: 34px;
+
+        font-size: 1.3rem;
+    }
+
+    .admin-modal-form {
+        padding: 17px 16px;
+
+        gap: 15px;
+    }
+
+    .admin-return-summary {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .admin-modal-actions {
+        flex-direction: column-reverse;
+    }
+
+    .admin-modal-actions .admin-primary-button,
+    .admin-modal-actions .admin-secondary-button {
+        width: 100%;
+    }
+
+    .admin-history-list {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .admin-return-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-history-item-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
