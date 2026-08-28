@@ -5,34 +5,34 @@
   "semanas": [
     {
       "id": 1,
-      "data": "18-08-26",
+      "data": "29 de Setembro",
 
-      "presidente": "Roger Aragao",
+      "presidente": "Franklin Silva",
 
       "abertura": {
-        "cantico": 67,
-        "oracao": "Joao Pires"
+        "cantico": 153,
+        "oracao": "Franklin Silva"
       },
 
       "discursoPublico": {
         "tempo": "30 min",
         "numero": 28,
-        "tema": "Obedeca a Jeova",
-        "orador": "Rafael",
-        "congregacao": "Central - Lageado"
+        "tema": "O que vai acontecer em breve?",
+        "orador": "Jose Carlos Rossi",
+        "congregacao": "Oeste - Esteio"
       },
 
       "sentinela": {
         "tempo": "60 min",
-        "artigo": "Sabedoria de Jeova",
-        "tema": "A definir",
-        "dirigente": "Davi",
-        "leitor": "Lucad Isse"
+        "artigo": "Nosso grupo de servico de campo e um presente para nos",
+        "tema": "65",
+        "dirigente": "Carlos Davi",
+        "leitor": "Rafel Doico"
       },
 
       "encerramento": {
-        "cantico": 89,
-        "oracao": "Alan"
+        "cantico": 61,
+        "oracao": "Jose Carlos Rossi"
       }
     },
 
