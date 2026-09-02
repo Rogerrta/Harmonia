@@ -2,7 +2,7 @@
   "anuncios": [
     {
       "id": 1,
-      "titulo": "Oportunidade",
+      "titulo": "Lembrete!",
       "mensagem": "Não esqueça seu relatório!",
       "inicio": "2026-09-01",
       "fim": "2026-09-15",
