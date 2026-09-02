@@ -5,34 +5,34 @@
   "semanas": [
     {
       "id": 1,
-      "data": "29 de Setembro",
+      "data": "05 de Setembro",
 
       "presidente": "Franklin Silva",
 
       "abertura": {
         "cantico": 153,
-        "oracao": "Franklin Silva"
+        "oracao": "Eduardo Nichele"
       },
 
       "discursoPublico": {
         "tempo": "30 min",
-        "numero": 28,
-        "tema": "O que vai acontecer em breve?",
-        "orador": "Jose Carlos Rossi",
-        "congregacao": "Oeste - Esteio"
+        "numero": 119,
+        "tema": "Fortaleça sua fé em Deus e em suas promessas",
+        "orador": "Jeferson Isse",
+        "congregacao": "Harmonia - Canoas"
       },
 
       "sentinela": {
         "tempo": "60 min",
-        "artigo": "Nosso grupo de serviço de campo é um presente para nós",
-        "tema": "65",
+        "artigo": "Como você pode escutar com mais atenção?",
+        "tema": "89",
         "dirigente": "Carlos Davi",
         "leitor": "Rafel Doico"
       },
 
       "encerramento": {
-        "cantico": 61,
-        "oracao": "Jose Carlos Rossi"
+        "cantico": 87,
+        "oracao": "Jeerson Isse"
       }
     },
 

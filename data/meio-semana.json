@@ -5,10 +5,105 @@
   "semanas": [
     {
       "id": 1,
+      "periodo": "02 de Setembro",
+      "leituraBiblica": "JEREMIAS 31",
+
+      "presidente": "Fabiano Santos",
+      "conselheiro": null,
+
+      "abertura": {
+        "cantico": 27,
+        "oracao": "Pedro Garcia",
+        "comentarios": "1 min"
+      },
+
+      "tesouros": [
+        {
+          "titulo": "“Farei . . . um novo pacto“",
+          "subtitulo": "Discurso",
+          "tempo": "10 min",
+          "designado": "Javier Vaquero"
+        },
+        {
+          "titulo": "Joias Espirituais",
+          "subtitulo": "Consideração",
+          "tempo": "10 min",
+          "designado": "Rafael Doico"
+        },
+        {
+          "titulo": "Leitura da Bíblia",
+          "subtitulo": "Jer. 31:1-11 (th lição 12)",
+          "tempo": "4 min",
+          "designado": "Guilherme Andrade"
+        }
+      ],
+
+      "ministerio": [
+        {
+          "titulo": "Iniciando Conversa",
+          "subtitulo": "De casa em casa (Imd Licao 4 ponto 3)",
+          "tempo": "3 min",
+          "designado": "Maxwell Brites / Simara Brites"
+        },
+        {
+          "titulo": "Iniciando Conversa",
+          "subtitulo": "Testemunho Informal (Imd Licao 3 ponto 3)",
+          "tempo": "4 min",
+          "designado": "Frankelis Silva / Cristiane Nichele"
+        },
+        {
+          "titulo": "Explicando suas crenças",
+          "subtitulo": "Discurso (th lição 14)",
+          "tempo": "5 min",
+          "designado": "Danilo Bandinelli"
+        },
+        {
+          "titulo": "",
+          "subtitulo": "",
+          "tempo": "",
+          "designado": ""
+        }
+      ],
+
+      "vidaCrista": {
+        "cantico": 67,
+
+        "partes": [
+          {
+            "titulo": "Seja adaptável — Use o JW.ORG",
+            "subtitulo": "Consideração",
+            "tempo": "15 min",
+            "designado": "Carlos Davi"
+          },
+          {
+            "titulo": "--",
+            "subtitulo": "--",
+            "tempo": "--",
+            "designado": "-- "
+          },
+          {
+            "titulo": "Estudo Bíblico de Congregação",
+            "subtitulo": "Leitor do Estudo - Alan Garcia",
+            "tempo": "30 min",
+            "designado": "Daniel Queiroz",
+            "leitor": ""
+          }
+        ]
+      },
+
+      "encerramento": {
+        "comentarios": "3 min",
+        "cantico": 132,
+        "oracao": "Fabiano Santos"
+      }
+    },
+
+   {
+      "id": 2,
       "periodo": "09 de Setembro",
       "leituraBiblica": "JEREMIAS 32-33",
 
-      "presidente": "Roger Aragao",
+      "presidente": "Róger Aragão",
       "conselheiro": null,
 
       "abertura": {
@@ -22,7 +117,7 @@
           "titulo": "Meditar nas qualidades de Jeová fortalece a nossa fé",
           "subtitulo": "Discurso",
           "tempo": "10 min",
-          "designado": "Leandro Castro"
+          "designado": "Leandro de Castro"
         },
         {
           "titulo": "Joias Espirituais",
@@ -32,9 +127,9 @@
         },
         {
           "titulo": "Leitura da Bíblia",
-          "subtitulo": "Jer. 32:6-18 (th lição 2)",
+          "subtitulo": " Jer. 32:6-18 (th lição 2)",
           "tempo": "4 min",
-          "designado": "Alfred Malta"
+          "designado": "Alferd Malta"
         }
       ],
 
@@ -43,13 +138,13 @@
           "titulo": "Iniciando Conversa",
           "subtitulo": "De casa em casa (Imd Licao 4 ponto 3)",
           "tempo": "3 min",
-          "designado": "Rafael Emerin / Rogerio Maciel"
+          "designado": "Rafael Emerim / Rogério Maciel "
         },
         {
           "titulo": "Iniciando Conversa",
           "subtitulo": "Testemunho Informal (Imd Licao 4 ponto 4)",
           "tempo": "4 min",
-          "designado": "Daniela Rodel / Marcia Garcia"
+          "designado": "Daniela Rödel / Marcia Garcia"  
         },
         {
           "titulo": "Cultivando o Interesse",
@@ -70,23 +165,23 @@
 
         "partes": [
           {
-            "titulo": "Use Seu Tempo da Melhor Forma Durante a Campanha",
+            "titulo": "Use seu tempo da melhor forma durante a campanha",
             "subtitulo": "Consideração",
             "tempo": "15 min",
-            "designado": "Eduardo Nichele "
+            "designado": "Eduardo Nichele"
           },
           {
-            "titulo": "--",
-            "subtitulo": "--",
-            "tempo": "--",
-            "designado": "-- "
+            "titulo": "",
+            "subtitulo": "",
+            "tempo": "",
+            "designado": ""
           },
           {
             "titulo": "Estudo Bíblico de Congregação",
             "subtitulo": "Leitor do Estudo - Jeferson Isse",
             "tempo": "30 min",
             "designado": "Roberto Andrade",
-            "leitor": "Jeferson Isse"
+            "leitor": ""
           }
         ]
       },
@@ -94,12 +189,12 @@
       "encerramento": {
         "comentarios": "3 min",
         "cantico": 143,
-        "oracao": "Roger Aragao"
+        "oracao": "Róger Aragão"
       }
     },
 
-   {
-      "id": 2,
+    {
+      "id": 3,
       "periodo": "16 de Setembro",
       "leituraBiblica": "JEREMIAS 34-35",
 
@@ -129,14 +224,14 @@
           "titulo": "Leitura da Bíblia",
           "subtitulo": "Jer. 35:1-14 (th lição 5)",
           "tempo": "4 min",
-          "designado": "Pedro Rodel"
+          "designado": "Pedro Rödel"
         }
       ],
 
       "ministerio": [
         {
           "titulo": "Iniciando Conversa",
-          "subtitulo": "De casa em casa (Imd Licao 3 ponto 3)",
+          "subtitulo": "De casa em casa (Consideracao)(lmd lição 3 ponto 3)",
           "tempo": "2 min",
           "designado": "Rian Costa / Maria Raquel"
         },
@@ -144,28 +239,28 @@
           "titulo": "Iniciando Conversa",
           "subtitulo": "De casa em casa (Imd Licao 3 ponto 5)",
           "tempo": "2 min",
-          "designado": "Iris Lima / Luciana Diniz"
+          "designado": "Daniela Rodel / Marcia Garcia"
         },
         {
           "titulo": "Cultivando o Interesse",
           "subtitulo": "Testemunho Informal (Imd Licao 7 ponto 4)",
           "tempo": "3 min",
-          "designado": "Daiana Bandinelli / Jussara Rodrigues"
+          "designado": "Daiane Bandinelli / Jussara Rodrigues"
         },
         {
-          "titulo": "Fazendo Discipulos",
-          "subtitulo": "(Imd Licao 7 ponto 4",
-          "tempo": "4 min",
-          "designado": "Maria Eduarda / Patricia Aguiar"
+          "titulo": "Fazendo discípulos",
+          "subtitulo": "Testemunho Informal (th lição 11)",
+          "tempo": "3 min",
+          "designado": "Daiane Bandinelli / Jussara Rodrigues"
         }
       ],
 
       "vidaCrista": {
-        "cantico": 121,
+        "cantico": 142,
 
         "partes": [
           {
-            "titulo": " O autodomínio nos ajuda a obedecer",
+            "titulo": "O autodomínio nos ajuda a obedecer",
             "subtitulo": "Consideração",
             "tempo": "6 min",
             "designado": "Jeferson Isse"
@@ -174,14 +269,14 @@
             "titulo": "Realizações da Organização, Setembro",
             "subtitulo": "Consideração",
             "tempo": "9 min",
-            "designado": "Fabiano Silva"
+            "designado": "Fabiano Santos"
           },
           {
             "titulo": "Estudo Bíblico de Congregação",
-            "subtitulo": "Leitor do Estudo - Jeferson Isse",
+            "subtitulo": "Leitor do Estudo - Franklin Silva",
             "tempo": "30 min",
             "designado": "Rafael Doico",
-            "leitor": "Franklin Silva"
+            "leitor": ""
           }
         ]
       },
@@ -189,12 +284,12 @@
       "encerramento": {
         "comentarios": "3 min",
         "cantico": 28,
-        "oracao": "Alan Garcia"
+        "oracao": "Alna Garcia"
       }
     },
 
     {
-      "id": 3,
+      "id": 4,
       "periodo": "23 de Setembro",
       "leituraBiblica": "JEREMIAS 36-37",
 
@@ -289,7 +384,7 @@
     },
 
     {
-      "id": 4,
+      "id": 5,
       "periodo": "30 de Setembro",
       "leituraBiblica": "JEREMIAS 38-39",
 
@@ -381,12 +476,6 @@
         "cantico": 56,
         "oracao": "Carlos Davi"
       }
-    },
-
-    {
-      "id": 5,
-      "periodo": "A definir",
-      "leituraBiblica": "A definir"
     }
   ]
 }
