@@ -2,22 +2,19 @@
   "anuncios": [
     {
       "id": 1,
-      "titulo": "GRUPOS DE SERVIÇO DE CAMPO AOS DOMINGOS",
-      "mensagem": "Não Esqueça Seu Relatório!!!!",
+      "titulo": "Oportunidade",
+      "mensagem": "Não esqueça seu relatório!",
       "inicio": "2026-09-01",
       "fim": "2026-09-15",
       "destaque": true
     },
-
     {
       "id": 2,
-      "titulo": "GRUPOS DE SERVIÇO DE CAMPO AOS DOMINGOS",
-      "mensagem": "Estamos iniciando um novo ano de serviço.Em setembro, temos a campanha mundial da brochura 'Seja Feliz Para Sempre!'No dia 26 de setembro, teremos o discurso especial 'Como a Bíblia pode ajudar você?', Os publicadores que decidirem sair de pioneiros auxiliares pode escolher entre os requisitos de 15 e 30 horas.",
+      "titulo": "Oportunidade!",
+      "mensagem": "Estamos iniciando um novo ano de serviço. Em setembro, temos a campanha mundial da brochura 'Seja Feliz Para Sempre!'. No dia 26 de setembro, teremos o discurso especial 'Como a Bíblia pode ajudar você?'. Os publicadores que decidirem sair de pioneiros auxiliares podem escolher entre os requisitos de 15 e 30 horas.",
       "inicio": "2026-09-01",
       "fim": "2026-09-15",
       "destaque": true
     }
-
-    
   ]
 }
